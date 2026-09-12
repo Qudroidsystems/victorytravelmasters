@@ -1,4 +1,4 @@
-
+@extends('layouts.website.master')
 @section('content')
     <!-- Hero Section Start -->
     <div class="sis-hero hero-slider sis-br-radius mt-3 sis-home-image">
