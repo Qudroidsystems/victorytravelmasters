@@ -100,77 +100,11 @@ Route::get('/', function () {
     return redirect('/login');
 });
 
-Route::get('/test-sibling-data/{id}', function ($id) {
-    $group = DB::table('sibling_groups')->where('id', $id)->first();
-    $students = DB::table('sibling_group_students')
-        ->where('sibling_group_id', $id)
-        ->join('studentRegistration', 'sibling_group_students.student_id', '=', 'studentRegistration.id')
-        ->select('studentRegistration.id', 'studentRegistration.firstname', 'studentRegistration.lastname', 'studentRegistration.admissionNo')
-        ->get();
-
-    return response()->json([
-        'group'         => $group,
-        'students'      => $students,
-        'student_count' => $students->count(),
-    ]);
-});
 
 Auth::routes();
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 
-// CSRF refresh (used by the auto-refresh feature)
-Route::get('/refresh-csrf', function () {
-    if (request()->ajax()) {
-        Session::regenerateToken();
-        return response()->json(['csrf_token' => csrf_token()]);
-    }
-    return abort(404);
-})->middleware('web')->name('refresh.csrf');
 
-// Public ID card verification
-Route::get('/student-id-cards/verify/{token}', [StudentIdCardController::class, 'verify'])
-    ->name('student-id-cards.verify');
-
-// Test/session helper routes — outside auth so they can be hit without a session
-Route::get('/test-session-expired', function () {
-    return redirect()->route('login')
-        ->with('session_expired', true)
-        ->with('error', 'Your session has expired. Please login again.')
-        ->with('intended', url()->previous() ?? '/dashboard');
-})->name('test.session.expired');
-
-Route::get('/force-419', function () {
-    if (auth()->check()) {
-        auth()->logout();
-    }
-    session()->flush();
-    session()->regenerate();
-
-    return redirect()->route('login')
-        ->with('session_expired', true)
-        ->with('error', 'Your session has expired. Please login again.')
-        ->with('intended', '/dashboard');
-})->name('force.419');
-
-/*
-|--------------------------------------------------------------------------
-| Public / Signed Routes
-|--------------------------------------------------------------------------
-| ICS calendar feed and webhooks MUST sit outside the auth group so
-| signed URLs and third-party callbacks work without a logged-in session.
-*/
-
-// ICS calendar feed — public, verified via signed URL
-Route::get('/timetable/ics/{teacherId}', [TimetableController::class, 'exportIcs'])
-    ->name('timetable.ics')
-    ->middleware('signed');
-
-// Payment gateway webhooks — no CSRF, no auth
-Route::prefix('webhook')->group(function () {
-    Route::post('/paystack',    [FlexibleOnlinePaymentController::class, 'webhook'])->name('webhook.paystack');
-    Route::post('/remita',      [FlexibleOnlinePaymentController::class, 'webhook'])->name('webhook.remita');
-    Route::post('/flutterwave', [FlexibleOnlinePaymentController::class, 'webhook'])->name('webhook.flutterwave');
-});
 
 /*
 |--------------------------------------------------------------------------

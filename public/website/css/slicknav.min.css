@@ -1,0 +1,217 @@
+/*!
+ * SlickNav Responsive Mobile Menu v1.0.10
+ * (c) 2016 Josh Cope
+ * licensed under MIT
+ */
+ 
+.slicknav_btn,
+.slicknav_nav .slicknav_item {
+	cursor: pointer
+}
+
+.slicknav_menu,
+.slicknav_menu * {
+	box-sizing: border-box
+}
+
+.slicknav_btn {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 45px;
+	height: 45px;
+	min-width: 45px;
+	line-height: normal;
+	background-color: var(--main-color);
+	border-radius: 12px 12px 12px 0px;
+}
+
+.slicknav_btn .slicknav_icon-bar+.slicknav_icon-bar {
+	margin-top: .188em
+}
+
+.slicknav_menu .slicknav_menutxt {
+	display: block;
+	line-height: 1.188em;
+	float: left;
+	color: #fff;
+	font-weight: 700;
+	text-shadow: 0 1px 3px #000
+}
+
+.slicknav_menu .slicknav_icon {
+	float: left;
+	width: 1.125em;
+	height: .875em;
+	margin: .188em 0 0 .438em
+}
+
+.slicknav_menu .slicknav_icon:before {
+	background: 0 0;
+	width: 1.125em;
+	height: .875em;
+	display: block;
+	content: "";
+	position: absolute
+}
+
+.slicknav_menu .slicknav_no-text {
+	margin: 0
+}
+
+.slicknav_menu .slicknav_icon-bar {
+	display: block;
+	width: 1.125em;
+	height: .125em;
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
+	-webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, .25);
+	-moz-box-shadow: 0 1px 0 rgba(0, 0, 0, .25);
+	box-shadow: 0 1px 0 rgba(0, 0, 0, .25)
+}
+
+.slicknav_menu:after,
+.slicknav_menu:before {
+	content: " ";
+	display: table
+}
+
+.slicknav_menu:after {
+	clear: both
+}
+
+.slicknav_nav li,
+.slicknav_nav ul {
+	display: block
+}
+
+.slicknav_nav .slicknav_arrow {
+	display: none;
+}
+
+.slicknav_nav .slicknav_item a {
+    padding: 0;
+}
+
+.slicknav_nav .slicknav_row,
+.slicknav_nav a {
+	display: block;
+    color: var(--white-color);
+}
+
+.slicknav_open > .slicknav_item .nav-link {
+	color: var(--main-color);
+}
+
+.slicknav_menu ul ul li a:hover {
+		color: var(--main-color);
+}
+
+.slicknav_nav .slicknav_parent-link a {
+	display: inline;
+}
+
+.slicknav_menu {
+	position: absolute;
+    width: 100%;
+    padding: 15px;
+    border-radius: 0 0 0px 0;
+	border-radius: 15px;
+	margin-top: 18px;
+}
+
+.slicknav_menu ul {
+	margin: 0;
+    padding: 0;
+	background-color: var(--primary-color);
+}
+
+.slicknav_menu ul ul {
+	margin: 0;
+}
+
+.slicknav_menu ul ul li a {
+	font-weight: 500;
+	font-size: 16px;
+}
+
+.slicknav_nav .slicknav_row, .slicknav_nav li a {
+    padding: 10px 15px;
+    position: relative;
+}
+
+.slicknav_menu ul ul li a:hover {
+	color: var(--main-color);
+}
+
+.slicknav_nav .submenu i {
+    font-size: 15px;
+    color: var(--white-color);
+    position: absolute;
+    right: 8px;
+    top: 6px;
+	transform: rotate(0deg);
+    transition: all 0.3s ease-out;
+	padding: 0 !important;
+}
+
+.slicknav_open .slicknav_item i {
+	transform: rotate(-180deg);
+	color: var(--main-color);
+    transition: all 0.3s ease-out;
+}
+
+.slicknav_nav .nav-item {
+    border-bottom: 1px solid #FFFFFF1A;
+}
+
+.sis-menu-item-arrow {
+    display: none;
+}
+
+.slicknav_icon .slicknav_icon-bar:first-child {
+    margin: 0 !important;
+}
+
+.slicknav_icon .slicknav_icon-bar:last-child {
+    margin: 0 !important;
+}
+
+.slicknav_icon .slicknav_icon-bar {
+    display: block;
+    width: 100%;
+    height: 2px;
+    opacity: 1;
+    width: 25px;
+    background-color: var(--white-color);
+    border-radius: 6px;
+    margin: 7px 0 !important;
+    transition: all 0.4s ease-in-out;
+}
+
+.slicknav_icon span.slicknav_icon-bar:nth-child(2) {
+	width: 18px;
+}
+
+.navbar-toggle a.slicknav_btn.slicknav_open .slicknav_icon.slicknav_no-text {
+	position: relative;
+	left: 4px;
+	transition: 0.4s ease-in-out;
+}
+
+.navbar-toggle a.slicknav_btn.slicknav_open .slicknav_icon span.slicknav_icon-bar:nth-child(2) {
+    opacity: 0;
+	transition: 0.4s ease-in-out;
+}
+
+.navbar-toggle a.slicknav_btn.slicknav_open .slicknav_icon span.slicknav_icon-bar:nth-child(3) {
+    transform: rotate(45deg) translate(-8px, -4px);
+    transition: 0.4s ease-in-out;
+}
+
+.navbar-toggle a.slicknav_btn.slicknav_open .slicknav_icon span.slicknav_icon-bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-9px, 5px);
+	transition: 0.4s ease-in-out;
+}
