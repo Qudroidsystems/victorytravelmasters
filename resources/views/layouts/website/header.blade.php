@@ -13,7 +13,7 @@
     <!-- Page Title -->
     <title>Victory Journey Masters</title>
     <!-- Favicon Icon -->
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('website/images/favicon.png'))}}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('website/images/favicon.png')}}">
     <!-- Bootstrap Css Link -->
     <link href="{{ asset('website/css/bootstrap.min.css') }}" rel="stylesheet" media="screen">
     <!-- Swiper Css -->
