@@ -20,7 +20,6 @@
         "phpoffice/phpword": "^1.4",
         "picqer/php-barcode-generator": "*",
         "rockett/weasyprint": "*",
-        "simplesoftwareio/simple-qrcode": "^4.2",
         "spatie/laravel-permission": "^6.17",
         "spatie/laravel-responsecache": "^7.6",
         "twilio/sdk": "^8.6"
