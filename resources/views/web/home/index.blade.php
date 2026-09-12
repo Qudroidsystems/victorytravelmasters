@@ -1,145 +1,4 @@
-<!DOCTYPE html>
-<html lang="zxx">
 
-<!-- Mirrored from https://traviox-html.wpthemeverse.com/home-slider.html by HTTrack Website Copier/3.x [XR&CO], Sat, 12 Sep 2026 09:58:49 GMT -->
-<head>
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="robots" content="max-image-preview:large">
-    <!-- Page Title -->
-    <title>Traviox - Travel & Tour Booking - HTML Template</title>
-    <!-- Favicon Icon -->
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
-    <!-- Bootstrap Css Link -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <!-- Swiper Css -->
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
-    <!-- Mouse Cursor Css File -->
-    <link rel="stylesheet" href="css/mousecursor.css">
-    <!-- Magnific Popup Css File -->
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <!-- Font Awesome Icon Css-->
-    <link href="css/all.min.css" rel="stylesheet" media="screen">
-    <!-- SlickNav Css -->
-    <link href="css/slicknav.min.css" rel="stylesheet">
-    <!-- Animation On Scroll Css File -->
-    <link href="css/aos.css" rel="stylesheet">
-    <!-- Google Fonts Link-->
-    <link rel="preconnect" href="../fonts.googleapis.com/index.html">
-    <link rel="preconnect" href="../fonts.gstatic.com/index.html" crossorigin>
-    <!-- Lexend Serif Fonts Link -->
-    <link href="../fonts.googleapis.com/css246ff.css?family=Lexend:wght@100..900&amp;display=swap" rel="stylesheet">
-    <!-- Onest Fonts Link -->
-    <link href="../fonts.googleapis.com/css2493f.css?family=Onest:wght@100..900&amp;display=swap" rel="stylesheet">
-    <!-- Main Custom Css -->
-    <link href="css/custom.css" rel="stylesheet" media="screen">
-</head>
-<body>
-    <!-- Preloader Start -->
-    <div class="sis-preloader">
-        <div class="sis-loading-container rounded-0">
-            <div class="sis-loading"></div>
-            <div class="sis-loading-icon">
-                <figure class="sis-reveal">
-                    <img src="images/loader.png" alt="Traviox">
-                </figure>
-            </div>
-        </div>
-    </div>
-    <!-- Preloader End -->
-    <!-- Header New Start -->
-    <header id="sisf-page-header" class="sisf-main-header sis-br-radius mt-3 sisf-standerd-header">
-        <div id="sisf-page-header-inner" class="sisf-skin--light position-relative d-flex align-items-center">
-            <div class="container">
-                <!-- Logo Start -->
-                <a class="navbar-brand sisf-header-logo-link mobile-block" href="index-2.html">
-                    <img src="images/logo.svg" alt="Logo">
-                </a>
-                <!-- Logo End -->
-                <div class="sisf-centered-header-wrapper sisf--header d-flex justify-content-between align-items-center">
-                    <!-- Logo Start -->
-                    <a class="navbar-brand sisf-header-logo-link" href="index-2.html">
-                        <img src="images/logo.svg" alt="Logo">
-                    </a>
-                    <!-- Logo End -->
-                    <nav class="navbar navbar-expand-lg ms-auto me-4">
-                        <!-- Main Menu Start -->
-                        <div class="collapse navbar-collapse sis-main-menu">
-                            <div class="nav-menu-wrapper">
-                                <ul class="navbar-nav" id="menu">
-                                    <li class="nav-item submenu">
-                                        <a class="nav-link" href="index-2.html">Home<i class="fas fa-chevron-down custom-toggle-icon ps-2"></i></a>
-                                        <ul class="sub-menu">
-                                            <li class="nav-item"><a class="nav-link" href="index-2.html">Home - Video</a></li>
-                                            <li class="nav-item"><a class="nav-link" href="home-image.html">Home - Image</a></li>
-                                            <li class="nav-item"><a class="nav-link" href="home-slider.html">Home - Slider</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
-                                    <li class="nav-item submenu">
-                                        <a class="nav-link" href="destinations.html">Destinations</a>
-                                    </li>
-                                    <li class="nav-item submenu">
-                                        <a class="nav-link" href="tours.html">Tours</a>
-                                    </li>
-                                    <li class="nav-item submenu">
-                                        <a class="nav-link" href="blogs.html">Blog<i class="fas fa-chevron-down custom-toggle-icon ps-2"></i></a>
-                                        <ul class="sub-menu">
-                                            <li class="nav-item"><a class="nav-link" href="blogs.html">Blog Standard</a></li>
-                                            <li class="nav-item"><a class="nav-link" href="blogs-list.html">Blog List</a></li>
-                                            <li class="nav-item"><a class="nav-link" href="blog-grid.html">Blog Grid</a></li>
-                                            <li class="nav-item"><a class="nav-link" href="blog-three-columns.html">Blog 3 Columns</a></li>
-                                            <li class="nav-item"><a class="nav-link" href="blog-single.html">Blog Detail</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item submenu">
-                                        <a class="nav-link" href="#">Pages<i class="fas fa-chevron-down custom-toggle-icon ps-2"></i></a>
-                                        <ul class="sub-menu">
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="service.html">
-                                                    <span>Our Service</span>
-                                                    <span class="menu-item-arrow ps-0">
-                                                        <i class="fa-solid fa-chevron-right"></i>
-                                                    </span>
-                                                </a>
-                                                <ul class="sub-menu">
-                                                    <li class="nav-item"><a class="nav-link" href="service.html">Service List</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="service-single.html">Service Detail</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="nav-item"><a class="nav-link" href="destination-single.html">Destinations Detail</a></li>
-                                            <li class="nav-item"><a class="nav-link" href="tour-single.html">Tour Detail</a></li>
-                                            <li class="nav-item"><a class="nav-link" href="our-guide.html">Our Guide</a></li>
-                                            <li class="nav-item"><a class="nav-link" href="guide-detail.html">Our Guide Detail</a></li>
-                                            <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
-                                            <li class="nav-item"><a class="nav-link" href="faq.html">FAQ’s</a></li>
-                                            <li class="nav-item"><a class="nav-link" href="image-gallery.html">Image Gallery</a></li>
-                                            <li class="nav-item"><a class="nav-link" href="masonry-gallery.html">Masonry Gallery</a></li>
-                                            <li class="nav-item"><a class="nav-link" href="video-gallery.html">Video Gallery</a></li>
-                                            <li class="nav-item"><a class="nav-link" href="error.html">Error Page 404</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item submenu"><a class="nav-link" href="contact.html">Contact Us</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- Main Menu End -->
-                    </nav>
-                    <div class="sisf-widget-holder sisf--two d-flex align-items-center">
-                        <div class="header-btn">
-                            <a href="contact.html" class="sis-btn-default">Being your journey<i class="fa-solid fa-arrow-right-long"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="navbar-toggle"></div>
-                <div class="responsive-menu"></div>
-            </div>
-        </div>
-    </header>
     <!-- Header New End -->
     <!-- Hero Section Start -->
     <div class="sis-hero hero-slider sis-br-radius mt-3 sis-home-image">
@@ -149,7 +8,7 @@
                     <div class="swiper-slide">
                         <div class="hero-slide align-items-center pb-0">
                             <div class="hero-slider-image">
-                                <img src="images/slide-bg1.jpg" alt="Traviox">
+                                <img src="{{ asset('website/images/slide-bg1.jpg'))}}" alt="Traviox">
                             </div>
                             <!-- Content Start -->
                             <div class="container">
@@ -186,7 +45,7 @@
                     <div class="swiper-slide">
                         <div class="hero-slide align-items-center pb-0">
                             <div class="hero-slider-image">
-                                <img src="images/slide-bg2.jpg" alt="Traviox">
+                                <img src="{{ asset('website/images/slide-bg2.jpg'))}}" alt="Traviox">
                             </div>
                             <!-- Content Start -->
                             <div class="container">
@@ -223,7 +82,7 @@
                     <div class="swiper-slide">
                         <div class="hero-slide align-items-center pb-0">
                             <div class="hero-slider-image">
-                                <img src="images/slide-bg3.jpg" alt="Traviox">
+                                <img src="{{ asset('website/images/slide-bg3.jpg'))}}" alt="Traviox">
                             </div>
                             <!-- Content Start -->
                             <div class="container">
@@ -296,14 +155,14 @@
                         <!-- About Image Start -->
                         <div class="sisf-about-image-small" data-aos="zoom-in" data-aos-delay="500">
                             <figure>
-                                <img src="images/about-img2.png" alt="Traviox">
+                                <img src="{{ asset('website/images/about-img2.png') }}" alt="Traviox">
                             </figure>
                         </div>
                         <!-- About Image End -->
                         <!-- About Image Start -->
                         <div class="sisf-about-image-right">
                             <figure class="sis-reveal sis-image-anime">
-                                <img src="images/about-img1.png" class="w-100" alt="Traviox">
+                                <img src="{{ asset('website/images/about-img1.png') }}" class="w-100" alt="Traviox">
                             </figure>
                         </div>
                         <!-- About Image End -->
@@ -318,7 +177,7 @@
                             <!-- Counter Image Start -->
                             <div class="sis-e-counter-image">
                                 <figure>
-                                    <img src="images/counter-icon1.svg" alt="Traviox">
+                                    <img src="{{ asset('website/images/counter-icon1.svg'))}}" alt="Traviox">
                                 </figure>
                             </div>
                             <!-- Counter Image Start -->
@@ -347,7 +206,7 @@
                             <!-- Counter Image Start -->
                             <div class="sis-e-counter-image">
                                 <figure>
-                                    <img src="images/counter-icon2.svg" alt="Traviox">
+                                    <img src="{{ asset('website/images/counter-icon2.svg'))}}" alt="Traviox">
                                 </figure>
                             </div>
                             <!-- Counter Image Start -->
@@ -376,7 +235,7 @@
                             <!-- Counter Image Start -->
                             <div class="sis-e-counter-image">
                                 <figure>
-                                    <img src="images/counter-icon3.svg" alt="Traviox">
+                                    <img src="{{ asset('website/images/counter-icon3.svg'))}}" alt="Traviox">
                                 </figure>
                             </div>
                             <!-- Counter Image Start -->
@@ -405,7 +264,7 @@
                             <!-- Counter Image Start -->
                             <div class="sis-e-counter-image">
                                 <figure>
-                                    <img src="images/counter-icon4.svg" alt="Traviox">
+                                    <img src="{{ asset('website/images/counter-icon4.svg'))}}" alt="Traviox">
                                 </figure>
                             </div>
                             <!-- Counter Image Start -->
@@ -461,7 +320,7 @@
                                                 <div class="sisf-destination-image position-relative">
                                                     <a href="destination-single.html" class="sisf-sis-page-link">
                                                         <figure>
-                                                            <img src="images/destination-image-1.jpg" class="w-100 sis-radius" alt="Traviox">
+                                                            <img src="{{ asset('website/images/destination-image-1.jpg'))}}" class="w-100 sis-radius" alt="Traviox">
                                                         </figure>
                                                     </a>
                                                 </div>
@@ -486,7 +345,7 @@
                                                 <div class="sisf-destination-image position-relative">
                                                     <a href="destination-single.html" class="sisf-sis-page-link">
                                                         <figure>
-                                                            <img src="images/destination-image-2.jpg" class="w-100 sis-radius" alt="Traviox">
+                                                            <img src="{{ asset('website/images/destination-image-2.jpg'))}}" class="w-100 sis-radius" alt="Traviox">
                                                         </figure>
                                                     </a>
                                                 </div>
@@ -511,7 +370,7 @@
                                                 <div class="sisf-destination-image position-relative">
                                                     <a href="destination-single.html" class="sisf-sis-page-link">
                                                         <figure>
-                                                            <img src="images/destination-image-3.jpg" class="w-100 sis-radius" alt="Traviox">
+                                                            <img src="{{ asset('website/images/destination-image-3.jpg'))}}" class="w-100 sis-radius" alt="Traviox">
                                                         </figure>
                                                     </a>
                                                 </div>
@@ -536,7 +395,7 @@
                                                 <div class="sisf-destination-image position-relative">
                                                     <a href="destination-single.html" class="sisf-sis-page-link">
                                                         <figure>
-                                                            <img src="images/destination-image-4.jpg" class="w-100 sis-radius" alt="Traviox">
+                                                            <img src="{{ asset('website/images/destination-image-4.jpg'))}}" class="w-100 sis-radius" alt="Traviox">
                                                         </figure>
                                                     </a>
                                                 </div>
@@ -561,7 +420,7 @@
                                                 <div class="sisf-destination-image position-relative">
                                                     <a href="destination-single.html" class="sisf-sis-page-link">
                                                         <figure>
-                                                            <img src="images/destination-image-5.jpg" class="w-100 sis-radius" alt="Traviox">
+                                                            <img src="{{ asset('website/images/destination-image-5.jpg'))}}" class="w-100 sis-radius" alt="Traviox">
                                                         </figure>
                                                     </a>
                                                 </div>
@@ -593,7 +452,7 @@
                             <a href="destinations.html" class="sis-btn-default">Find Your Adventure<i class="fa-solid fa-arrow-right-long"></i></a>
                         </div>
                         <div class="sisf-sis-e-box">
-                            <p class="mb-1" data-aos="fade-up" data-aos-delay="300"><span class="pe-2"><img src="images/users.png" alt="Traviox"></span> Pack your dreams, leave the planning to us, and experience journeys that you'll remember forever. <a href="about-us.html">Being your journey</a></p>
+                            <p class="mb-1" data-aos="fade-up" data-aos-delay="300"><span class="pe-2"><img src="{{ asset('website/images/users.png') }}" alt="Traviox"></span> Pack your dreams, leave the planning to us, and experience journeys that you'll remember forever. <a href="about-us.html">Being your journey</a></p>
                             <p class="mb-0" data-aos="fade-up" data-aos-delay="500">Rated 4.9/5 by Happy Travelers Worldwide
                                 <span class="sisf-e-colored">★</span>
                                 <span class="sisf-e-colored">★</span>
@@ -634,12 +493,12 @@
                                 <div class="sis-e-icon-top position-relative d-inline-block" data-aos="zoom-in" data-aos-delay="600">
                                     <div class="sis-e-icon-spin">
                                         <figure>
-                                            <img src="images/icon-top.svg" class="spin-img" alt="Traviox">
+                                            <img src="{{ asset('website/images/icon-top.svg'))}}" class="spin-img" alt="Traviox">
                                         </figure>
                                     </div>
                                     <div class="sis-m-icon-top">
                                         <figure>
-                                            <img src="images/page-comman-icon.svg" alt="Traviox">
+                                            <img src="{{ asset('website/images/page-comman-icon.svg'))}}" alt="Traviox">
                                         </figure>
                                     </div>
                                 </div>
@@ -661,7 +520,7 @@
                                                     <div class="sisf-tour-image position-relative">
                                                         <a href="tour-single.html">
                                                             <figure class="sis-image-anime">
-                                                                <img src="images/tour-list1.jpg" class="w-100" alt="Traviox">
+                                                                <img src="{{ asset('website/images/tour-list1.jpg'))}}" class="w-100" alt="Traviox">
                                                             </figure>
                                                         </a>
                                                         <div class="sis-tours-category">
@@ -699,7 +558,7 @@
                                                     <div class="sisf-tour-image position-relative">
                                                         <a href="tour-single.html">
                                                             <figure class="sis-image-anime">
-                                                                <img src="images/tour-list2.jpg" class="w-100" alt="Traviox">
+                                                                <img src="{{ asset('website/images/tour-list2.jpg'))}}" class="w-100" alt="Traviox">
                                                             </figure>
                                                         </a>
                                                         <div class="sis-tours-category">
@@ -737,7 +596,7 @@
                                                     <div class="sisf-tour-image position-relative">
                                                         <a href="tour-single.html">
                                                             <figure class="sis-image-anime">
-                                                                <img src="images/tour-list3.jpg" class="w-100" alt="Traviox">
+                                                                <img src="{{ asset('website/images/tour-list3.jpg'))}}" class="w-100" alt="Traviox">
                                                             </figure>
                                                         </a>
                                                         <div class="sis-tours-category">
@@ -775,7 +634,7 @@
                                                     <div class="sisf-tour-image position-relative">
                                                         <a href="tour-single.html">
                                                             <figure class="sis-image-anime">
-                                                                <img src="images/tour-list4.jpg" class="w-100" alt="Traviox">
+                                                                <img src="{{ asset('website/images/tour-list4.jpg'))}}" class="w-100" alt="Traviox">
                                                             </figure>
                                                         </a>
                                                         <div class="sis-tours-category">
@@ -813,7 +672,7 @@
                                                     <div class="sisf-tour-image position-relative">
                                                         <a href="tour-single.html">
                                                             <figure class="sis-image-anime">
-                                                                <img src="images/tour-list5.jpg" class="w-100" alt="Traviox">
+                                                                <img src="{{ asset('website/images/tour-list5.jpg'))}}" class="w-100" alt="Traviox">
                                                             </figure>
                                                         </a>
                                                         <div class="sis-tours-category">
@@ -880,7 +739,7 @@
                                     <div class="sisf-e-inner d-flex gap-4">
                                         <div class="sisf-e-icon">
                                             <figure>
-                                                <img src="images/how-work-icon1.svg" alt="Traviox">
+                                                <img src="{{ asset('website/images/how-work-icon1.svg'))}}" alt="Traviox">
                                             </figure>
                                         </div>
                                         <div class="sisf-e-content">
@@ -899,7 +758,7 @@
                                     <div class="sisf-e-inner d-flex gap-4">
                                         <div class="sisf-e-icon">
                                             <figure>
-                                                <img src="images/how-work-icon2.svg" alt="Traviox">
+                                                <img src="{{ asset('website/images/how-work-icon2.svg'))}}" alt="Traviox">
                                             </figure>
                                         </div>
                                         <div class="sisf-e-content">
@@ -918,7 +777,7 @@
                                     <div class="sisf-e-inner d-flex gap-4">
                                         <div class="sisf-e-icon">
                                             <figure>
-                                                <img src="images/how-work-icon3.svg" alt="Traviox">
+                                                <img src="{{ asset('website/images/how-work-icon3.svg'))}}" alt="Traviox">
                                             </figure>
                                         </div>
                                         <div class="sisf-e-content">
@@ -941,7 +800,7 @@
                                 <div class="sisf-e-content-on-image position-relative">
                                     <div class="sisf-how-work-image">
                                         <figure class="sis-image-anime sis-reveal">
-                                            <img src="images/how-works-img.jpg" class="w-100 sis-radius" alt="Traviox">
+                                            <img src="{{ asset('website/images/how-works-img.jpg'))}}" class="w-100 sis-radius" alt="Traviox">
                                         </figure>
                                     </div>
                                     <div class="sis-e-left-top-text sisf-float-left-right" data-aos="zoom-in" data-aos-delay="300">
@@ -952,7 +811,7 @@
                                             <div class="sisf-m-inner d-flex align-items-center gap-4">
                                                 <div class="sisf-icon-image">
                                                     <figure>
-                                                        <img src="images/how-work-icon-left.jpg" class="sis-radius" alt="Traviox">
+                                                        <img src="{{ asset('website/images/how-work-icon-left.jpg'))}}" class="sis-radius" alt="Traviox">
                                                     </figure>
                                                 </div>
                                                 <div class="sisf-e-content">
@@ -991,7 +850,7 @@
                                 <div class="sisf-e-content-on-image position-relative">
                                     <div class="sisf-how-work-image">
                                         <figure class="sis-image-anime sis-reveal">
-                                            <img src="images/how-works-img1.jpg" class="w-100 sis-radius" alt="Traviox">
+                                            <img src="{{ asset('website/images/how-works-img1.jpg'))}}" class="w-100 sis-radius" alt="Traviox">
                                         </figure>
                                     </div>
                                     <div class="sis-e-left-top-text sisf-float-left-right p-3 rounded-4" data-aos="zoom-in" data-aos-delay="300">
@@ -1004,7 +863,7 @@
                                             <div class="sisf-m-inner">
                                                 <div class="sisf-icon-image">
                                                     <figure>
-                                                        <img src="images/form-img.png" class="sis-radius" alt="Traviox">
+                                                        <img src="{{ asset('website/images/form-img.png') }}" class="sis-radius" alt="Traviox">
                                                     </figure>
                                                 </div>
                                             </div>
@@ -1018,7 +877,7 @@
                                 <div class="sisf-e-content-on-image position-relative">
                                     <div class="sisf-how-work-image">
                                         <figure class="sis-image-anime sis-reveal">
-                                            <img src="images/how-works-img2.jpg" class="w-100 sis-radius" alt="Traviox">
+                                            <img src="{{ asset('website/images/how-works-img2.jpg'))}}" class="w-100 sis-radius" alt="Traviox">
                                         </figure>
                                     </div>
                                     <div class="sis-e-left-top-text px-3 sisf-float-left-right" data-aos="zoom-in" data-aos-delay="300">
@@ -1029,7 +888,7 @@
                                             <div class="sisf-m-inner">
                                                 <div class="sisf-icon-image">
                                                     <figure>
-                                                        <img src="images/travel-img.png" class="sis-radius" alt="Traviox">
+                                                        <img src="{{ asset('website/images/travel-img.png') }}" class="sis-radius" alt="Traviox">
                                                     </figure>
                                                 </div>
                                             </div>
@@ -1047,7 +906,7 @@
                 <div class="col-12">
                     <div class="sis-comman-bottom-line-text sis-e-bottom text-center">
                         <div class="sisf-sis-e-box">
-                            <p class="mb-1" data-aos="fade-up" data-aos-delay="300"><span class="pe-2"><img src="images/users.png" alt="Traviox"></span> From dream destinations to unforgettable memories, we make every journey effortless and inspiring. <a href="about-us.html">Being your journey</a></p>
+                            <p class="mb-1" data-aos="fade-up" data-aos-delay="300"><span class="pe-2"><img src="{{ asset('website/images/users.png') }}" alt="Traviox"></span> From dream destinations to unforgettable memories, we make every journey effortless and inspiring. <a href="about-us.html">Being your journey</a></p>
                             <p class="mb-0" data-aos="fade-up" data-aos-delay="500">Trusted by Thousands of Travelers
                                 <span class="sisf-e-colored">★</span>
                                 <span class="sisf-e-colored">★</span>
@@ -1084,7 +943,7 @@
                                     <div class="sisf-e-inner">
                                         <div class="sisf-e-icon mb-4">
                                             <figure>
-                                                <img src="images/service-icon1.svg" alt="Traviox">
+                                                <img src="{{ asset('website/images/service-icon1.svg'))}}" alt="Traviox">
                                             </figure>
                                         </div>
                                         <div class="sisf-e-content">
@@ -1103,7 +962,7 @@
                                     <div class="sisf-e-inner">
                                         <div class="sisf-e-icon mb-4">
                                             <figure>
-                                                <img src="images/service-icon2.svg" alt="Traviox">
+                                                <img src="{{ asset('website/images/service-icon2.svg'))}}" alt="Traviox">
                                             </figure>
                                         </div>
                                         <div class="sisf-e-content">
@@ -1124,7 +983,7 @@
                                     <div class="sisf-e-inner">
                                         <div class="sisf-e-icon mb-4">
                                             <figure>
-                                                <img src="images/service-icon3.svg" alt="Traviox">
+                                                <img src="{{ asset('website/images/service-icon3.svg'))}}" alt="Traviox">
                                             </figure>
                                         </div>
                                         <div class="sisf-e-content">
@@ -1143,7 +1002,7 @@
                                     <div class="sisf-e-inner">
                                         <div class="sisf-e-icon mb-4">
                                             <figure>
-                                                <img src="images/service-icon4.svg" alt="Traviox">
+                                                <img src="{{ asset('website/images/service-icon4.svg'))}}" alt="Traviox">
                                             </figure>
                                         </div>
                                         <div class="sisf-e-content">
@@ -1169,7 +1028,7 @@
                         <div class="sisf-service-image-right position-relative">
                             <div class="sisf-services-bottom-image" data-aos="zoom-in" data-aos-delay="500">
                                 <figure>
-                                    <img src="images/service-bottom-image.png" alt="Traviox">
+                                    <img src="{{ asset('website/images/service-bottom-image.png') }}" alt="Traviox">
                                 </figure>
                             </div>
                         </div>
@@ -1187,27 +1046,27 @@
                     <div class="sisf-page-images-wrapper sis-gallery-items position-relative">
                         <!-- Image Start -->
                         <div class="sis-gallery-item-image sisf-image-inner">
-                            <a href="images/what-we-offer1.png">
+                            <a href="{{ asset('website/images/what-we-offer1.png') }}">
                                 <figure class="sis-image-anime sis-reveal">
-                                    <img src="images/what-we-offer1.png" class="w-100 sis-radius" alt="Traviox">
+                                    <img src="{{ asset('website/images/what-we-offer1.png') }}" class="w-100 sis-radius" alt="Traviox">
                                 </figure>
                             </a>
                         </div>
                         <!-- Image End -->
                         <!-- Image Start -->
                         <div class="sis-gallery-item-image sisf-image-inner sisf-m-center position-absolute">
-                            <a href="images/what-we-offer2.png">
+                            <a href="{{ asset('website/images/what-we-offer2.png') }}">
                                 <figure class="sis-image-anime sis-reveal">
-                                    <img src="images/what-we-offer2.png" class="w-100 sis-radius" alt="Traviox">
+                                    <img src="{{ asset('website/images/what-we-offer2.png') }}" class="w-100 sis-radius" alt="Traviox">
                                 </figure>
                             </a>
                         </div>
                         <!-- Image End -->
                         <!-- Image Start -->
                         <div class="sis-gallery-item-image sisf-image-inner sisf-m-end position-absolute">
-                            <a href="images/what-we-offer3.png">
+                            <a href="{{ asset('website/images/what-we-offer3.png') }}">
                                 <figure class="sis-image-anime sis-reveal">
-                                    <img src="images/what-we-offer3.png" class="w-100 sis-radius" alt="Traviox">
+                                    <img src="{{ asset('website/images/what-we-offer3.png') }}" class="w-100 sis-radius" alt="Traviox">
                                 </figure>
                             </a>
                         </div>
@@ -1231,7 +1090,7 @@
                                 <div class="sisf-e-inner">
                                     <div class="sisf-e-icon mb-3">
                                         <figure>
-                                            <img src="images/what-we-offer-icon1.svg" alt="Traviox">
+                                            <img src="{{ asset('website/images/what-we-offer-icon1.svg'))}}" alt="Traviox">
                                         </figure>
                                     </div>
                                     <div class="sisf-e-content">
@@ -1250,7 +1109,7 @@
                                 <div class="sisf-e-inner">
                                     <div class="sisf-e-icon mb-3">
                                         <figure>
-                                            <img src="images/what-we-offer-icon2.svg" alt="Traviox">
+                                            <img src="{{ asset('website/images/what-we-offer-icon2.svg'))}}" alt="Traviox">
                                         </figure>
                                     </div>
                                     <div class="sisf-e-content">
@@ -1271,7 +1130,7 @@
                                 <div class="sisf-e-inner">
                                     <div class="sisf-e-icon mb-3">
                                         <figure>
-                                            <img src="images/what-we-offer-icon3.svg" alt="Traviox">
+                                            <img src="{{ asset('website/images/what-we-offer-icon3.svg'))}}" alt="Traviox">
                                         </figure>
                                     </div>
                                     <div class="sisf-e-content">
@@ -1290,7 +1149,7 @@
                                 <div class="sisf-e-inner">
                                     <div class="sisf-e-icon mb-3">
                                         <figure>
-                                            <img src="images/what-we-offer-icon4.svg" alt="Traviox">
+                                            <img src="{{ asset('website/images/what-we-offer-icon4.svg'))}}" alt="Traviox">
                                         </figure>
                                     </div>
                                     <div class="sisf-e-content">
@@ -1373,7 +1232,7 @@
                                         <div class="sisf-e-inner sis-radius overflow-hidden position-relative mb-0">
                                             <div class="sisf-e-testimonial-image">
                                                 <figure>
-                                                    <img src="images/testimonial1.png" class="w-100" alt="Traviox">
+                                                    <img src="{{ asset('website/images/testimonial1.png') }}" class="w-100" alt="Traviox">
                                                 </figure>
                                             </div>
                                             <div class="sisf-e-top sis-e-testimonial-content p-3">
@@ -1410,7 +1269,7 @@
                                         <div class="sisf-e-inner sis-radius overflow-hidden position-relative mb-0">
                                             <div class="sisf-e-testimonial-image">
                                                 <figure>
-                                                    <img src="images/testimonial2.png" class="w-100" alt="Traviox">
+                                                    <img src="{{ asset('website/images/testimonial2.png') }}" class="w-100" alt="Traviox">
                                                 </figure>
                                             </div>
                                             <div class="sisf-e-top sis-e-testimonial-content p-3">
@@ -1447,7 +1306,7 @@
                                         <div class="sisf-e-inner sis-radius overflow-hidden position-relative mb-0">
                                             <div class="sisf-e-testimonial-image">
                                                 <figure>
-                                                    <img src="images/testimonial3.png" class="w-100" alt="Traviox">
+                                                    <img src="{{ asset('website/images/testimonial3.png') }}" class="w-100" alt="Traviox">
                                                 </figure>
                                             </div>
                                             <div class="sisf-e-top sis-e-testimonial-content p-3">
@@ -1484,7 +1343,7 @@
                                         <div class="sisf-e-inner sis-radius overflow-hidden position-relative mb-0">
                                             <div class="sisf-e-testimonial-image">
                                                 <figure>
-                                                    <img src="images/testimonial4.png" class="w-100" alt="Traviox">
+                                                    <img src="{{ asset('website/images/testimonial4.png') }}" class="w-100" alt="Traviox">
                                                 </figure>
                                             </div>
                                             <div class="sisf-e-top sis-e-testimonial-content p-3">
@@ -1527,7 +1386,7 @@
                 <div class="col-12">
                     <div class="sis-comman-bottom-line-text sis-e-bottom text-center">
                         <div class="sisf-sis-e-box">
-                            <p class="mb-1" data-aos="fade-up" data-aos-delay="300"><span class="pe-2"><img src="images/users1.png" alt="Traviox"></span> Trusted by 25,000+ Happy Travelers Worldwide <a href="about-us.html">Being your journey</a></p>
+                            <p class="mb-1" data-aos="fade-up" data-aos-delay="300"><span class="pe-2"><img src="{{ asset('website/images/users1.png') }}" alt="Traviox"></span> Trusted by 25,000+ Happy Travelers Worldwide <a href="about-us.html">Being your journey</a></p>
                             <p class="mb-0" data-aos="fade-up" data-aos-delay="500">4.9/5 Average Rating from Verified Travelers
                                 <span class="sisf-e-colored">★</span>
                                 <span class="sisf-e-colored">★</span>
@@ -1549,7 +1408,7 @@
                 <div class="col-lg-5 position-relative">
                     <div class="sis-e-faqs-image">
                         <figure class="sis-image-anime sis-reveal">
-                            <img src="images/faqs-img.jpg" class="w-100 sis-radius" alt="Traviox">
+                            <img src="{{ asset('website/images/faqs-img.jpg'))}}" class="w-100 sis-radius" alt="Traviox">
                         </figure>
                     </div>
                     <div class="sisf-faqs-contact-part sisf-contact-left-bottom" data-aos="zoom-in-left" data-aos-delay="500">
@@ -1727,7 +1586,7 @@
                                                 <div class="sisf-e-inner">
                                                     <div class="sis-logo-slide-image text-center">
                                                         <figure>
-                                                            <img src="images/clien-logo1.png" alt="Traviox">
+                                                            <img src="{{ asset('website/images/clien-logo1.png') }}" alt="Traviox">
                                                         </figure>
                                                     </div>
                                                 </div>
@@ -1736,7 +1595,7 @@
                                                 <div class="sisf-e-inner">
                                                     <div class="sis-logo-slide-image text-center">
                                                         <figure>
-                                                            <img src="images/clien-logo2.png" alt="Traviox">
+                                                            <img src="{{ asset('website/images/clien-logo2.png') }}" alt="Traviox">
                                                         </figure>
                                                     </div>
                                                 </div>
@@ -1745,7 +1604,7 @@
                                                 <div class="sisf-e-inner">
                                                     <div class="sis-logo-slide-image text-center">
                                                         <figure>
-                                                            <img src="images/clien-logo3.png" alt="Traviox">
+                                                            <img src="{{ asset('website/images/clien-logo3.png') }}" alt="Traviox">
                                                         </figure>
                                                     </div>
                                                 </div>
@@ -1754,7 +1613,7 @@
                                                 <div class="sisf-e-inner">
                                                     <div class="sis-logo-slide-image text-center">
                                                         <figure>
-                                                            <img src="images/clien-logo4.png" alt="Traviox">
+                                                            <img src="{{ asset('website/images/clien-logo4.png') }}" alt="Traviox">
                                                         </figure>
                                                     </div>
                                                 </div>
@@ -1763,7 +1622,7 @@
                                                 <div class="sisf-e-inner">
                                                     <div class="sis-logo-slide-image text-center">
                                                         <figure>
-                                                            <img src="images/clien-logo5.png" alt="Traviox">
+                                                            <img src="{{ asset('website/images/clien-logo5.png') }}" alt="Traviox">
                                                         </figure>
                                                     </div>
                                                 </div>
@@ -1772,7 +1631,7 @@
                                                 <div class="sisf-e-inner">
                                                     <div class="sis-logo-slide-image text-center">
                                                         <figure>
-                                                            <img src="images/clien-logo6.png" alt="Traviox">
+                                                            <img src="{{ asset('website/images/clien-logo6.png') }}" alt="Traviox">
                                                         </figure>
                                                     </div>
                                                 </div>
@@ -1781,7 +1640,7 @@
                                                 <div class="sisf-e-inner">
                                                     <div class="sis-logo-slide-image text-center">
                                                         <figure>
-                                                            <img src="images/clien-logo7.png" alt="Traviox">
+                                                            <img src="{{ asset('website/images/clien-logo7.png') }}" alt="Traviox">
                                                         </figure>
                                                     </div>
                                                 </div>
@@ -1790,7 +1649,7 @@
                                                 <div class="sisf-e-inner">
                                                     <div class="sis-logo-slide-image text-center">
                                                         <figure>
-                                                            <img src="images/clien-logo8.png" alt="Traviox">
+                                                            <img src="{{ asset('website/images/clien-logo8.png') }}" alt="Traviox">
                                                         </figure>
                                                     </div>
                                                 </div>
@@ -1799,7 +1658,7 @@
                                                 <div class="sisf-e-inner">
                                                     <div class="sis-logo-slide-image text-center">
                                                         <figure>
-                                                            <img src="images/clien-logo9.png" alt="Traviox">
+                                                            <img src="{{ asset('website/images/clien-logo9.png') }}" alt="Traviox">
                                                         </figure>
                                                     </div>
                                                 </div>
@@ -1820,7 +1679,7 @@
                                                 <div class="sisf-e-inner">
                                                     <div class="sis-logo-slide-image text-center">
                                                         <figure>
-                                                            <img src="images/clien-logo1.png" alt="Traviox">
+                                                            <img src="{{ asset('website/images/clien-logo1.png') }}" alt="Traviox">
                                                         </figure>
                                                     </div>
                                                 </div>
@@ -1829,7 +1688,7 @@
                                                 <div class="sisf-e-inner">
                                                     <div class="sis-logo-slide-image text-center">
                                                         <figure>
-                                                            <img src="images/clien-logo2.png" alt="Traviox">
+                                                            <img src="{{ asset('website/images/clien-logo2.png') }}" alt="Traviox">
                                                         </figure>
                                                     </div>
                                                 </div>
@@ -1838,7 +1697,7 @@
                                                 <div class="sisf-e-inner">
                                                     <div class="sis-logo-slide-image text-center">
                                                         <figure>
-                                                            <img src="images/clien-logo3.png" alt="Traviox">
+                                                            <img src="{{ asset('website/images/clien-logo3.png') }}" alt="Traviox">
                                                         </figure>
                                                     </div>
                                                 </div>
@@ -1847,7 +1706,7 @@
                                                 <div class="sisf-e-inner">
                                                     <div class="sis-logo-slide-image text-center">
                                                         <figure>
-                                                            <img src="images/clien-logo4.png" alt="Traviox">
+                                                            <img src="{{ asset('website/images/clien-logo4.png') }}" alt="Traviox">
                                                         </figure>
                                                     </div>
                                                 </div>
@@ -1856,7 +1715,7 @@
                                                 <div class="sisf-e-inner">
                                                     <div class="sis-logo-slide-image text-center">
                                                         <figure>
-                                                            <img src="images/clien-logo5.png" alt="Traviox">
+                                                            <img src="{{ asset('website/images/clien-logo5.png') }}" alt="Traviox">
                                                         </figure>
                                                     </div>
                                                 </div>
@@ -1865,7 +1724,7 @@
                                                 <div class="sisf-e-inner">
                                                     <div class="sis-logo-slide-image text-center">
                                                         <figure>
-                                                            <img src="images/clien-logo6.png" alt="Traviox">
+                                                            <img src="{{ asset('website/images/clien-logo6.png') }}" alt="Traviox">
                                                         </figure>
                                                     </div>
                                                 </div>
@@ -1874,7 +1733,7 @@
                                                 <div class="sisf-e-inner">
                                                     <div class="sis-logo-slide-image text-center">
                                                         <figure>
-                                                            <img src="images/clien-logo7.png" alt="Traviox">
+                                                            <img src="{{ asset('website/images/clien-logo7.png') }}" alt="Traviox">
                                                         </figure>
                                                     </div>
                                                 </div>
@@ -1883,7 +1742,7 @@
                                                 <div class="sisf-e-inner">
                                                     <div class="sis-logo-slide-image text-center">
                                                         <figure>
-                                                            <img src="images/clien-logo8.png" alt="Traviox">
+                                                            <img src="{{ asset('website/images/clien-logo8.png') }}" alt="Traviox">
                                                         </figure>
                                                     </div>
                                                 </div>
@@ -1892,7 +1751,7 @@
                                                 <div class="sisf-e-inner">
                                                     <div class="sis-logo-slide-image text-center">
                                                         <figure>
-                                                            <img src="images/clien-logo9.png" alt="Traviox">
+                                                            <img src="{{ asset('website/images/clien-logo9.png') }}" alt="Traviox">
                                                         </figure>
                                                     </div>
                                                 </div>
@@ -1913,7 +1772,7 @@
                                                 <div class="sisf-e-inner">
                                                     <div class="sis-logo-slide-image text-center">
                                                         <figure>
-                                                            <img src="images/clien-logo1.png" alt="Traviox">
+                                                            <img src="{{ asset('website/images/clien-logo1.png') }}" alt="Traviox">
                                                         </figure>
                                                     </div>
                                                 </div>
@@ -1922,7 +1781,7 @@
                                                 <div class="sisf-e-inner">
                                                     <div class="sis-logo-slide-image text-center">
                                                         <figure>
-                                                            <img src="images/clien-logo2.png" alt="Traviox">
+                                                            <img src="{{ asset('website/images/clien-logo2.png') }}" alt="Traviox">
                                                         </figure>
                                                     </div>
                                                 </div>
@@ -1931,7 +1790,7 @@
                                                 <div class="sisf-e-inner">
                                                     <div class="sis-logo-slide-image text-center">
                                                         <figure>
-                                                            <img src="images/clien-logo3.png" alt="Traviox">
+                                                            <img src="{{ asset('website/images/clien-logo3.png') }}" alt="Traviox">
                                                         </figure>
                                                     </div>
                                                 </div>
@@ -1940,7 +1799,7 @@
                                                 <div class="sisf-e-inner">
                                                     <div class="sis-logo-slide-image text-center">
                                                         <figure>
-                                                            <img src="images/clien-logo4.png" alt="Traviox">
+                                                            <img src="{{ asset('website/images/clien-logo4.png') }}" alt="Traviox">
                                                         </figure>
                                                     </div>
                                                 </div>
@@ -1949,7 +1808,7 @@
                                                 <div class="sisf-e-inner">
                                                     <div class="sis-logo-slide-image text-center">
                                                         <figure>
-                                                            <img src="images/clien-logo5.png" alt="Traviox">
+                                                            <img src="{{ asset('website/images/clien-logo5.png') }}" alt="Traviox">
                                                         </figure>
                                                     </div>
                                                 </div>
@@ -1958,7 +1817,7 @@
                                                 <div class="sisf-e-inner">
                                                     <div class="sis-logo-slide-image text-center">
                                                         <figure>
-                                                            <img src="images/clien-logo6.png" alt="Traviox">
+                                                            <img src="{{ asset('website/images/clien-logo6.png') }}" alt="Traviox">
                                                         </figure>
                                                     </div>
                                                 </div>
@@ -1967,7 +1826,7 @@
                                                 <div class="sisf-e-inner">
                                                     <div class="sis-logo-slide-image text-center">
                                                         <figure>
-                                                            <img src="images/clien-logo7.png" alt="Traviox">
+                                                            <img src="{{ asset('website/images/clien-logo7.png') }}" alt="Traviox">
                                                         </figure>
                                                     </div>
                                                 </div>
@@ -1976,7 +1835,7 @@
                                                 <div class="sisf-e-inner">
                                                     <div class="sis-logo-slide-image text-center">
                                                         <figure>
-                                                            <img src="images/clien-logo8.png" alt="Traviox">
+                                                            <img src="{{ asset('website/images/clien-logo8.png') }}" alt="Traviox">
                                                         </figure>
                                                     </div>
                                                 </div>
@@ -1985,7 +1844,7 @@
                                                 <div class="sisf-e-inner">
                                                     <div class="sis-logo-slide-image text-center">
                                                         <figure>
-                                                            <img src="images/clien-logo9.png" alt="Traviox">
+                                                            <img src="{{ asset('website/images/clien-logo9.png') }}" alt="Traviox">
                                                         </figure>
                                                     </div>
                                                 </div>
@@ -2159,7 +2018,7 @@
                                     <div class="sisf-e-media-image">
                                         <a href="blog-single.html" class="d-block">
                                             <figure>
-                                                <img src="images/blog-image1.jpg" class="w-100" alt="Traviox">
+                                                <img src="{{ asset('website/images/blog-image1.jpg'))}}" class="w-100" alt="Traviox">
                                             </figure>
                                         </a>
                                     </div>
@@ -2200,7 +2059,7 @@
                                     <div class="sisf-e-media-image">
                                         <a href="blog-single.html" class="d-block">
                                             <figure>
-                                                <img src="images/blog-image2.jpg" class="w-100" alt="Traviox">
+                                                <img src="{{ asset('website/images/blog-image2.jpg'))}}" class="w-100" alt="Traviox">
                                             </figure>
                                         </a>
                                     </div>
@@ -2241,7 +2100,7 @@
                                     <div class="sisf-e-media-image">
                                         <a href="blog-single.html" class="d-block">
                                             <figure>
-                                                <img src="images/blog-image3.jpg" class="w-100" alt="Traviox">
+                                                <img src="{{ asset('website/images/blog-image3.jpg'))}}" class="w-100" alt="Traviox">
                                             </figure>
                                         </a>
                                     </div>
@@ -2283,7 +2142,7 @@
             <div class="sisf-partners-content-part sis-primary-background sis-radius position-relative">
                 <div class="sisf-sis-top-right-image">
                     <figure>
-                        <img src="images/explore-bg.png" alt="Traviox">
+                        <img src="{{ asset('website/images/explore-bg.png') }}" alt="Traviox">
                     </figure>
                 </div>
                 <div class="row align-items-center">
@@ -2301,7 +2160,7 @@
                     <div class="col-lg-5">
                         <div class="sisf-explore-right-image" data-aos="zoom-in" data-aos-delay="400">
                             <figure>
-                                <img src="images/explore-img-right.png" alt="Traviox">
+                                <img src="{{ asset('website/images/explore-img-right.png') }}" alt="Traviox">
                             </figure>
                         </div>
                     </div>
@@ -2310,198 +2169,3 @@
         </div>
     </div>
     <!-- Explore More Section End -->
-    <!-- Footer Start -->
-    <footer class="main-footer">
-        <div class="sisf-page-footer-inner-area sisf-page-background sis-br-radius mb-3">
-            <div class="sisf-page-footer-middle-area">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-4 col-lg-6 col-md-6">
-                            <div class="footer-logo mb-4 pb-4" data-aos="fade-right" data-aos-delay="100">
-                                <a href="index-2.html">
-                                    <img src="images/logo.svg" alt="Traviox">
-                                </a>
-                            </div>
-                            <div class="sisf-e-text-bottom">
-                                <div class="sisf-m-text" data-aos="fade-up" data-aos-delay="300">
-                                    <p class="text-white">From breathtaking international destinations to personalized vacation packages, we make every journey seamless, memorable.</p>
-                                </div>
-                            </div>
-                            <div class="subscribe-newsletter-form" data-aos="fade-up" data-aos-delay="900">
-                                <form id="newslettersForm">
-                                    <div class="form-group position-relative d-flex align-items-center">
-                                        <input type="email" name="email" class="form-control p-0 border-0 mb-0" id="mail" placeholder="Enter your email address" required="">
-                                        <span><i class="fa-solid fa-arrow-right-long"></i></span>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="col-xl-2 col-lg-6 col-md-6">
-                            <!-- Links Start -->
-                            <div class="footer-links page" data-aos="fade-up" data-aos-delay="100">
-                                <h3>Quick Links</h3>
-                                <ul>
-                                    <li><a href="index-2.html">Home</a></li>
-                                    <li><a href="about-us.html">About Us</a></li>
-                                    <li><a href="service.html">Our Services</a></li>
-                                    <li><a href="destinations.html">Destinations</a></li>
-                                    <li><a href="blogs.html">Latest Blogs</a></li>
-                                    <li class="mb-0"><a href="contact.html">Contact Us</a></li>
-                                </ul>
-                            </div>
-                            <!-- Links End -->
-                        </div>
-                        <div class="col-xl-3 col-lg-6 col-md-6">
-                            <!-- Links Start -->
-                            <div class="footer-links page" data-aos="fade-up" data-aos-delay="300">
-                                <h3>Popular Destinations</h3>
-                                <ul>
-                                    <li><a href="destination-single.html">Bali, Indonesia</a></li>
-                                    <li><a href="destination-single.html">Santorini, Greece</a></li>
-                                    <li><a href="destination-single.html">Swiss Alps</a></li>
-                                    <li><a href="destination-single.html">Dubai, UAE</a></li>
-                                    <li><a href="destination-single.html">Maldives</a></li>
-                                    <li class="mb-0"><a href="destination-single.html">Kyoto, Japan</a></li>
-                                </ul>
-                            </div>
-                            <!-- Links End -->
-                        </div>
-                        <div class="col-xl-3 col-lg-6 col-md-6">
-                            <!-- Links Start -->
-                            <div class="footer-links page mb-0" data-aos="fade-up" data-aos-delay="300">
-                                <h3>Working Hours</h3>
-                                <ul>
-                                    <li><a href="#">Monday - Friday : 09 AM - 08 PM</a></li>
-                                    <li><a href="#">Saturday : 10 AM - 05 PM</a></li>
-                                    <li class="mb-0"><a href="#">Sunday : Closed</a></li>
-                                </ul>
-                            </div>
-                            <!-- Links End -->
-                        </div>
-                        <div class="col-12">
-                            <div class="sisf-page-footer-middle-area-bottom">
-                                <div class="row align-items-center">
-                                    <div class="col-xl-6 col-lg-4">
-                                        <!-- Links Start -->
-                                        <div class="footer--links page d-flex align-items-center flex-wrap gap-3" data-aos="fade-right" data-aos-delay="100">
-                                            <div class="sisf-e-social-title">
-                                                <h3 class="text-white">Follow Us On Socials:</h3>
-                                            </div>
-                                            <div class="footer-social-icons-link page">
-                                                <ul class="list-unstyled d-flex align-items-center gap-3 p-0 m-0">
-                                                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                                                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                                                    <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
-                                                    <li class="mb-0"><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <!-- Links End -->
-                                    </div>
-                                    <div class="col-xl-6 col-lg-8">
-                                        <div class="sisf-sis-contact-footer-information" data-aos="fade-left" data-aos-delay="100">
-                                            <div class="sisf-sis-contact-information d-flex align-items-center justify-content-end gap-4">
-                                                <div class="sisf-contact-box d-flex align-items-center gap-3">
-                                                    <div class="sisf-icon">
-                                                        <a href="tel:+18004567890"><i class="fa-solid fa-phone-volume"></i></a>
-                                                    </div>
-                                                    <div class="sisf-sis-e-content">
-                                                        <span class="sis-title text-white d-block">Call us on</span>
-                                                        <a href="tel:+18004567890" class="sis-title text-white d-block">+1 (800) 456-7890</a>
-                                                    </div>
-                                                </div>
-                                                <div class="sisf-contact-box d-flex align-items-center ps-4 gap-3">
-                                                    <div class="sisf-icon">
-                                                        <a href="mailto:info@traviox.com"><i class="fa-regular fa-envelope"></i></a>
-                                                    </div>
-                                                    <div class="sisf-sis-e-content">
-                                                        <span class="sis-title text-white d-block">Reach out</span>
-                                                        <a href="mailto:info@traviox.com" class="sis-title text-white d-block">info@traviox.com</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="sisf-page-footer-bottom-area">
-                <div class="container">
-                    <!-- Footer Copyright Section Start -->
-                    <div class="footer-copyright">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <!-- Footer Copyright Start -->
-                                <div class="footer-copyright-text">
-                                    <p class="mb-0 text-white">&copy; 2026 Traviox Travel & Tour Booking. All Rights Reserved.</p>
-                                </div>
-                                <!-- Footer Copyright End -->
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="footer-privacy-policy">
-                                    <ul class="list-unstyled d-flex align-items-center justify-content-end gap-4 p-0 m-0">
-                                        <li><a href="#" class="text-white">Privacy & Policy</a></li>
-                                        <li><a href="#" class="text-white">Term's & Condition</a></li>
-                                        <li><a href="#" class="text-white">Cookie Policy</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Footer Copyright Section End -->
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- Footer End -->
-    <!-- Cursor Start -->
-    <div class="sisf-cursor sisf-js-cursor">
-        <div class="sisf-cursor-wrapper">
-            <div class="sisf-cursor--follower sisf-js-follower"></div>
-            <div class="sisf-cursor--label sisf-js-label"></div>
-            <div class="sisf-cursor--drap sisf-js-drap"></div>
-            <div class="sisf-cursor--icon sisf-js-icon"></div>
-        </div>
-    </div>
-    <!-- Cursor End -->
-    <!-- Back to Top Button Start -->
-    <div class="sis-back-to-top-button">
-        <button class="sis-back-to-top" id="backToTop">
-            <span class="mt-1"><i class="fa fa-chevron-up"></i></span>
-        </button>
-    </div>
-    <!-- Back to Top Button End -->
-    <!-- Jquery Library File -->
-    <script src="js/jquery-3.7.1.min.js"></script>
-    <!-- Bootstrap js File -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Validator js file -->
-    <script src="js/validator.min.js"></script>
-    <!-- SlickNav js File -->
-    <script src="js/jquery.slicknav.js"></script>
-    <!-- Swiper js File -->
-    <script src="js/swiper-bundle.min.js"></script>
-    <!-- Animation On Scroll Js File -->
-    <script src="js/aos.js"></script>
-    <!-- Counter js File -->
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
-    <!-- Magnific js File -->
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <!-- Gsap Js File -->
-    <script src="js/gsap.min.js"></script>
-    <!-- Cursor Js File -->
-    <script src="js/magiccursor.js"></script>
-    <script src="js/cursor/cursor.js"></script>
-    <!-- Text Effect js file -->
-    <script src="js/ScrollTrigger.min.js"></script>
-    <script src="js/SplitText.js"></script>
-    <!-- Main Custom js file -->
-    <script src="js/script.js"></script>
-</body>
-
-<!-- Mirrored from https://traviox-html.wpthemeverse.com/home-slider.html by HTTrack Website Copier/3.x [XR&CO], Sat, 12 Sep 2026 09:58:50 GMT -->
-</html>
