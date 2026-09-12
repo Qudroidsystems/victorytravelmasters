@@ -1,0 +1,2507 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<!-- Mirrored from https://traviox-html.wpthemeverse.com/home-slider.html by HTTrack Website Copier/3.x [XR&CO], Sat, 12 Sep 2026 09:58:49 GMT -->
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="robots" content="max-image-preview:large">
+    <!-- Page Title -->
+    <title>Traviox - Travel & Tour Booking - HTML Template</title>
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+    <!-- Bootstrap Css Link -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!-- Mouse Cursor Css File -->
+    <link rel="stylesheet" href="css/mousecursor.css">
+    <!-- Magnific Popup Css File -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- Font Awesome Icon Css-->
+    <link href="css/all.min.css" rel="stylesheet" media="screen">
+    <!-- SlickNav Css -->
+    <link href="css/slicknav.min.css" rel="stylesheet">
+    <!-- Animation On Scroll Css File -->
+    <link href="css/aos.css" rel="stylesheet">
+    <!-- Google Fonts Link-->
+    <link rel="preconnect" href="../fonts.googleapis.com/index.html">
+    <link rel="preconnect" href="../fonts.gstatic.com/index.html" crossorigin>
+    <!-- Lexend Serif Fonts Link -->
+    <link href="../fonts.googleapis.com/css246ff.css?family=Lexend:wght@100..900&amp;display=swap" rel="stylesheet">
+    <!-- Onest Fonts Link -->
+    <link href="../fonts.googleapis.com/css2493f.css?family=Onest:wght@100..900&amp;display=swap" rel="stylesheet">
+    <!-- Main Custom Css -->
+    <link href="css/custom.css" rel="stylesheet" media="screen">
+</head>
+<body>
+    <!-- Preloader Start -->
+    <div class="sis-preloader">
+        <div class="sis-loading-container rounded-0">
+            <div class="sis-loading"></div>
+            <div class="sis-loading-icon">
+                <figure class="sis-reveal">
+                    <img src="images/loader.png" alt="Traviox">
+                </figure>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader End -->
+    <!-- Header New Start -->
+    <header id="sisf-page-header" class="sisf-main-header sis-br-radius mt-3 sisf-standerd-header">
+        <div id="sisf-page-header-inner" class="sisf-skin--light position-relative d-flex align-items-center">
+            <div class="container">
+                <!-- Logo Start -->
+                <a class="navbar-brand sisf-header-logo-link mobile-block" href="index-2.html">
+                    <img src="images/logo.svg" alt="Logo">
+                </a>
+                <!-- Logo End -->
+                <div class="sisf-centered-header-wrapper sisf--header d-flex justify-content-between align-items-center">
+                    <!-- Logo Start -->
+                    <a class="navbar-brand sisf-header-logo-link" href="index-2.html">
+                        <img src="images/logo.svg" alt="Logo">
+                    </a>
+                    <!-- Logo End -->
+                    <nav class="navbar navbar-expand-lg ms-auto me-4">
+                        <!-- Main Menu Start -->
+                        <div class="collapse navbar-collapse sis-main-menu">
+                            <div class="nav-menu-wrapper">
+                                <ul class="navbar-nav" id="menu">
+                                    <li class="nav-item submenu">
+                                        <a class="nav-link" href="index-2.html">Home<i class="fas fa-chevron-down custom-toggle-icon ps-2"></i></a>
+                                        <ul class="sub-menu">
+                                            <li class="nav-item"><a class="nav-link" href="index-2.html">Home - Video</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="home-image.html">Home - Image</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="home-slider.html">Home - Slider</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
+                                    <li class="nav-item submenu">
+                                        <a class="nav-link" href="destinations.html">Destinations</a>
+                                    </li>
+                                    <li class="nav-item submenu">
+                                        <a class="nav-link" href="tours.html">Tours</a>
+                                    </li>
+                                    <li class="nav-item submenu">
+                                        <a class="nav-link" href="blogs.html">Blog<i class="fas fa-chevron-down custom-toggle-icon ps-2"></i></a>
+                                        <ul class="sub-menu">
+                                            <li class="nav-item"><a class="nav-link" href="blogs.html">Blog Standard</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="blogs-list.html">Blog List</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="blog-grid.html">Blog Grid</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="blog-three-columns.html">Blog 3 Columns</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="blog-single.html">Blog Detail</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item submenu">
+                                        <a class="nav-link" href="#">Pages<i class="fas fa-chevron-down custom-toggle-icon ps-2"></i></a>
+                                        <ul class="sub-menu">
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="service.html">
+                                                    <span>Our Service</span>
+                                                    <span class="menu-item-arrow ps-0">
+                                                        <i class="fa-solid fa-chevron-right"></i>
+                                                    </span>
+                                                </a>
+                                                <ul class="sub-menu">
+                                                    <li class="nav-item"><a class="nav-link" href="service.html">Service List</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="service-single.html">Service Detail</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item"><a class="nav-link" href="destination-single.html">Destinations Detail</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="tour-single.html">Tour Detail</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="our-guide.html">Our Guide</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="guide-detail.html">Our Guide Detail</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="faq.html">FAQ’s</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="image-gallery.html">Image Gallery</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="masonry-gallery.html">Masonry Gallery</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="video-gallery.html">Video Gallery</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="error.html">Error Page 404</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item submenu"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Main Menu End -->
+                    </nav>
+                    <div class="sisf-widget-holder sisf--two d-flex align-items-center">
+                        <div class="header-btn">
+                            <a href="contact.html" class="sis-btn-default">Being your journey<i class="fa-solid fa-arrow-right-long"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar-toggle"></div>
+                <div class="responsive-menu"></div>
+            </div>
+        </div>
+    </header>
+    <!-- Header New End -->
+    <!-- Hero Section Start -->
+    <div class="sis-hero hero-slider sis-br-radius mt-3 sis-home-image">
+        <div class="hero-slider-layout hero-slider--layout position-relative">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="hero-slide align-items-center pb-0">
+                            <div class="hero-slider-image">
+                                <img src="images/slide-bg1.jpg" alt="Traviox">
+                            </div>
+                            <!-- Content Start -->
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xl-9 col-lg-6">
+                                        <!-- Hero Content Start -->
+                                        <div class="hero-content text-start pb-0">
+                                            <!-- Hero Title Start -->
+                                            <div class="sis-section-title mb-0">
+                                                <span class="sisf-subtitle text-white sis-text-anime-style-2">Trusted by 25,000+ Happy Travelers Worldwide</span>
+                                                <h1 class="sis-text-anime-style-2 text-start">Discover Your Next Great Adventure Around the World</h1>
+                                                <div class="sisf-m-text" data-aos="fade-up" data-aos-delay="300">
+                                                    <p class="text-white text-start">From breathtaking landscapes and vibrant cities to unforgettable cultural experiences, we create personalized journeys that turn every trip into a lifetime memory.</p>
+                                                </div>
+                                                <div class="button-group d-flex align-items-center flex-wrap gap-3">
+                                                    <div class="sisf-m-button aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                                                        <a href="tours.html" class="sis-btn-default">Explore Tours<i class="fa-solid fa-arrow-right-long"></i></a>
+                                                    </div>
+                                                    <div class="sisf-m-button aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
+                                                        <a href="../traviox.wpthemeverse.com/wp-content/uploads/2026/07/video-hero.mp4" class="sis-btn-default gap-1 popup-video btn-light">Watch Video<span class="fa-solid fa-play-circle"></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Hero Title End -->
+                                        </div>
+                                        <!-- Hero Content End -->
+                                    </div>
+                                    <div class="col-xl-3 col-lg-6"></div>
+                                </div>
+                            </div>
+                            <!-- Content End -->
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="hero-slide align-items-center pb-0">
+                            <div class="hero-slider-image">
+                                <img src="images/slide-bg2.jpg" alt="Traviox">
+                            </div>
+                            <!-- Content Start -->
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xl-9 col-lg-6">
+                                        <!-- Hero Content Start -->
+                                        <div class="hero-content text-start pb-0">
+                                            <!-- Hero Title Start -->
+                                            <div class="sis-section-title mb-0">
+                                                <span class="sisf-subtitle text-white sis-text-anime-style-2">Trusted by 25,000+ Happy Travelers Worldwide</span>
+                                                <h1 class="sis-text-anime-style-2 text-start">Discover Your Next Great Adventure Around the World</h1>
+                                                <div class="sisf-m-text" data-aos="fade-up" data-aos-delay="300">
+                                                    <p class="text-white text-start">From breathtaking landscapes and vibrant cities to unforgettable cultural experiences, we create personalized journeys that turn every trip into a lifetime memory.</p>
+                                                </div>
+                                                <div class="button-group d-flex align-items-center flex-wrap gap-3">
+                                                    <div class="sisf-m-button aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                                                        <a href="tours.html" class="sis-btn-default">Explore Tours<i class="fa-solid fa-arrow-right-long"></i></a>
+                                                    </div>
+                                                    <div class="sisf-m-button aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
+                                                        <a href="../traviox.wpthemeverse.com/wp-content/uploads/2026/07/video-hero.mp4" class="sis-btn-default gap-1 popup-video btn-light">Watch Video<span class="fa-solid fa-play-circle"></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Hero Title End -->
+                                        </div>
+                                        <!-- Hero Content End -->
+                                    </div>
+                                    <div class="col-xl-3 col-lg-6"></div>
+                                </div>
+                            </div>
+                            <!-- Content End -->
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="hero-slide align-items-center pb-0">
+                            <div class="hero-slider-image">
+                                <img src="images/slide-bg3.jpg" alt="Traviox">
+                            </div>
+                            <!-- Content Start -->
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xl-9 col-lg-6">
+                                        <!-- Hero Content Start -->
+                                        <div class="hero-content text-start pb-0">
+                                            <!-- Hero Title Start -->
+                                            <div class="sis-section-title mb-0">
+                                                <span class="sisf-subtitle text-white sis-text-anime-style-2">Trusted by 25,000+ Happy Travelers Worldwide</span>
+                                                <h1 class="sis-text-anime-style-2 text-start">Discover Your Next Great Adventure Around the World</h1>
+                                                <div class="sisf-m-text" data-aos="fade-up" data-aos-delay="300">
+                                                    <p class="text-white text-start">From breathtaking landscapes and vibrant cities to unforgettable cultural experiences, we create personalized journeys that turn every trip into a lifetime memory.</p>
+                                                </div>
+                                                <div class="button-group d-flex align-items-center flex-wrap gap-3">
+                                                    <div class="sisf-m-button aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                                                        <a href="tours.html" class="sis-btn-default">Explore Tours<i class="fa-solid fa-arrow-right-long"></i></a>
+                                                    </div>
+                                                    <div class="sisf-m-button aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
+                                                        <a href="../traviox.wpthemeverse.com/wp-content/uploads/2026/07/video-hero.mp4" class="sis-btn-default gap-1 popup-video btn-light">Watch Video<span class="fa-solid fa-play-circle"></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Hero Title End -->
+                                        </div>
+                                        <!-- Hero Content End -->
+                                    </div>
+                                    <div class="col-xl-3 col-lg-6"></div>
+                                </div>
+                            </div>
+                            <!-- Content End -->
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-pagination d-flex justify-content-center"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero Section End -->
+    <!-- About Us Section Start -->
+    <div class="sis-about-us-section sis-page-background pb-0 section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <!-- Section Title Start -->
+                    <div class="sisf-sis-section-title sis-section-title">
+                        <span class="sisf-m-subtitle sis-text-anime-style-3">About Traviox</span>
+                        <h2 class="sisf-m-title sis-text-anime-style-3"><span class="sisf-e-colored">Creating Memorable Journeys,</span> One Destination at a Time</h2>
+                        <div class="sisf-m-text" data-aos="fade-up" data-aos-delay="100">
+                            <p class="mt-3">At Traviox, we design thoughtfully planned journeys that combine comfort, adventure, and unforgettable moments for every traveler.</p>
+                        </div>
+                    </div>
+                    <!-- Section Title End -->
+                    <div class="sisf-sis-listing-items">
+                        <p class="mb-2" data-aos="fade-up" data-aos-delay="300">
+                            <span class="sisf-e-colored"><i class="fa-solid pe-3 fa-check"></i></span>
+                            <span class="sisf-e-colored">No Booking Fee Rate Guarantee</span>
+                        </p>
+                        <p class="mb-2" data-aos="fade-up" data-aos-delay="500">
+                            <span class="sisf-e-colored"><i class="fa-solid pe-3 fa-check"></i></span>
+                            <span class="sisf-e-colored">24/7 Emergency Helpline</span>
+                        </p>
+                    </div>
+                    <div class="sisf-m-button pt-4" data-aos="fade-up" data-aos-delay="700">
+                        <a href="about-us.html" class="sis-btn-default">Discover Our Story<i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="sisf-about-images d-flex align-items-end">
+                        <!-- About Image Start -->
+                        <div class="sisf-about-image-small" data-aos="zoom-in" data-aos-delay="500">
+                            <figure>
+                                <img src="images/about-img2.png" alt="Traviox">
+                            </figure>
+                        </div>
+                        <!-- About Image End -->
+                        <!-- About Image Start -->
+                        <div class="sisf-about-image-right">
+                            <figure class="sis-reveal sis-image-anime">
+                                <img src="images/about-img1.png" class="w-100" alt="Traviox">
+                            </figure>
+                        </div>
+                        <!-- About Image End -->
+                    </div>
+                </div>
+            </div>
+            <div class="sisf-sis-page-counters">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <!-- Couter Item Start -->
+                        <div class="sis-counter-item d-flex align-items-center gap-4" data-aos="fade-up" data-aos-delay="100">
+                            <!-- Counter Image Start -->
+                            <div class="sis-e-counter-image">
+                                <figure>
+                                    <img src="images/counter-icon1.svg" alt="Traviox">
+                                </figure>
+                            </div>
+                            <!-- Counter Image Start -->
+                            <!-- Counter Image End -->
+                            <div class="sis-e-content">
+                                <!-- Counter Title Start -->
+                                <div class="sis-counter-title">
+                                    <h2 class="d-flex align-items-center mb-1">
+                                        <span class="sis-counter sisf-e-colored">25,000</span>
+                                        <span class="sisf-digit-label sisf-e-colored">+</span>
+                                    </h2>
+                                </div>
+                                <!-- Counter Title End -->
+                                <!-- Counter Content Start -->
+                                <div class="sis-counter-text">
+                                    <span>Happy Travelers</span>
+                                </div>
+                                <!-- Counter Content End -->
+                            </div>
+                        </div>
+                        <!-- Couter Item End -->
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <!-- Couter Item Start -->
+                        <div class="sis-counter-item d-flex align-items-center gap-4" data-aos="fade-up" data-aos-delay="300">
+                            <!-- Counter Image Start -->
+                            <div class="sis-e-counter-image">
+                                <figure>
+                                    <img src="images/counter-icon2.svg" alt="Traviox">
+                                </figure>
+                            </div>
+                            <!-- Counter Image Start -->
+                            <!-- Counter Image End -->
+                            <div class="sis-e-content">
+                                <!-- Counter Title Start -->
+                                <div class="sis-counter-title">
+                                    <h2 class="d-flex align-items-center mb-1">
+                                        <span class="sis-counter sisf-e-colored">120</span>
+                                        <span class="sisf-digit-label sisf-e-colored">+</span>
+                                    </h2>
+                                </div>
+                                <!-- Counter Title End -->
+                                <!-- Counter Content Start -->
+                                <div class="sis-counter-text">
+                                    <span>Global Destinations</span>
+                                </div>
+                                <!-- Counter Content End -->
+                            </div>
+                        </div>
+                        <!-- Couter Item End -->
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <!-- Couter Item Start -->
+                        <div class="sis-counter-item d-flex align-items-center gap-4" data-aos="fade-up" data-aos-delay="500">
+                            <!-- Counter Image Start -->
+                            <div class="sis-e-counter-image">
+                                <figure>
+                                    <img src="images/counter-icon3.svg" alt="Traviox">
+                                </figure>
+                            </div>
+                            <!-- Counter Image Start -->
+                            <!-- Counter Image End -->
+                            <div class="sis-e-content">
+                                <!-- Counter Title Start -->
+                                <div class="sis-counter-title">
+                                    <h2 class="d-flex align-items-center mb-1">
+                                        <span class="sis-counter sisf-e-colored">98</span>
+                                        <span class="sisf-digit-label sisf-e-colored">%</span>
+                                    </h2>
+                                </div>
+                                <!-- Counter Title End -->
+                                <!-- Counter Content Start -->
+                                <div class="sis-counter-text">
+                                    <span>Customer Satisfaction</span>
+                                </div>
+                                <!-- Counter Content End -->
+                            </div>
+                        </div>
+                        <!-- Couter Item End -->
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <!-- Couter Item Start -->
+                        <div class="sis-counter-item d-flex align-items-center gap-4" data-aos="fade-up" data-aos-delay="700">
+                            <!-- Counter Image Start -->
+                            <div class="sis-e-counter-image">
+                                <figure>
+                                    <img src="images/counter-icon4.svg" alt="Traviox">
+                                </figure>
+                            </div>
+                            <!-- Counter Image Start -->
+                            <!-- Counter Image End -->
+                            <div class="sis-e-content">
+                                <!-- Counter Title Start -->
+                                <div class="sis-counter-title">
+                                    <h2 class="d-flex align-items-center mb-1">
+                                        <span class="sis-counter sisf-e-colored">15</span>
+                                        <span class="sisf-digit-label sisf-e-colored">+</span>
+                                    </h2>
+                                </div>
+                                <!-- Counter Title End -->
+                                <!-- Counter Content Start -->
+                                <div class="sis-counter-text">
+                                    <span>Years of Experience</span>
+                                </div>
+                                <!-- Counter Content End -->
+                            </div>
+                        </div>
+                        <!-- Couter Item End -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About Us Section End -->
+    <!-- Top Destination Section Start -->
+    <div class="sis-destination-section section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Section Title Start -->
+                    <div class="sisf-sis-section-title text-center sis-section-title">
+                        <span class="sisf-m-subtitle sis-text-anime-style-3">Top Destinations</span>
+                        <h2 class="sisf-m-title sis-text-anime-style-3">Explore Our <span class="sisf-e-colored">Most<br> Loved Destinations</span></h2>
+                        <div class="sisf-m-text" data-aos="fade-up" data-aos-delay="100">
+                            <p>Discover handpicked places where breathtaking landscapes, rich cultures, and unforgettable experiences<br> come together to create your perfect escape.</p>
+                        </div>
+                    </div>
+                    <!-- Section Title End -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="sisf-destination-list">
+                        <div class="sis-comman-swiper-slider" data-aos="fade-up" data-aos-delay="100">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="sisf-destination-list-item">
+                                            <div class="sisf-e-inner sis-radius position-relative">
+                                                <div class="sisf-destination-image position-relative">
+                                                    <a href="destination-single.html" class="sisf-sis-page-link">
+                                                        <figure>
+                                                            <img src="images/destination-image-1.jpg" class="w-100 sis-radius" alt="Traviox">
+                                                        </figure>
+                                                    </a>
+                                                </div>
+                                                <!-- Content Start -->
+                                                <div class="sisf-e-content d-flex align-items-center justify-content-between">
+                                                    <div class="sisf-sis-e-title">
+                                                        <h3 class="sisf-e-title">
+                                                            <a href="destination-single.html">Switzerland</a>
+                                                        </h3>
+                                                    </div>
+                                                    <div class="sisf-m-icon-button">
+                                                        <a href="destination-single.html"><i class="fa-solid fa-arrow-right-long"></i></a>
+                                                    </div>
+                                                </div>
+                                                <!-- Content End -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="sisf-destination-list-item">
+                                            <div class="sisf-e-inner sis-radius position-relative">
+                                                <div class="sisf-destination-image position-relative">
+                                                    <a href="destination-single.html" class="sisf-sis-page-link">
+                                                        <figure>
+                                                            <img src="images/destination-image-2.jpg" class="w-100 sis-radius" alt="Traviox">
+                                                        </figure>
+                                                    </a>
+                                                </div>
+                                                <!-- Content Start -->
+                                                <div class="sisf-e-content d-flex align-items-center justify-content-between">
+                                                    <div class="sisf-sis-e-title">
+                                                        <h3 class="sisf-e-title">
+                                                            <a href="destination-single.html">Greece</a>
+                                                        </h3>
+                                                    </div>
+                                                    <div class="sisf-m-icon-button">
+                                                        <a href="destination-single.html"><i class="fa-solid fa-arrow-right-long"></i></a>
+                                                    </div>
+                                                </div>
+                                                <!-- Content End -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="sisf-destination-list-item">
+                                            <div class="sisf-e-inner sis-radius position-relative">
+                                                <div class="sisf-destination-image position-relative">
+                                                    <a href="destination-single.html" class="sisf-sis-page-link">
+                                                        <figure>
+                                                            <img src="images/destination-image-3.jpg" class="w-100 sis-radius" alt="Traviox">
+                                                        </figure>
+                                                    </a>
+                                                </div>
+                                                <!-- Content Start -->
+                                                <div class="sisf-e-content d-flex align-items-center justify-content-between">
+                                                    <div class="sisf-sis-e-title">
+                                                        <h3 class="sisf-e-title">
+                                                            <a href="destination-single.html">Japan</a>
+                                                        </h3>
+                                                    </div>
+                                                    <div class="sisf-m-icon-button">
+                                                        <a href="destination-single.html"><i class="fa-solid fa-arrow-right-long"></i></a>
+                                                    </div>
+                                                </div>
+                                                <!-- Content End -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="sisf-destination-list-item">
+                                            <div class="sisf-e-inner sis-radius position-relative">
+                                                <div class="sisf-destination-image position-relative">
+                                                    <a href="destination-single.html" class="sisf-sis-page-link">
+                                                        <figure>
+                                                            <img src="images/destination-image-4.jpg" class="w-100 sis-radius" alt="Traviox">
+                                                        </figure>
+                                                    </a>
+                                                </div>
+                                                <!-- Content Start -->
+                                                <div class="sisf-e-content d-flex align-items-center justify-content-between">
+                                                    <div class="sisf-sis-e-title">
+                                                        <h3 class="sisf-e-title">
+                                                            <a href="destination-single.html">Indonesia</a>
+                                                        </h3>
+                                                    </div>
+                                                    <div class="sisf-m-icon-button">
+                                                        <a href="destination-single.html"><i class="fa-solid fa-arrow-right-long"></i></a>
+                                                    </div>
+                                                </div>
+                                                <!-- Content End -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="sisf-destination-list-item">
+                                            <div class="sisf-e-inner sis-radius position-relative">
+                                                <div class="sisf-destination-image position-relative">
+                                                    <a href="destination-single.html" class="sisf-sis-page-link">
+                                                        <figure>
+                                                            <img src="images/destination-image-5.jpg" class="w-100 sis-radius" alt="Traviox">
+                                                        </figure>
+                                                    </a>
+                                                </div>
+                                                <!-- Content Start -->
+                                                <div class="sisf-e-content d-flex align-items-center justify-content-between">
+                                                    <div class="sisf-sis-e-title">
+                                                        <h3 class="sisf-e-title">
+                                                            <a href="destination-single.html">Italy</a>
+                                                        </h3>
+                                                    </div>
+                                                    <div class="sisf-m-icon-button">
+                                                        <a href="destination-single.html"><i class="fa-solid fa-arrow-right-long"></i></a>
+                                                    </div>
+                                                </div>
+                                                <!-- Content End -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="sis-comman-bottom-line-text sis-e-bottom d-flex flex-wrap gap-5">
+                        <div class="sisf-m-button" data-aos="fade-up" data-aos-delay="100">
+                            <a href="destinations.html" class="sis-btn-default">Find Your Adventure<i class="fa-solid fa-arrow-right-long"></i></a>
+                        </div>
+                        <div class="sisf-sis-e-box">
+                            <p class="mb-1" data-aos="fade-up" data-aos-delay="300"><span class="pe-2"><img src="images/users.png" alt="Traviox"></span> Pack your dreams, leave the planning to us, and experience journeys that you'll remember forever. <a href="about-us.html">Being your journey</a></p>
+                            <p class="mb-0" data-aos="fade-up" data-aos-delay="500">Rated 4.9/5 by Happy Travelers Worldwide
+                                <span class="sisf-e-colored">★</span>
+                                <span class="sisf-e-colored">★</span>
+                                <span class="sisf-e-colored">★</span>
+                                <span class="sisf-e-colored">★</span>
+                                <span class="sisf-e-colored">★</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Top Destination Section End -->
+    <!-- Tour List Section Start -->
+    <div class="sis-tour-list-section sis-br-radius position-relative">
+        <div class="sis-page-list-background sis-radius">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <!-- Section Title Start -->
+                        <div class="sisf-sis-section-title sis-section-title">
+                            <span class="sisf-m-subtitle sis-text-anime-style-3">Our Tour Packages</span>
+                            <h2 class="sisf-m-title text-white sis-text-anime-style-3"><span class="sisf-e-colored">Explore the World's</span> Most Inspiring Places</h2>
+                        </div>
+                        <!-- Section Title End -->
+                    </div>
+                    <div class="col-lg-6">
+                        <!-- Section Title Start -->
+                        <div class="sisf-sis-section-title sis-section-title">
+                            <div class="sisf-m-text" data-aos="fade-up" data-aos-delay="100">
+                                <p class="text-white">From iconic landmarks and pristine beaches to breathtaking mountains and vibrant cities, discover handpicked destinations designed for unforgettable adventures and lifelong memories.</p>
+                            </div>
+                            <div class="sisf-m-button-inner d-flex justify-content-between flex-wrap">
+                                <div class="sisf-m-button pt-4" data-aos="fade-up" data-aos-delay="300">
+                                    <a href="tours.html" class="sis-btn-default">Explore the Packages<i class="fa-solid fa-arrow-right-long"></i></a>
+                                </div>
+                                <div class="sis-e-icon-top position-relative d-inline-block" data-aos="zoom-in" data-aos-delay="600">
+                                    <div class="sis-e-icon-spin">
+                                        <figure>
+                                            <img src="images/icon-top.svg" class="spin-img" alt="Traviox">
+                                        </figure>
+                                    </div>
+                                    <div class="sis-m-icon-top">
+                                        <figure>
+                                            <img src="images/page-comman-icon.svg" alt="Traviox">
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Section Title End -->
+                    </div>
+                </div>
+                <div class="sisf-tour-list-part">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="sis-comman--swiper-slider" data-aos="zoom-in" data-aos-delay="300">
+                                <div class="swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="sisf-tour-list-item sis-radius bg-white">
+                                                <div class="sisf-e-inner mb-0">
+                                                    <!-- Vehicle Image Start -->
+                                                    <div class="sisf-tour-image position-relative">
+                                                        <a href="tour-single.html">
+                                                            <figure class="sis-image-anime">
+                                                                <img src="images/tour-list1.jpg" class="w-100" alt="Traviox">
+                                                            </figure>
+                                                        </a>
+                                                        <div class="sis-tours-category">
+                                                            <span>Switzerland</span>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Vehicle Image End-->
+                                                    <!-- Vehicle Content Start -->
+                                                    <div class="sisf-tour-content p-3">
+                                                        <div class="sisf-tour-title mb-1">
+                                                            <h3 class="sis-tour-item__link">
+                                                                <a href="tour-single.html">Alpine Beauty at Every Turn</a>
+                                                            </h3>
+                                                        </div>
+                                                        <div class="sisf-m-text">
+                                                            <p class="mb-3">Journey through snow-capped peaks, crystal-clear lakes, scenic train rides, and charming villages nestled in the heart of the Alps.</p>
+                                                        </div>
+                                                        <div class="sis-tour-item__price_wrap">
+                                                            <div class="sis-tour-item__start mb-1">
+                                                                <span>Starting From</span>
+                                                            </div>
+                                                            <div class="sis-tour-item__price">
+                                                                <h3 class="mb-0 sisf-e-colored">$1,899 / Person</h3>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Vehicle Content End -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="sisf-tour-list-item sis-radius bg-white">
+                                                <div class="sisf-e-inner mb-0">
+                                                    <!-- Vehicle Image Start -->
+                                                    <div class="sisf-tour-image position-relative">
+                                                        <a href="tour-single.html">
+                                                            <figure class="sis-image-anime">
+                                                                <img src="images/tour-list2.jpg" class="w-100" alt="Traviox">
+                                                            </figure>
+                                                        </a>
+                                                        <div class="sis-tours-category">
+                                                            <span>Japan</span>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Vehicle Image End-->
+                                                    <!-- Vehicle Content Start -->
+                                                    <div class="sisf-tour-content p-3">
+                                                        <div class="sisf-tour-title mb-1">
+                                                            <h3 class="sis-tour-item__link">
+                                                                <a href="tour-single.html">Where Tradition Meets Tomorrow</a>
+                                                            </h3>
+                                                        </div>
+                                                        <div class="sisf-m-text">
+                                                            <p class="mb-3">Experience ancient temples, cherry blossoms, modern cityscapes, and breathtaking natural beauty in one unforgettable destination.</p>
+                                                        </div>
+                                                        <div class="sis-tour-item__price_wrap">
+                                                            <div class="sis-tour-item__start mb-1">
+                                                                <span>Starting From</span>
+                                                            </div>
+                                                            <div class="sis-tour-item__price">
+                                                                <h3 class="mb-0 sisf-e-colored">$1,499 / Person</h3>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Vehicle Content End -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="sisf-tour-list-item sis-radius bg-white">
+                                                <div class="sisf-e-inner mb-0">
+                                                    <!-- Vehicle Image Start -->
+                                                    <div class="sisf-tour-image position-relative">
+                                                        <a href="tour-single.html">
+                                                            <figure class="sis-image-anime">
+                                                                <img src="images/tour-list3.jpg" class="w-100" alt="Traviox">
+                                                            </figure>
+                                                        </a>
+                                                        <div class="sis-tours-category">
+                                                            <span>Italy</span>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Vehicle Image End-->
+                                                    <!-- Vehicle Content Start -->
+                                                    <div class="sisf-tour-content p-3">
+                                                        <div class="sisf-tour-title mb-1">
+                                                            <h3 class="sis-tour-item__link">
+                                                                <a href="tour-single.html">History, Romance & Timeless Charm</a>
+                                                            </h3>
+                                                        </div>
+                                                        <div class="sisf-m-text">
+                                                            <p class="mb-3">Explore world-famous architecture, authentic Italian cuisine, coastal escapes, and centuries of culture across Italy's most beautiful cities.</p>
+                                                        </div>
+                                                        <div class="sis-tour-item__price_wrap">
+                                                            <div class="sis-tour-item__start mb-1">
+                                                                <span>Starting From</span>
+                                                            </div>
+                                                            <div class="sis-tour-item__price">
+                                                                <h3 class="mb-0 sisf-e-colored">$1,699 / Person</h3>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Vehicle Content End -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="sisf-tour-list-item sis-radius bg-white">
+                                                <div class="sisf-e-inner mb-0">
+                                                    <!-- Vehicle Image Start -->
+                                                    <div class="sisf-tour-image position-relative">
+                                                        <a href="tour-single.html">
+                                                            <figure class="sis-image-anime">
+                                                                <img src="images/tour-list4.jpg" class="w-100" alt="Traviox">
+                                                            </figure>
+                                                        </a>
+                                                        <div class="sis-tours-category">
+                                                            <span>Dubai, UAE</span>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Vehicle Image End-->
+                                                    <!-- Vehicle Content Start -->
+                                                    <div class="sisf-tour-content p-3">
+                                                        <div class="sisf-tour-title mb-1">
+                                                            <h3 class="sis-tour-item__link">
+                                                                <a href="tour-single.html">Luxury Beyond Every Expectation</a>
+                                                            </h3>
+                                                        </div>
+                                                        <div class="sisf-m-text">
+                                                            <p class="mb-3">Experience futuristic architecture, desert adventures, luxury shopping, world-class dining, and unforgettable entertainment in Dubai.</p>
+                                                        </div>
+                                                        <div class="sis-tour-item__price_wrap">
+                                                            <div class="sis-tour-item__start mb-1">
+                                                                <span>Starting From</span>
+                                                            </div>
+                                                            <div class="sis-tour-item__price">
+                                                                <h3 class="mb-0 sisf-e-colored">$1,299 / Person</h3>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Vehicle Content End -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="sisf-tour-list-item sis-radius bg-white">
+                                                <div class="sisf-e-inner mb-0">
+                                                    <!-- Vehicle Image Start -->
+                                                    <div class="sisf-tour-image position-relative">
+                                                        <a href="tour-single.html">
+                                                            <figure class="sis-image-anime">
+                                                                <img src="images/tour-list5.jpg" class="w-100" alt="Traviox">
+                                                            </figure>
+                                                        </a>
+                                                        <div class="sis-tours-category">
+                                                            <span>Maldives</span>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Vehicle Image End-->
+                                                    <!-- Vehicle Content Start -->
+                                                    <div class="sisf-tour-content p-3">
+                                                        <div class="sisf-tour-title mb-1">
+                                                            <h3 class="sis-tour-item__link">
+                                                                <a href="tour-single.html">Escape to Tropical Paradise</a>
+                                                            </h3>
+                                                        </div>
+                                                        <div class="sisf-m-text">
+                                                            <p class="mb-3">Relax in luxurious overwater villas, crystal-clear lagoons, pristine beaches, and breathtaking sunsets in the Maldives.</p>
+                                                        </div>
+                                                        <div class="sis-tour-item__price_wrap">
+                                                            <div class="sis-tour-item__start mb-1">
+                                                                <span>Starting From</span>
+                                                            </div>
+                                                            <div class="sis-tour-item__price">
+                                                                <h3 class="mb-0 sisf-e-colored">$2,199 / Person</h3>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Vehicle Content End -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Tour List Section End -->
+    <!-- How It Work Section Start -->
+    <div class="sis-how-it-work-section section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Section Title Start -->
+                    <div class="sisf-sis-section-title text-center sis-section-title">
+                        <span class="sisf-m-subtitle sis-text-anime-style-3">How it works</span>
+                        <h2 class="sisf-m-title sis-text-anime-style-3">Plan Your Perfect Journey in<br> <span class="sisf-e-colored">Three Simple Steps</span></h2>
+                        <div class="sisf-m-text" data-aos="fade-up" data-aos-delay="100">
+                            <p>From choosing your dream destination to returning home with unforgettable memories, we make every stage<br> of your travel experience seamless, personalized, and stress-free.</p>
+                        </div>
+                    </div>
+                    <!-- Section Title End -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="sisf-journey-staps">
+                        <!-- Nav Tabs Button Start -->
+                        <div class="nav-tabs sis-journey-stap-tab" role="tablist">
+                            <div class="sis-journey-stap-type active" data-bs-toggle="tab" data-bs-target="#your-destination" role="tabpanel">
+                                <div class="sisf-how-works-right-content" data-aos="fade-up" data-aos-delay="100">
+                                    <div class="sisf-e-inner d-flex gap-4">
+                                        <div class="sisf-e-icon">
+                                            <figure>
+                                                <img src="images/how-work-icon1.svg" alt="Traviox">
+                                            </figure>
+                                        </div>
+                                        <div class="sisf-e-content">
+                                            <div class="sisf-m-title mb-2">
+                                                <h3 class="sisf-m-titl-inner">Explore Your Destination</h3>
+                                            </div>
+                                            <div class="sisf-m-text">
+                                                <p class="mb-0 sisf-page-text-line">Browse our carefully selected destinations, compare experiences, and discover the perfect place that matches your travel style and interests.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sis-journey-stap-type" data-bs-toggle="tab" data-bs-target="#journey" role="tabpanel">
+                                <div class="sisf-how-works-right-content" data-aos="fade-up" data-aos-delay="100">
+                                    <div class="sisf-e-inner d-flex gap-4">
+                                        <div class="sisf-e-icon">
+                                            <figure>
+                                                <img src="images/how-work-icon2.svg" alt="Traviox">
+                                            </figure>
+                                        </div>
+                                        <div class="sisf-e-content">
+                                            <div class="sisf-m-title mb-2">
+                                                <h3 class="sisf-m-titl-inner">Customize Your Journey</h3>
+                                            </div>
+                                            <div class="sisf-m-text">
+                                                <p class="mb-0 sisf-page-text-line">Personalize your itinerary by selecting accommodations, activities, transportation, and experiences with guidance from our travel experts.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sis-journey-stap-type pb-0" data-bs-toggle="tab" data-bs-target="#confidence" role="tabpanel">
+                                <div class="sisf-how-works-right-content" data-aos="fade-up" data-aos-delay="100">
+                                    <div class="sisf-e-inner d-flex gap-4">
+                                        <div class="sisf-e-icon">
+                                            <figure>
+                                                <img src="images/how-work-icon3.svg" alt="Traviox">
+                                            </figure>
+                                        </div>
+                                        <div class="sisf-e-content">
+                                            <div class="sisf-m-title mb-2">
+                                                <h3 class="sisf-m-titl-inner">Travel with Confidence</h3>
+                                            </div>
+                                            <div class="sisf-m-text">
+                                                <p class="mb-0 sisf-page-text-line">Confirm your booking and enjoy a worry-free adventure with dedicated support before, during, and after your trip.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Nav Tabs Button End -->
+                        <!-- Tab Contect Start-->
+                        <div class="sis-journey-tab-content tab-content">
+                            <!-- Your Destination Type List Start -->
+                            <div id="your-destination" class="tab-pane active sis-zoom-anim">
+                                <div class="sisf-e-content-on-image position-relative">
+                                    <div class="sisf-how-work-image">
+                                        <figure class="sis-image-anime sis-reveal">
+                                            <img src="images/how-works-img.jpg" class="w-100 sis-radius" alt="Traviox">
+                                        </figure>
+                                    </div>
+                                    <div class="sis-e-left-top-text sisf-float-left-right" data-aos="zoom-in" data-aos-delay="300">
+                                        <h3>Paris <span class="sisf-e-colored fa-solid fa-plane"></span> Santorini</h3>
+                                    </div>
+                                    <div class="sis-e-right-content">
+                                        <div class="sisf-e-inner sis-radius bg-white p-3 sis-fade">
+                                            <div class="sisf-m-inner d-flex align-items-center gap-4">
+                                                <div class="sisf-icon-image">
+                                                    <figure>
+                                                        <img src="images/how-work-icon-left.jpg" class="sis-radius" alt="Traviox">
+                                                    </figure>
+                                                </div>
+                                                <div class="sisf-e-content">
+                                                    <div class="sisf-m-content">
+                                                        <p class="mb-0">Ongoing</p>
+                                                    </div>
+                                                    <div class="sisf-m-title">
+                                                        <h3>Trip to Paris</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="sisf-e--inner mt-3">
+                                                <div class="sis-progressbar sisf-progressbar">
+                                                    <div class="sis-skills-progress-bar mb-0">
+                                                        <!-- Skill Item Start -->
+                                                        <div class="sis-skillbar" data-percent="45%">
+                                                            <div class="sis-skill-data justify-content-start gap-1 mb-2">
+                                                                <div class="sis-skill-no">45%</div>
+                                                                <div class="sis-skill-title mb-0">completed</div>
+                                                            </div>
+                                                            <div class="sis-skill-progress">
+                                                                <div class="sis-count-bar"></div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Skill Item End -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Your Destination Type List End -->
+                            <!-- Your Journey Type List Start -->
+                            <div id="journey" class="tab-pane fade sis-zoom-anim">
+                                <div class="sisf-e-content-on-image position-relative">
+                                    <div class="sisf-how-work-image">
+                                        <figure class="sis-image-anime sis-reveal">
+                                            <img src="images/how-works-img1.jpg" class="w-100 sis-radius" alt="Traviox">
+                                        </figure>
+                                    </div>
+                                    <div class="sis-e-left-top-text sisf-float-left-right p-3 rounded-4" data-aos="zoom-in" data-aos-delay="300">
+                                        <h3>City Walking Tour</h3>
+                                        <p class="my-1">Slightseeing • 3 hours</p>
+                                        <p class="mb-0 sisf-e-colored fw-bold">$45 per person</p>
+                                    </div>
+                                    <div class="sis-e-right-content">
+                                        <div class="sisf-e-inner sisf-page sis-radius sis-fade">
+                                            <div class="sisf-m-inner">
+                                                <div class="sisf-icon-image">
+                                                    <figure>
+                                                        <img src="images/form-img.png" class="sis-radius" alt="Traviox">
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Your Journey Type List End -->
+                            <!-- Confidence Type List Start -->
+                            <div id="confidence" class="tab-pane fade sis-zoom-anim">
+                                <div class="sisf-e-content-on-image position-relative">
+                                    <div class="sisf-how-work-image">
+                                        <figure class="sis-image-anime sis-reveal">
+                                            <img src="images/how-works-img2.jpg" class="w-100 sis-radius" alt="Traviox">
+                                        </figure>
+                                    </div>
+                                    <div class="sis-e-left-top-text px-3 sisf-float-left-right" data-aos="zoom-in" data-aos-delay="300">
+                                        <h3><span class="sisf-e-colored pe-2 fa-solid fa-phone"></span> 24/7 Support</h3>
+                                    </div>
+                                    <div class="sis-e-right-content">
+                                        <div class="sisf-e-inner sis-radius sis-fade">
+                                            <div class="sisf-m-inner">
+                                                <div class="sisf-icon-image">
+                                                    <figure>
+                                                        <img src="images/travel-img.png" class="sis-radius" alt="Traviox">
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Confidence Type List End -->
+                        </div>
+                        <!-- Tab Contect End-->
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="sis-comman-bottom-line-text sis-e-bottom text-center">
+                        <div class="sisf-sis-e-box">
+                            <p class="mb-1" data-aos="fade-up" data-aos-delay="300"><span class="pe-2"><img src="images/users.png" alt="Traviox"></span> From dream destinations to unforgettable memories, we make every journey effortless and inspiring. <a href="about-us.html">Being your journey</a></p>
+                            <p class="mb-0" data-aos="fade-up" data-aos-delay="500">Trusted by Thousands of Travelers
+                                <span class="sisf-e-colored">★</span>
+                                <span class="sisf-e-colored">★</span>
+                                <span class="sisf-e-colored">★</span>
+                                <span class="sisf-e-colored">★</span>
+                                <span class="sisf-e-colored">★</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- How It Work Section End -->
+    <!-- Our Services Section Start -->
+    <div class="sis-our-services-section sis-br-radius sis-comman-background">
+        <div class="sisf-services-background section">
+            <div class="container">
+                <div class="row align-items-end">
+                    <div class="col-lg-7">
+                        <!-- Section Title Start -->
+                        <div class="sisf-sis-section-title sis-section-title">
+                            <span class="sisf-m-subtitle sis-text-anime-style-3">Our Services</span>
+                            <h2 class="sisf-m-title text-white sis-text-anime-style-3"><span class="sisf-e-colored">Exceptional Travel Services</span> <br>for Every Journey</h2>
+                            <div class="sisf-m-text" data-aos="fade-up" data-aos-delay="100">
+                                <p class="text-white">Whether you're planning a relaxing holiday, an exciting adventure, or a luxury getaway, <br>our comprehensive travel solutions ensure every trip is seamless from departure to return.</p>
+                            </div>
+                        </div>
+                        <!-- Section Title End -->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <!-- Item Start -->
+                                <div class="sisf-sis-e-service-list" data-aos="fade-up" data-aos-delay="100">
+                                    <div class="sisf-e-inner">
+                                        <div class="sisf-e-icon mb-4">
+                                            <figure>
+                                                <img src="images/service-icon1.svg" alt="Traviox">
+                                            </figure>
+                                        </div>
+                                        <div class="sisf-e-content">
+                                            <div class="sisf-m-title mb-2">
+                                                <h3 class="sisf-m-titl-inner">International Tour Packages</h3>
+                                            </div>
+                                            <div class="sisf-m-text">
+                                                <p class="text-white sis-page-text-line">Explore carefully curated destinations with flexible itineraries designed for unforgettable travel experiences.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Item End -->
+                                <!-- Item Start -->
+                                <div class="sisf-sis-e-service-list" data-aos="fade-up" data-aos-delay="300">
+                                    <div class="sisf-e-inner">
+                                        <div class="sisf-e-icon mb-4">
+                                            <figure>
+                                                <img src="images/service-icon2.svg" alt="Traviox">
+                                            </figure>
+                                        </div>
+                                        <div class="sisf-e-content">
+                                            <div class="sisf-m-title mb-2">
+                                                <h3 class="sisf-m-titl-inner">Transportation & Transfers</h3>
+                                            </div>
+                                            <div class="sisf-m-text">
+                                                <p class="text-white sis-page-text-line">Enjoy smooth airport pickups, local transportation, and reliable travel arrangements throughout your journey.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Item End -->
+                            </div>
+                            <div class="col-md-6">
+                                <!-- Item Start -->
+                                <div class="sisf-sis-e-service-list" data-aos="fade-up" data-aos-delay="100">
+                                    <div class="sisf-e-inner">
+                                        <div class="sisf-e-icon mb-4">
+                                            <figure>
+                                                <img src="images/service-icon3.svg" alt="Traviox">
+                                            </figure>
+                                        </div>
+                                        <div class="sisf-e-content">
+                                            <div class="sisf-m-title mb-2">
+                                                <h3 class="sisf-m-titl-inner">Luxury Accommodation</h3>
+                                            </div>
+                                            <div class="sisf-m-text">
+                                                <p class="text-white sis-page-text-line">Stay in handpicked hotels and resorts that combine comfort, quality, and exceptional hospitality.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Item End -->
+                                <!-- Item Start -->
+                                <div class="sisf-sis-e-service-list" data-aos="fade-up" data-aos-delay="300">
+                                    <div class="sisf-e-inner">
+                                        <div class="sisf-e-icon mb-4">
+                                            <figure>
+                                                <img src="images/service-icon4.svg" alt="Traviox">
+                                            </figure>
+                                        </div>
+                                        <div class="sisf-e-content">
+                                            <div class="sisf-m-title mb-2">
+                                                <h3 class="sisf-m-titl-inner">24/7 Travel Support</h3>
+                                            </div>
+                                            <div class="sisf-m-text">
+                                                <p class="text-white sis-page-text-line">Our dedicated travel experts are available<br> around the clock to assist you before, during, and after your trip.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Item End -->
+                            </div>
+                            <div class="col-12">
+                                <div class="sisf-m-button pt-2" data-aos="fade-up" data-aos-delay="500">
+                                    <a href="service.html" class="sis-btn-default">View All Services<i class="fa-solid fa-arrow-right-long"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="sisf-service-image-right position-relative">
+                            <div class="sisf-services-bottom-image" data-aos="zoom-in" data-aos-delay="500">
+                                <figure>
+                                    <img src="images/service-bottom-image.png" alt="Traviox">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Our Services Section End -->
+    <!-- What We Offer Section Start -->
+    <div class="sis-what-we-offer-section section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="sisf-page-images-wrapper sis-gallery-items position-relative">
+                        <!-- Image Start -->
+                        <div class="sis-gallery-item-image sisf-image-inner">
+                            <a href="images/what-we-offer1.png">
+                                <figure class="sis-image-anime sis-reveal">
+                                    <img src="images/what-we-offer1.png" class="w-100 sis-radius" alt="Traviox">
+                                </figure>
+                            </a>
+                        </div>
+                        <!-- Image End -->
+                        <!-- Image Start -->
+                        <div class="sis-gallery-item-image sisf-image-inner sisf-m-center position-absolute">
+                            <a href="images/what-we-offer2.png">
+                                <figure class="sis-image-anime sis-reveal">
+                                    <img src="images/what-we-offer2.png" class="w-100 sis-radius" alt="Traviox">
+                                </figure>
+                            </a>
+                        </div>
+                        <!-- Image End -->
+                        <!-- Image Start -->
+                        <div class="sis-gallery-item-image sisf-image-inner sisf-m-end position-absolute">
+                            <a href="images/what-we-offer3.png">
+                                <figure class="sis-image-anime sis-reveal">
+                                    <img src="images/what-we-offer3.png" class="w-100 sis-radius" alt="Traviox">
+                                </figure>
+                            </a>
+                        </div>
+                        <!-- Image End -->
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <!-- Section Title Start -->
+                    <div class="sisf-sis-section-title sis-section-title">
+                        <span class="sisf-m-subtitle sis-text-anime-style-3">What We Offer</span>
+                        <h2 class="sisf-m-title sis-text-anime-style-3">Discover Experiences That Make <span class="sisf-e-colored"> Every Journey Unforgettable</span></h2>
+                        <div class="sisf-m-text" data-aos="fade-up" data-aos-delay="100">
+                            <p class="mt-2">rom thrilling outdoor adventures to relaxing cultural escapes, our curated experiences are designed to help you explore every destination in a unique and memorable way.</p>
+                        </div>
+                    </div>
+                    <!-- Section Title End -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <!-- Item Start -->
+                            <div class="sisf-sis-e-page-list" data-aos="fade-up" data-aos-delay="100">
+                                <div class="sisf-e-inner">
+                                    <div class="sisf-e-icon mb-3">
+                                        <figure>
+                                            <img src="images/what-we-offer-icon1.svg" alt="Traviox">
+                                        </figure>
+                                    </div>
+                                    <div class="sisf-e-content">
+                                        <div class="sisf-m-title mb-2">
+                                            <h3 class="sisf-m-titl-inner">Guided Tours</h3>
+                                        </div>
+                                        <div class="sisf-m-text">
+                                            <p class="sisf-page-text-line">Explore iconic destinations with knowledgeable local guides and thoughtfully planned itineraries.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item End -->
+                            <!-- Item Start -->
+                            <div class="sisf-sis-e-page-list" data-aos="fade-up" data-aos-delay="300">
+                                <div class="sisf-e-inner">
+                                    <div class="sisf-e-icon mb-3">
+                                        <figure>
+                                            <img src="images/what-we-offer-icon2.svg" alt="Traviox">
+                                        </figure>
+                                    </div>
+                                    <div class="sisf-e-content">
+                                        <div class="sisf-m-title mb-2">
+                                            <h3 class="sisf-m-titl-inner">Luxury Getaways</h3>
+                                        </div>
+                                        <div class="sisf-m-text">
+                                            <p class="sisf-page-text-line">Experience premium accommodations, exclusive resorts, and personalized services for a relaxing escape.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item End -->
+                        </div>
+                        <div class="col-md-6">
+                            <!-- Item Start -->
+                            <div class="sisf-sis-e-page-list" data-aos="fade-up" data-aos-delay="100">
+                                <div class="sisf-e-inner">
+                                    <div class="sisf-e-icon mb-3">
+                                        <figure>
+                                            <img src="images/what-we-offer-icon3.svg" alt="Traviox">
+                                        </figure>
+                                    </div>
+                                    <div class="sisf-e-content">
+                                        <div class="sisf-m-title mb-2">
+                                            <h3 class="sisf-m-titl-inner">Outdoor Adventures</h3>
+                                        </div>
+                                        <div class="sisf-m-text">
+                                            <p class="sisf-page-text-line">Enjoy hiking, camping, water sports, and thrilling activities surrounded by breathtaking natural landscapes.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item End -->
+                            <!-- Item Start -->
+                            <div class="sisf-sis-e-page-list" data-aos="fade-up" data-aos-delay="300">
+                                <div class="sisf-e-inner">
+                                    <div class="sisf-e-icon mb-3">
+                                        <figure>
+                                            <img src="images/what-we-offer-icon4.svg" alt="Traviox">
+                                        </figure>
+                                    </div>
+                                    <div class="sisf-e-content">
+                                        <div class="sisf-m-title mb-2">
+                                            <h3 class="sisf-m-titl-inner">Local Experiences</h3>
+                                        </div>
+                                        <div class="sisf-m-text">
+                                            <p class="sisf-page-text-line">Connect with local communities through authentic food, traditions, festivals, and cultural attractions.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item End -->
+                        </div>
+                        <div class="col-12">
+                            <div class="sisf-m-button" data-aos="fade-up" data-aos-delay="500">
+                                <a href="about-us.html" class="sis-btn-default">Discover Our Story<i class="fa-solid fa-arrow-right-long"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- What We Offer Section End -->
+    <!-- Experiences Section Start -->
+    <div class="sis-experiences-section sis-br-radius position-relative overflow-hidden">
+        <div class="sis-experiences-background">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 p-0">
+                        <div class="intro-video-box">
+                            <div class="sisf-sis-back-video">
+                                <video class="bg-video" autoplay loop muted>
+                                    <source src="../traviox.wpthemeverse.com/wp-content/uploads/2026/06/video3.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Section Title Start -->
+                        <div class="sisf-sis-section-title text-center mb-0 sis-section-title">
+                            <h2 class="sisf-m-title text-white sis-text-anime-style-3"><span class="sisf-e-colored">Travel Beyond</span> The Ordinary With<br> <span class="sisf-e-colored">Extraordinary Experiences</span></h2>
+                            <div class="sisf-m-button pt-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
+                                <a href="contact.html" class="sis-btn-default">Plan Your Journey<i class="fa-solid fa-arrow-right-long"></i></a>
+                            </div>
+                        </div>
+                        <!-- Section Title End -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Experiences Section End -->
+    <!-- Testimonials Section Start -->
+    <div class="sis-testimonial-section section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Section Title Start -->
+                    <div class="sisf-sis-section-title text-center sis-section-title">
+                        <span class="sisf-m-subtitle sis-text-anime-style-3">Traveller’s Story</span>
+                        <h2 class="sisf-m-title sis-text-anime-style-3">Journeys That<br> <span class="sisf-e-colored">Inspire Confidence</span></h2>
+                        <div class="sisf-m-text" data-aos="fade-up" data-aos-delay="100">
+                            <p>Real travelers, unforgettable experiences. Discover why thousands trust Traviox to turn every trip into a<br> seamless and memorable adventure.</p>
+                        </div>
+                    </div>
+                    <!-- Section Title End -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="testimonial-right page" data-aos="fade-up" data-aos-delay="300">
+                        <div class="sis-comman--swiper-slider sisf-testimonials-list sisf-testimonial-slider">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="sisf-e-inner sis-radius overflow-hidden position-relative mb-0">
+                                            <div class="sisf-e-testimonial-image">
+                                                <figure>
+                                                    <img src="images/testimonial1.png" class="w-100" alt="Traviox">
+                                                </figure>
+                                            </div>
+                                            <div class="sisf-e-top sis-e-testimonial-content p-3">
+                                                <div class="quote-left-icon mb-2">
+                                                    <span><i class="fa-solid sisf-e-colored fa-quote-left"></i></span>
+                                                </div>
+                                                <div class="sisf-bottom-with-content">
+                                                    <div class="sisf-bottom--content">
+                                                        <div class="sisf-m-inner">
+                                                            <div class="sisf-e-author">
+                                                                <span class="sisf-e-author-name pe-1 sisf-primary-text">Emma Thompson</span>
+                                                                <span class="sisf-m-divider"></span>
+                                                                <span class="sisf-e-author-role ps-2 sisf-primary-text">London, United Kingdom</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="sisf-ratings py-2">
+                                                    <div class="sisf-m-star sisf--initial">
+                                                        <span class="star">★</span>
+                                                        <span class="star">★</span>
+                                                        <span class="star">★</span>
+                                                        <span class="star">★</span>
+                                                        <span class="star">★</span>
+                                                    </div>
+                                                </div>
+                                                <div class="sisf-e-content-center sisf-e-discription border-0">
+                                                    <p class="mb-0 sisf-primary-text">Our honeymoon was everything we dreamed of and more. From the luxury resort to every guided excursion, everything was perfectly organized. We simply enjoyed the journey without worrying about a thing.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="sisf-e-inner sis-radius overflow-hidden position-relative mb-0">
+                                            <div class="sisf-e-testimonial-image">
+                                                <figure>
+                                                    <img src="images/testimonial2.png" class="w-100" alt="Traviox">
+                                                </figure>
+                                            </div>
+                                            <div class="sisf-e-top sis-e-testimonial-content p-3">
+                                                <div class="quote-left-icon mb-2">
+                                                    <span><i class="fa-solid sisf-e-colored fa-quote-left"></i></span>
+                                                </div>
+                                                <div class="sisf-bottom-with-content">
+                                                    <div class="sisf-bottom--content">
+                                                        <div class="sisf-m-inner">
+                                                            <div class="sisf-e-author">
+                                                                <span class="sisf-e-author-name pe-1 sisf-primary-text">Daniel Carter</span>
+                                                                <span class="sisf-m-divider"></span>
+                                                                <span class="sisf-e-author-role ps-2 sisf-primary-text">Toronto, Canada</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="sisf-ratings py-2">
+                                                    <div class="sisf-m-star sisf--initial">
+                                                        <span class="star">★</span>
+                                                        <span class="star">★</span>
+                                                        <span class="star">★</span>
+                                                        <span class="star">★</span>
+                                                        <span class="star">★</span>
+                                                    </div>
+                                                </div>
+                                                <div class="sisf-e-content-center sisf-e-discription border-0">
+                                                    <p class="mb-0 sisf-primary-text">Planning an international family vacation felt overwhelming until we found Traviox. Every detail was handled professionally, and the itinerary was perfectly balanced for both adults and kids.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="sisf-e-inner sis-radius overflow-hidden position-relative mb-0">
+                                            <div class="sisf-e-testimonial-image">
+                                                <figure>
+                                                    <img src="images/testimonial3.png" class="w-100" alt="Traviox">
+                                                </figure>
+                                            </div>
+                                            <div class="sisf-e-top sis-e-testimonial-content p-3">
+                                                <div class="quote-left-icon mb-2">
+                                                    <span><i class="fa-solid sisf-e-colored fa-quote-left"></i></span>
+                                                </div>
+                                                <div class="sisf-bottom-with-content">
+                                                    <div class="sisf-bottom--content">
+                                                        <div class="sisf-m-inner">
+                                                            <div class="sisf-e-author">
+                                                                <span class="sisf-e-author-name pe-1 sisf-primary-text">Sophia Martinez</span>
+                                                                <span class="sisf-m-divider"></span>
+                                                                <span class="sisf-e-author-role ps-2 sisf-primary-text">Barcelona, Spain</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="sisf-ratings py-2">
+                                                    <div class="sisf-m-star sisf--initial">
+                                                        <span class="star">★</span>
+                                                        <span class="star">★</span>
+                                                        <span class="star">★</span>
+                                                        <span class="star">★</span>
+                                                        <span class="star">★</span>
+                                                    </div>
+                                                </div>
+                                                <div class="sisf-e-content-center sisf-e-discription border-0">
+                                                    <p class="mb-0 sisf-primary-text">I've booked several trips through Traviox, and each experience has exceeded my expectations. The destinations, local guides, and customer support were outstanding from beginning to end.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="sisf-e-inner sis-radius overflow-hidden position-relative mb-0">
+                                            <div class="sisf-e-testimonial-image">
+                                                <figure>
+                                                    <img src="images/testimonial4.png" class="w-100" alt="Traviox">
+                                                </figure>
+                                            </div>
+                                            <div class="sisf-e-top sis-e-testimonial-content p-3">
+                                                <div class="quote-left-icon mb-2">
+                                                    <span><i class="fa-solid sisf-e-colored fa-quote-left"></i></span>
+                                                </div>
+                                                <div class="sisf-bottom-with-content">
+                                                    <div class="sisf-bottom--content">
+                                                        <div class="sisf-m-inner">
+                                                            <div class="sisf-e-author">
+                                                                <span class="sisf-e-author-name pe-1 sisf-primary-text">Olivia Wilson</span>
+                                                                <span class="sisf-m-divider"></span>
+                                                                <span class="sisf-e-author-role ps-2 sisf-primary-text">New York, United States</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="sisf-ratings py-2">
+                                                    <div class="sisf-m-star sisf--initial">
+                                                        <span class="star">★</span>
+                                                        <span class="star">★</span>
+                                                        <span class="star">★</span>
+                                                        <span class="star">★</span>
+                                                        <span class="star">★</span>
+                                                    </div>
+                                                </div>
+                                                <div class="sisf-e-content-center sisf-e-discription border-0">
+                                                    <p class="mb-0 sisf-primary-text">I’ve booked multiple international tours with this team, and every journey has been exceptional. From carefully selected destinations to knowledgeable guides and outstanding customer support.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="sis-comman-bottom-line-text sis-e-bottom text-center">
+                        <div class="sisf-sis-e-box">
+                            <p class="mb-1" data-aos="fade-up" data-aos-delay="300"><span class="pe-2"><img src="images/users1.png" alt="Traviox"></span> Trusted by 25,000+ Happy Travelers Worldwide <a href="about-us.html">Being your journey</a></p>
+                            <p class="mb-0" data-aos="fade-up" data-aos-delay="500">4.9/5 Average Rating from Verified Travelers
+                                <span class="sisf-e-colored">★</span>
+                                <span class="sisf-e-colored">★</span>
+                                <span class="sisf-e-colored">★</span>
+                                <span class="sisf-e-colored">★</span>
+                                <span class="sisf-e-colored">★</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonials Section End -->
+    <!-- FAQ Section Start -->
+    <div class="sis-faq-section section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 position-relative">
+                    <div class="sis-e-faqs-image">
+                        <figure class="sis-image-anime sis-reveal">
+                            <img src="images/faqs-img.jpg" class="w-100 sis-radius" alt="Traviox">
+                        </figure>
+                    </div>
+                    <div class="sisf-faqs-contact-part sisf-contact-left-bottom" data-aos="zoom-in-left" data-aos-delay="500">
+                        <div class="sisf-e-inner sisf-float-left-right bg-white sis-radius p-4">
+                            <div class="sisf-e-content">
+                                <div class="sisf-m-title">
+                                    <h3>Need Personal Travel Assistance?</h3>
+                                </div>
+                                <div class="sisf-m-text">
+                                    <p>Our travel specialists are here to help you plan the perfect<br> getaway and answer any questions you may have.</p>
+                                </div>
+                            </div>
+                            <div class="sisf-sis-contact-information">
+                                <div class="sisf-contact-box mb-2 d-flex align-items-center gap-3">
+                                    <div class="sisf--icon">
+                                        <a href="tel:+18004567890" class="sis-comman-text"><i class="fa-solid fa-phone-volume"></i></a>
+                                    </div>
+                                    <div class="sisf-sis-e-content">
+                                        <a href="tel:+18004567890" class="sis-title sis-comman-text d-block">+1 (800) 456-7890</a>
+                                    </div>
+                                </div>
+                                <div class="sisf-contact-box mb-2 d-flex align-items-center gap-3">
+                                    <div class="sisf--icon">
+                                        <a href="mailto:hello@travioxtravel.com" class="sis-comman-text"><i class="fa-regular fa-envelope"></i></a>
+                                    </div>
+                                    <div class="sisf-sis-e-content">
+                                        <a href="mailto:hello@travioxtravel.com" class="sis-title sis-comman-text d-block">hello@Travioxtravel.com</a>
+                                    </div>
+                                </div>
+                                <div class="sisf-contact-box d-flex align-items-center gap-3">
+                                    <div class="sisf--icon">
+                                        <a href="#" class="sis-comman-text"><i class="fa-solid fa-clock"></i></a>
+                                    </div>
+                                    <div class="sisf-sis-e-content">
+                                        <a href="#" class="sis-title sis-comman-text d-block">Mon – Sat: 9:00 AM – 7:00 PM</a>
+                                    </div>
+                                </div>
+                                <div class="sisf-m-button pt-4">
+                                    <a href="contact.html" class="sis-btn-default">Contact Our Experts<i class="fa-solid fa-arrow-right-long"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <!-- Section Title Start -->
+                    <div class="sisf-sis-section-title sis-section-title">
+                        <span class="sisf-m-subtitle sis-text-anime-style-3">FAQs</span>
+                        <h2 class="sisf-m-title sis-text-anime-style-3">Frequently <span class="sisf-e-colored">Asked Questions</span></h2>
+                        <div class="sisf-m-text" data-aos="fade-up" data-aos-delay="100">
+                            <p>Have questions about planning your next adventure? Here are answers to some of the most common questions to help you book with confidence.</p>
+                        </div>
+                    </div>
+                    <!-- Section Title End -->
+                    <div class="sisf-page-accordian sisf-sis-page-accordian sisf-page-bottom sis-radius bg-white overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                        <div class="accordion" id="sisf-Accordion">
+                            <!-- Accordion Item Start-->
+                            <div class="accordion-item mt-0">
+                                <h2 class="accordion-header sis-comman-title">
+                                    <button class="accordion-button mt-0" data-bs-toggle="collapse" data-bs-target="#sis-one">
+                                        <span>1. How do I book a tour package?</span>
+                                    </button>
+                                </h2>
+                                <div id="sis-one" class="accordion-collapse collapse show" data-bs-parent="#sisf-Accordion">
+                                    <div class="accordion-body">
+                                        <div class="sisf-e-content-inner">
+                                            <p class="mb-0 text-white">Browse your preferred destination, select a package, choose your travel dates, and complete your booking securely through our simple online process.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Accordion Item End-->
+                            <!-- Accordion Item Start-->
+                            <div class="accordion-item mt-0">
+                                <h2 class="accordion-header sis-comman-title">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#sis-two">
+                                        <span>2. Can I customize my travel itinerary?</span>
+                                    </button>
+                                </h2>
+                                <div id="sis-two" class="accordion-collapse collapse" data-bs-parent="#sisf-Accordion">
+                                    <div class="accordion-body">
+                                        <div class="sisf-e-content-inner">
+                                            <p class="mb-0 text-white">Browse your preferred destination, select a package, choose your travel dates, and complete your booking securely through our simple online process.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Accordion Item End-->
+                            <!-- Accordion Item Start-->
+                            <div class="accordion-item mt-0">
+                                <h2 class="accordion-header sis-comman-title">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#sis-three">
+                                        <span>3. What is included in the tour package?</span>
+                                    </button>
+                                </h2>
+                                <div id="sis-three" class="accordion-collapse collapse" data-bs-parent="#sisf-Accordion">
+                                    <div class="accordion-body">
+                                        <div class="sisf-e-content-inner">
+                                            <p class="mb-0 text-white">Browse your preferred destination, select a package, choose your travel dates, and complete your booking securely through our simple online process.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Accordion Item End-->
+                            <!-- Accordion Item Start-->
+                            <div class="accordion-item mt-0">
+                                <h2 class="accordion-header sis-comman-title">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#sis-four">
+                                        <span>4. Can I cancel or reschedule my booking?</span>
+                                    </button>
+                                </h2>
+                                <div id="sis-four" class="accordion-collapse collapse" data-bs-parent="#sisf-Accordion">
+                                    <div class="accordion-body">
+                                        <div class="sisf-e-content-inner">
+                                            <p class="mb-0 text-white">Browse your preferred destination, select a package, choose your travel dates, and complete your booking securely through our simple online process.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Accordion Item End-->
+                            <!-- Accordion Item Start-->
+                            <div class="accordion-item mt-0">
+                                <h2 class="accordion-header sis-comman-title">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#sis-five">
+                                        <span>5. Do you provide international travel assistance?</span>
+                                    </button>
+                                </h2>
+                                <div id="sis-five" class="accordion-collapse collapse" data-bs-parent="#sisf-Accordion">
+                                    <div class="accordion-body">
+                                        <div class="sisf-e-content-inner">
+                                            <p class="mb-0 text-white">Browse your preferred destination, select a package, choose your travel dates, and complete your booking securely through our simple online process.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Accordion Item End-->
+                            <!-- Accordion Item Start-->
+                            <div class="accordion-item border-0 mt-0">
+                                <h2 class="accordion-header sis-comman-title">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#sis-six">
+                                        <span>6. How can I contact your travel experts?</span>
+                                    </button>
+                                </h2>
+                                <div id="sis-six" class="accordion-collapse collapse" data-bs-parent="#sisf-Accordion">
+                                    <div class="accordion-body">
+                                        <div class="sisf-e-content-inner">
+                                            <p class="mb-0 text-white">Browse your preferred destination, select a package, choose your travel dates, and complete your booking securely through our simple online process.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Accordion Item End-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FAQ Section End -->
+    <!-- Contact Us Section Start -->
+    <div class="sis-contact-us-section sis-br-radius section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="sisf-e-content text-center mt-5">
+                        <p class="text-white">Trusted by 25,000+ Travelers and 500+ Global Travel Partners</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="sis-logo-slider" data-aos="fade-up" data-aos-delay="100">
+                                <div class="sis-comman-swiper-slider">
+                                    <div class="swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="sisf-e-inner">
+                                                    <div class="sis-logo-slide-image text-center">
+                                                        <figure>
+                                                            <img src="images/clien-logo1.png" alt="Traviox">
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="sisf-e-inner">
+                                                    <div class="sis-logo-slide-image text-center">
+                                                        <figure>
+                                                            <img src="images/clien-logo2.png" alt="Traviox">
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="sisf-e-inner">
+                                                    <div class="sis-logo-slide-image text-center">
+                                                        <figure>
+                                                            <img src="images/clien-logo3.png" alt="Traviox">
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="sisf-e-inner">
+                                                    <div class="sis-logo-slide-image text-center">
+                                                        <figure>
+                                                            <img src="images/clien-logo4.png" alt="Traviox">
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="sisf-e-inner">
+                                                    <div class="sis-logo-slide-image text-center">
+                                                        <figure>
+                                                            <img src="images/clien-logo5.png" alt="Traviox">
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="sisf-e-inner">
+                                                    <div class="sis-logo-slide-image text-center">
+                                                        <figure>
+                                                            <img src="images/clien-logo6.png" alt="Traviox">
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="sisf-e-inner">
+                                                    <div class="sis-logo-slide-image text-center">
+                                                        <figure>
+                                                            <img src="images/clien-logo7.png" alt="Traviox">
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="sisf-e-inner">
+                                                    <div class="sis-logo-slide-image text-center">
+                                                        <figure>
+                                                            <img src="images/clien-logo8.png" alt="Traviox">
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="sisf-e-inner">
+                                                    <div class="sis-logo-slide-image text-center">
+                                                        <figure>
+                                                            <img src="images/clien-logo9.png" alt="Traviox">
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="sis-logo-slider my-4" data-aos="fade-up" data-aos-delay="300">
+                                <div class="sis-comman--swiper-slider">
+                                    <div class="swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="sisf-e-inner">
+                                                    <div class="sis-logo-slide-image text-center">
+                                                        <figure>
+                                                            <img src="images/clien-logo1.png" alt="Traviox">
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="sisf-e-inner">
+                                                    <div class="sis-logo-slide-image text-center">
+                                                        <figure>
+                                                            <img src="images/clien-logo2.png" alt="Traviox">
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="sisf-e-inner">
+                                                    <div class="sis-logo-slide-image text-center">
+                                                        <figure>
+                                                            <img src="images/clien-logo3.png" alt="Traviox">
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="sisf-e-inner">
+                                                    <div class="sis-logo-slide-image text-center">
+                                                        <figure>
+                                                            <img src="images/clien-logo4.png" alt="Traviox">
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="sisf-e-inner">
+                                                    <div class="sis-logo-slide-image text-center">
+                                                        <figure>
+                                                            <img src="images/clien-logo5.png" alt="Traviox">
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="sisf-e-inner">
+                                                    <div class="sis-logo-slide-image text-center">
+                                                        <figure>
+                                                            <img src="images/clien-logo6.png" alt="Traviox">
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="sisf-e-inner">
+                                                    <div class="sis-logo-slide-image text-center">
+                                                        <figure>
+                                                            <img src="images/clien-logo7.png" alt="Traviox">
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="sisf-e-inner">
+                                                    <div class="sis-logo-slide-image text-center">
+                                                        <figure>
+                                                            <img src="images/clien-logo8.png" alt="Traviox">
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="sisf-e-inner">
+                                                    <div class="sis-logo-slide-image text-center">
+                                                        <figure>
+                                                            <img src="images/clien-logo9.png" alt="Traviox">
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="sis-logo-slider mb-4" data-aos="fade-up" data-aos-delay="500">
+                                <div class="sisf-comman--swiper-slider ms-auto me-auto">
+                                    <div class="swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="sisf-e-inner">
+                                                    <div class="sis-logo-slide-image text-center">
+                                                        <figure>
+                                                            <img src="images/clien-logo1.png" alt="Traviox">
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="sisf-e-inner">
+                                                    <div class="sis-logo-slide-image text-center">
+                                                        <figure>
+                                                            <img src="images/clien-logo2.png" alt="Traviox">
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="sisf-e-inner">
+                                                    <div class="sis-logo-slide-image text-center">
+                                                        <figure>
+                                                            <img src="images/clien-logo3.png" alt="Traviox">
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="sisf-e-inner">
+                                                    <div class="sis-logo-slide-image text-center">
+                                                        <figure>
+                                                            <img src="images/clien-logo4.png" alt="Traviox">
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="sisf-e-inner">
+                                                    <div class="sis-logo-slide-image text-center">
+                                                        <figure>
+                                                            <img src="images/clien-logo5.png" alt="Traviox">
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="sisf-e-inner">
+                                                    <div class="sis-logo-slide-image text-center">
+                                                        <figure>
+                                                            <img src="images/clien-logo6.png" alt="Traviox">
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="sisf-e-inner">
+                                                    <div class="sis-logo-slide-image text-center">
+                                                        <figure>
+                                                            <img src="images/clien-logo7.png" alt="Traviox">
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="sisf-e-inner">
+                                                    <div class="sis-logo-slide-image text-center">
+                                                        <figure>
+                                                            <img src="images/clien-logo8.png" alt="Traviox">
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="sisf-e-inner">
+                                                    <div class="sis-logo-slide-image text-center">
+                                                        <figure>
+                                                            <img src="images/clien-logo9.png" alt="Traviox">
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="sis-contect-right bg-white p-4 sis-radius" data-aos="fade-up" data-aos-delay="100">
+                        <!-- Setion Title Start -->
+                        <div class="sisf-sis-section-title sis-section-title">
+                            <span class="sisf-m-subtitle sis-text-anime-style-3">Start Your Joruney</span>
+                            <h2 class="sisf-m-title sis-text-anime-style-3"><span class="sisf-e-colored">Let's Plan</span> Your Next Unforgettable Adventure</h2>
+                            <div class="sisf-m-text">
+                                <p>Our travel experts are here to create a personalized journey tailored just for you.</p>
+                            </div>
+                        </div>
+                        <!-- Setion Title End -->
+                        <div class="form-section">
+                            <!-- Form Start -->
+                            <form id="enquiryForm" class="p-0 m-0" action="#" method="POST" data-toggle="validator">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <div class="help-block with-errors"></div>
+                                            <div class="form-col">
+                                                <label class="sis-form-label mb-2">First Name *</label>
+                                                <input type="text" class="form-control sis-comman-bg" id="firstName" name="firstName" placeholder="ex. John" required="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <div class="help-block with-errors"></div>
+                                            <div class="form-col">
+                                                <label class="sis-form-label mb-2">Last Name *</label>
+                                                <input type="text" class="form-control sis-comman-bg" id="lastName" name="lastName" placeholder="ex. Doe" required="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <div class="help-block with-errors"></div>
+                                            <div class="form-col">
+                                                <label class="sis-form-label mb-2">Phone Number *</label>
+                                                <input type="tel" class="form-control sis-comman-bg" id="phone" name="phone" placeholder="ex. +1 (800) 456-7890" required="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <div class="help-block with-errors"></div>
+                                            <div class="form-col">
+                                                <label class="sis-form-label mb-2">Email Address *</label>
+                                                <input type="email" class="form-control sis-comman-bg" id="email" name="email" placeholder="ex. john.doe@example.com" required="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <div class="help-block with-errors"></div>
+                                            <div class="form-col">
+                                                <label class="sis-form-label mb-2">Preferred Destination *</label>
+                                                <input type="email" class="form-control sis-comman-bg" id="destination" name="destination" placeholder="ex. Bali, Indonesia" required="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="sis-form-field form-group w-100 ps-0 border-0">
+                                            <div class="help-block with-errors"></div>
+                                            <label class="sis-form-label mb-2">Travel Date *</label>
+                                            <div class="sis-date-field position-relative">
+                                                <input type="date" class="form-control sis-comman-bg w-100" name="Date" required>
+                                                <i class="fa-regular fa-calendar"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="sis-form-field form-group">
+                                            <label class="sis-form-label mb-2">Number of Travelers *</label>
+                                            <select class="form-select form-control sis-comman-bg" name="Guests" required>
+                                                <option value="">ex. 2 Adults</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                                <option value="">5</option>
+                                                <option value="">6</option>
+                                                <option value="">7</option>
+                                                <option value="">8</option>
+                                                <option value="">9</option>
+                                                <option value="">10</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <div class="help-block with-errors"></div>
+                                            <div class="form-col position-relative">
+                                                <label class="sis-form-label mb-2">Your Message *</label>
+                                                <textarea id="message" class="form-control sis-comman-bg rounded-3" name="message" placeholder="We're planning a 7-day honeymoon and would love a package that includes beachfront accommodation, island tours, and a romantic sunset dinner." rows="2" required=""></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sisf-m-btn pt-3">
+                                    <button type="submit" class="sis-btn-default">Start Planning My Trip<i class="fa-solid fa-arrow-right-long"></i></button>
+                                </div>
+                            </form>
+                            <!-- Form End -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact Us Section End -->
+    <!-- Letest Blog Section Start -->
+    <div class="sis-letest-blog-section section">
+        <div class="container">
+            <div class="row align-items-end">
+                <div class="col-lg-7">
+                    <!-- Section Title Start -->
+                    <div class="sisf-sis-section-title sis-section-title">
+                        <span class="sisf-m-subtitle sis-text-anime-style-3">Latest Blogs</span>
+                        <h2 class="sisf-m-title sis-text-anime-style-3">Discover Inspiration for Your <span class="sisf-e-colored">Next Adventure</span></h2>
+                        <div class="button-group pt-2 d-flex align-items-center flex-wrap gap-4">
+                            <div class="sisf-m-button" data-aos="fade-up" data-aos-delay="100">
+                                <a href="blogs.html" class="sis-btn-default">View All Blogs<i class="fa-solid fa-arrow-right-long"></i></a>
+                            </div>
+                            <div class="sisf-m-button" data-aos="fade-up" data-aos-delay="300">
+                                <a href="about-us.html" class="sis-btn-default btn-light">Discover Our Story<i class="fa-solid fa-arrow-right-long"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Section Title End -->
+                </div>
+                <div class="col-lg-5">
+                    <!-- Section Title Start -->
+                    <div class="sisf-sis-section-title sis-section-title">
+                        <div class="sisf-m-text mb-3 pb-3" data-aos="fade-up" data-aos-delay="100">
+                            <p class="mt-0">Explore expert travel tips, destination guides, hidden gems, and inspiring stories designed to help you plan unforgettable journeys and create meaningful experiences wherever yournext adventure takes you.</p>
+                        </div>
+                        <div class="sis-comman-bottom--line-text sis-e-bottom">
+                            <div class="sisf-sis-e-box d-flex align-items-center flex-wrap gap-2">
+                                <p class="m-0" data-aos="fade-up" data-aos-delay="300">
+                                    <span class="sisf-e-colored">★</span>
+                                    <span class="sisf-e-colored">★</span>
+                                    <span class="sisf-e-colored">★</span>
+                                    <span class="sisf-e-colored">★</span>
+                                    <span class="sisf-e-colored">★</span>
+                                </p>
+                                <p class="m-0" data-aos="fade-up" data-aos-delay="500">Rated <span class="sis-primary-text fw-bold">4.9/5</span> by Happy Travelers Worldwide</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Section Title End -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="sis-letest-blog-item sis-radius bg-white p-3" data-aos="fade-up" data-aos-delay="100">
+                        <div class="sisf-e-inner position-relative">
+                            <div class="sisf-e-media-holder mb-3">
+                                <div class="sisf-e-media">
+                                    <!-- Blog Image Start -->
+                                    <div class="sisf-e-media-image">
+                                        <a href="blog-single.html" class="d-block">
+                                            <figure>
+                                                <img src="images/blog-image1.jpg" class="w-100" alt="Traviox">
+                                            </figure>
+                                        </a>
+                                    </div>
+                                    <!-- Blog Image End -->
+                                    <div class="sisf-blog-category">
+                                        <a href="blogs.html">5 Min Read</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Blog Content Start -->
+                            <div class="sisf-e-content">
+                                <div class="sisf-e-text">
+                                    <div class="sisf-e-title-wraper">
+                                        <h2 class="sisf-e-title sis-comman-text entry-title">
+                                            <a class="sisf-e-title-link blog-title-link" href="blog-single.html">
+                                                10 Essential Travel Tips for a Stress-Free Vacation
+                                            </a>
+                                        </h2>
+                                    </div>
+                                    <div class="sisf-m-text">
+                                        <p class="sisf-e-discription sisf-page-text-line mb-0">Discover practical travel tips that help you save time, pack smarter, avoid common mistakes...</p>
+                                    </div>
+                                    <div class="sisf-m-btn pt-4">
+                                        <a href="blog-single.html" class="sis-btn-default d-inline-block">Read More <i class="fa-solid fa-arrow-right-long"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Blog Content End -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="sis-letest-blog-item sis-radius bg-white p-3" data-aos="fade-up" data-aos-delay="300">
+                        <div class="sisf-e-inner position-relative">
+                            <div class="sisf-e-media-holder mb-3">
+                                <div class="sisf-e-media">
+                                    <!-- Blog Image Start -->
+                                    <div class="sisf-e-media-image">
+                                        <a href="blog-single.html" class="d-block">
+                                            <figure>
+                                                <img src="images/blog-image2.jpg" class="w-100" alt="Traviox">
+                                            </figure>
+                                        </a>
+                                    </div>
+                                    <!-- Blog Image End -->
+                                    <div class="sisf-blog-category">
+                                        <a href="blogs.html">10 Min Read</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Blog Content Start -->
+                            <div class="sisf-e-content">
+                                <div class="sisf-e-text">
+                                    <div class="sisf-e-title-wraper">
+                                        <h2 class="sisf-e-title sis-comman-text entry-title">
+                                            <a class="sisf-e-title-link blog-title-link" href="blog-single.html">
+                                                Hidden Gems You Must Visit in Southeast Asia
+                                            </a>
+                                        </h2>
+                                    </div>
+                                    <div class="sisf-m-text">
+                                        <p class="sisf-e-discription sisf-page-text-line mb-0">Explore breathtaking beaches, charming villages, and lesser-known destinations perfect for travelers...</p>
+                                    </div>
+                                    <div class="sisf-m-btn pt-4">
+                                        <a href="blog-single.html" class="sis-btn-default d-inline-block">Read More <i class="fa-solid fa-arrow-right-long"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Blog Content End -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="sis-letest-blog-item sis-radius bg-white p-3 mb-0" data-aos="fade-up" data-aos-delay="500">
+                        <div class="sisf-e-inner position-relative">
+                            <div class="sisf-e-media-holder mb-3">
+                                <div class="sisf-e-media">
+                                    <!-- Blog Image Start -->
+                                    <div class="sisf-e-media-image">
+                                        <a href="blog-single.html" class="d-block">
+                                            <figure>
+                                                <img src="images/blog-image3.jpg" class="w-100" alt="Traviox">
+                                            </figure>
+                                        </a>
+                                    </div>
+                                    <!-- Blog Image End -->
+                                    <div class="sisf-blog-category">
+                                        <a href="blogs.html">8 Min Read</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Blog Content Start -->
+                            <div class="sisf-e-content">
+                                <div class="sisf-e-text">
+                                    <div class="sisf-e-title-wraper">
+                                        <h2 class="sisf-e-title sis-comman-text entry-title">
+                                            <a class="sisf-e-title-link blog-title-link" href="blog-single.html">
+                                                Top Adventure Activities Every Thrill-Seeker Should Try
+                                            </a>
+                                        </h2>
+                                    </div>
+                                    <div class="sisf-m-text">
+                                        <p class="sisf-e-discription sisf-page-text-line mb-0">From mountain hiking to scuba diving and skydiving, discover unforgettable adventures...</p>
+                                    </div>
+                                    <div class="sisf-m-btn pt-4">
+                                        <a href="blog-single.html" class="sis-btn-default d-inline-block">Read More <i class="fa-solid fa-arrow-right-long"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Blog Content End -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Letest Blog Section End -->
+    <!-- Explore More Section Start -->
+    <div class="sis-explore-more-section">
+        <div class="container">
+            <div class="sisf-partners-content-part sis-primary-background sis-radius position-relative">
+                <div class="sisf-sis-top-right-image">
+                    <figure>
+                        <img src="images/explore-bg.png" alt="Traviox">
+                    </figure>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-lg-7">
+                        <!-- Section Title Start -->
+                        <div class="sisf-sis-section-title mb-0 ps-5 sis-section-title">
+                            <span class="sisf-m-subtitle text-white sis-text-anime-style-3">Explore More. Worry Less.</span>
+                            <h2 class="sisf-m-title text-white sis-text-anime-style-3">Book dream vacations with special limited-time offers.</h2>
+                            <div class="sisf-m-button pt-3" data-aos="fade-up" data-aos-delay="100">
+                                <a href="about-us.html" class="sis-btn-default btn-light">Limited Time Offer<i class="fa-solid fa-arrow-right-long"></i></a>
+                            </div>
+                        </div>
+                        <!-- Section Title End -->
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="sisf-explore-right-image" data-aos="zoom-in" data-aos-delay="400">
+                            <figure>
+                                <img src="images/explore-img-right.png" alt="Traviox">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Explore More Section End -->
+    <!-- Footer Start -->
+    <footer class="main-footer">
+        <div class="sisf-page-footer-inner-area sisf-page-background sis-br-radius mb-3">
+            <div class="sisf-page-footer-middle-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-6 col-md-6">
+                            <div class="footer-logo mb-4 pb-4" data-aos="fade-right" data-aos-delay="100">
+                                <a href="index-2.html">
+                                    <img src="images/logo.svg" alt="Traviox">
+                                </a>
+                            </div>
+                            <div class="sisf-e-text-bottom">
+                                <div class="sisf-m-text" data-aos="fade-up" data-aos-delay="300">
+                                    <p class="text-white">From breathtaking international destinations to personalized vacation packages, we make every journey seamless, memorable.</p>
+                                </div>
+                            </div>
+                            <div class="subscribe-newsletter-form" data-aos="fade-up" data-aos-delay="900">
+                                <form id="newslettersForm">
+                                    <div class="form-group position-relative d-flex align-items-center">
+                                        <input type="email" name="email" class="form-control p-0 border-0 mb-0" id="mail" placeholder="Enter your email address" required="">
+                                        <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-6 col-md-6">
+                            <!-- Links Start -->
+                            <div class="footer-links page" data-aos="fade-up" data-aos-delay="100">
+                                <h3>Quick Links</h3>
+                                <ul>
+                                    <li><a href="index-2.html">Home</a></li>
+                                    <li><a href="about-us.html">About Us</a></li>
+                                    <li><a href="service.html">Our Services</a></li>
+                                    <li><a href="destinations.html">Destinations</a></li>
+                                    <li><a href="blogs.html">Latest Blogs</a></li>
+                                    <li class="mb-0"><a href="contact.html">Contact Us</a></li>
+                                </ul>
+                            </div>
+                            <!-- Links End -->
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-6">
+                            <!-- Links Start -->
+                            <div class="footer-links page" data-aos="fade-up" data-aos-delay="300">
+                                <h3>Popular Destinations</h3>
+                                <ul>
+                                    <li><a href="destination-single.html">Bali, Indonesia</a></li>
+                                    <li><a href="destination-single.html">Santorini, Greece</a></li>
+                                    <li><a href="destination-single.html">Swiss Alps</a></li>
+                                    <li><a href="destination-single.html">Dubai, UAE</a></li>
+                                    <li><a href="destination-single.html">Maldives</a></li>
+                                    <li class="mb-0"><a href="destination-single.html">Kyoto, Japan</a></li>
+                                </ul>
+                            </div>
+                            <!-- Links End -->
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-6">
+                            <!-- Links Start -->
+                            <div class="footer-links page mb-0" data-aos="fade-up" data-aos-delay="300">
+                                <h3>Working Hours</h3>
+                                <ul>
+                                    <li><a href="#">Monday - Friday : 09 AM - 08 PM</a></li>
+                                    <li><a href="#">Saturday : 10 AM - 05 PM</a></li>
+                                    <li class="mb-0"><a href="#">Sunday : Closed</a></li>
+                                </ul>
+                            </div>
+                            <!-- Links End -->
+                        </div>
+                        <div class="col-12">
+                            <div class="sisf-page-footer-middle-area-bottom">
+                                <div class="row align-items-center">
+                                    <div class="col-xl-6 col-lg-4">
+                                        <!-- Links Start -->
+                                        <div class="footer--links page d-flex align-items-center flex-wrap gap-3" data-aos="fade-right" data-aos-delay="100">
+                                            <div class="sisf-e-social-title">
+                                                <h3 class="text-white">Follow Us On Socials:</h3>
+                                            </div>
+                                            <div class="footer-social-icons-link page">
+                                                <ul class="list-unstyled d-flex align-items-center gap-3 p-0 m-0">
+                                                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                                                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                                    <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                                    <li class="mb-0"><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- Links End -->
+                                    </div>
+                                    <div class="col-xl-6 col-lg-8">
+                                        <div class="sisf-sis-contact-footer-information" data-aos="fade-left" data-aos-delay="100">
+                                            <div class="sisf-sis-contact-information d-flex align-items-center justify-content-end gap-4">
+                                                <div class="sisf-contact-box d-flex align-items-center gap-3">
+                                                    <div class="sisf-icon">
+                                                        <a href="tel:+18004567890"><i class="fa-solid fa-phone-volume"></i></a>
+                                                    </div>
+                                                    <div class="sisf-sis-e-content">
+                                                        <span class="sis-title text-white d-block">Call us on</span>
+                                                        <a href="tel:+18004567890" class="sis-title text-white d-block">+1 (800) 456-7890</a>
+                                                    </div>
+                                                </div>
+                                                <div class="sisf-contact-box d-flex align-items-center ps-4 gap-3">
+                                                    <div class="sisf-icon">
+                                                        <a href="mailto:info@traviox.com"><i class="fa-regular fa-envelope"></i></a>
+                                                    </div>
+                                                    <div class="sisf-sis-e-content">
+                                                        <span class="sis-title text-white d-block">Reach out</span>
+                                                        <a href="mailto:info@traviox.com" class="sis-title text-white d-block">info@traviox.com</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sisf-page-footer-bottom-area">
+                <div class="container">
+                    <!-- Footer Copyright Section Start -->
+                    <div class="footer-copyright">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <!-- Footer Copyright Start -->
+                                <div class="footer-copyright-text">
+                                    <p class="mb-0 text-white">&copy; 2026 Traviox Travel & Tour Booking. All Rights Reserved.</p>
+                                </div>
+                                <!-- Footer Copyright End -->
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="footer-privacy-policy">
+                                    <ul class="list-unstyled d-flex align-items-center justify-content-end gap-4 p-0 m-0">
+                                        <li><a href="#" class="text-white">Privacy & Policy</a></li>
+                                        <li><a href="#" class="text-white">Term's & Condition</a></li>
+                                        <li><a href="#" class="text-white">Cookie Policy</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Footer Copyright Section End -->
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+    <!-- Cursor Start -->
+    <div class="sisf-cursor sisf-js-cursor">
+        <div class="sisf-cursor-wrapper">
+            <div class="sisf-cursor--follower sisf-js-follower"></div>
+            <div class="sisf-cursor--label sisf-js-label"></div>
+            <div class="sisf-cursor--drap sisf-js-drap"></div>
+            <div class="sisf-cursor--icon sisf-js-icon"></div>
+        </div>
+    </div>
+    <!-- Cursor End -->
+    <!-- Back to Top Button Start -->
+    <div class="sis-back-to-top-button">
+        <button class="sis-back-to-top" id="backToTop">
+            <span class="mt-1"><i class="fa fa-chevron-up"></i></span>
+        </button>
+    </div>
+    <!-- Back to Top Button End -->
+    <!-- Jquery Library File -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap js File -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Validator js file -->
+    <script src="js/validator.min.js"></script>
+    <!-- SlickNav js File -->
+    <script src="js/jquery.slicknav.js"></script>
+    <!-- Swiper js File -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- Animation On Scroll Js File -->
+    <script src="js/aos.js"></script>
+    <!-- Counter js File -->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <!-- Magnific js File -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- Gsap Js File -->
+    <script src="js/gsap.min.js"></script>
+    <!-- Cursor Js File -->
+    <script src="js/magiccursor.js"></script>
+    <script src="js/cursor/cursor.js"></script>
+    <!-- Text Effect js file -->
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="js/SplitText.js"></script>
+    <!-- Main Custom js file -->
+    <script src="js/script.js"></script>
+</body>
+
+<!-- Mirrored from https://traviox-html.wpthemeverse.com/home-slider.html by HTTrack Website Copier/3.x [XR&CO], Sat, 12 Sep 2026 09:58:50 GMT -->
+</html>
