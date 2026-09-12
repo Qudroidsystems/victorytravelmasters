@@ -46,11 +46,11 @@ class DatabaseSeeder extends Seeder
         $this->command->info('');
 
         // ============================================================
-        // PART 1: CORE PERMISSIONS & FOUNDATION
+        // CORE PERMISSIONS & FOUNDATION
         // ============================================================
 
         $this->printSection(
-            '🔐 PART 1: CORE PERMISSIONS & FOUNDATION'
+            '🔐 CORE PERMISSIONS & FOUNDATION'
         );
 
         $result = $this->safeCall(
@@ -77,450 +77,7 @@ class DatabaseSeeder extends Seeder
             $skippedCount
         );
 
-        $result = $this->safeCall(
-            TermTableSeeder::class,
-            'TermTableSeeder',
-            '📅 Seeding term data...'
-        );
-        $this->updateStats(
-            $result,
-            $seededCount,
-            $failedCount,
-            $skippedCount
-        );
-
         $this->command->info('');
-
-        // ============================================================
-        // PART 2: ACADEMIC PERMISSIONS
-        // ============================================================
-
-        $this->printSection(
-            '🎓 PART 2: ACADEMIC PERMISSIONS'
-        );
-
-        $academicSeeders = [
-            'ViewClassPermissionTableSeeder' =>
-                '📖 Seeding class view permissions...',
-
-            'CompulsorySubjectsPermissionTableSeeder' =>
-                '📚 Seeding compulsory subjects permissions...',
-
-            'MockSubjectVettingsPermissionTableSeeder' =>
-                '✏️ Seeding mock subject vettings permissions...',
-
-            'MyClassMySubjectPermissionTableSeeder' =>
-                '🏫 Seeding my class/subject permissions...',
-
-            'MyMockSubjectVettingsPermissionTableSeeder' =>
-                '📝 Seeding my mock subject vettings...',
-
-            'MySubjectVettingsPermissionTableSeeder' =>
-                '📋 Seeding my subject vettings...',
-
-            'PrincipalscommentPermissionTableSeeder' =>
-                '👔 Seeding principal comments permissions...',
-
-            'SchoolInformationPermissionTableSeeder' =>
-                '🏢 Seeding school information permissions...',
-
-            'StudentMockReportPermissionTableSeeder' =>
-                '📊 Seeding student mock report permissions...',
-
-            'StudentPermissionTableSeeder' =>
-                '👨‍🎓 Seeding student permissions...',
-
-            'StudentReportPermissionTableSeeder' =>
-                '📈 Seeding student report permissions...',
-
-            'StudentStatusTableSeeder' =>
-                '🏷️ Seeding student status data...',
-
-            'SubjectClassResultRoomOperationPermissionTableSeeder' =>
-                '🔬 Seeding subject class result permissions...',
-
-            'SubjectUploadForStaffPermissionTableSeeder' =>
-                '💾 Seeding subject upload permissions...',
-
-            'SubjectVettedPermissionTableSeeder' =>
-                '✅ Seeding subject vetted permissions...',
-
-            'SubjectVettingsPermissionTableSeeder' =>
-                '🔍 Seeding subject vettings...',
-
-            'StudentAssessmentPermissionTableSeeder' =>
-                '📝 Seeding student assessment permissions...',
-
-            'IdCardPermissionSeeder' =>
-                '🪪 Seeding student ID Card permissions...',
-
-            'AdminScoreEntryPermissionSeeder' =>
-                '📝 Seeding Admin score entry...',
-        ];
-
-        $this->runSeederList(
-            $academicSeeders,
-            $seededCount,
-            $failedCount,
-            $skippedCount
-        );
-
-        // ============================================================
-        // PART 3: EXAM & ASSESSMENT PERMISSIONS
-        // ============================================================
-
-        $this->printSection(
-            '📝 PART 3: EXAM & ASSESSMENT PERMISSIONS'
-        );
-
-        $examSeeders = [
-            'ExamPermissionTableSeeder' =>
-                '📋 Seeding exam permissions...',
-
-            'QuestionPermissionTableSeeder' =>
-                '❓ Seeding question permissions...',
-
-            'CBTExamPermissionTableSeeder' =>
-                '💻 Seeding CBT exam permissions...',
-        ];
-
-        $this->runSeederList(
-            $examSeeders,
-            $seededCount,
-            $failedCount,
-            $skippedCount
-        );
-
-        // ============================================================
-        // PART 4: PARENT PORTAL PERMISSIONS
-        // ============================================================
-
-        $this->printSection(
-            '👨‍👩‍👧‍👦 PART 4: PARENT PORTAL PERMISSIONS'
-        );
-
-        $result = $this->safeCall(
-            ParentPermissionTableSeeder::class,
-            'ParentPermissionTableSeeder',
-            '👪 Seeding parent portal permissions...'
-        );
-
-        $this->updateStats(
-            $result,
-            $seededCount,
-            $failedCount,
-            $skippedCount
-        );
-
-        // ============================================================
-        // PART 5: TIMETABLE & SCHEDULING PERMISSIONS
-        // ============================================================
-
-        $this->printSection(
-            '🕐 PART 5: TIMETABLE & SCHEDULING PERMISSIONS'
-        );
-
-        $timetableSeeders = [
-            'TimetablePermissionTableSeeder' =>
-                '📅 Seeding timetable permissions...',
-
-            'RoomPermissionTableSeeder' =>
-                '🚪 Seeding room permissions...',
-
-            'HolidayPermissionTableSeeder' =>
-                '🎉 Seeding holiday permissions...',
-
-            'ExamTimetablePermissionTableSeeder' =>
-                '📋 Seeding exam timetable permissions...',
-
-            'TimetableReportsPermissionTableSeeder' =>
-                '📊 Seeding timetable reports permissions...',
-        ];
-
-        $this->runSeederList(
-            $timetableSeeders,
-            $seededCount,
-            $failedCount,
-            $skippedCount
-        );
-
-        // ============================================================
-        // PART 6: PROMOTION & SCHOOL BILL PERMISSIONS
-        // ============================================================
-
-        $this->printSection(
-            '🎯 PART 6: PROMOTION & SCHOOL BILL PERMISSIONS'
-        );
-
-        $result = $this->safeCall(
-            PromotionPermissionTableSeeder::class,
-            'PromotionPermissionTableSeeder',
-            '🚀 Seeding promotion permissions...'
-        );
-
-        $this->updateStats(
-            $result,
-            $seededCount,
-            $failedCount,
-            $skippedCount
-        );
-
-        $result = $this->safeCall(
-            SchoolBillTermSessionPermissionTableSeeder::class,
-            'SchoolBillTermSessionPermissionTableSeeder',
-            '💰 Seeding school bill term session permissions...'
-        );
-
-        $this->updateStats(
-            $result,
-            $seededCount,
-            $failedCount,
-            $skippedCount
-        );
-
-        // ============================================================
-        // PART 7: FINANCE PERMISSIONS
-        // ============================================================
-
-        $this->printSection(
-            '💰 PART 7: FINANCE PERMISSIONS'
-        );
-
-        $financePermissionSeeders = [
-            'ScholarshipPermissionSeeder' =>
-                '🎓 Seeding scholarship permissions...',
-
-            'FinancePermissionSeeder' =>
-                '💵 Seeding finance permissions...',
-
-            'SiblingGroupPermissionSeeder' =>
-                '👨‍👩‍👧 Seeding sibling group permissions...',
-
-            'StudentPaymentPermissionTableSeeder' =>
-                '💳 Seeding student payment permissions...',
-
-            'FinancialReportPermissionSeeder' =>
-                '📊 Seeding financial report permissions...',
-
-            'PayrollPermissionSeeder' =>
-                '💰 Seeding payroll permissions...',
-
-            'StaffPaymentPermissionSeeder' =>
-                '👨‍🏫 Seeding staff payment permissions...',
-
-            'SchoolPaymentPermissionTableSeeder' =>
-                '🏫 Seeding school payment permissions...',
-
-            'AllFinancePermissionsSeeder' =>
-                '💰 Seeding all finance permissions...',
-
-            'StaffAttendancePermissionTableSeeder' =>
-                '📋 Seeding staff attendance permissions...',
-        ];
-
-        $this->runSeederList(
-            $financePermissionSeeders,
-            $seededCount,
-            $failedCount,
-            $skippedCount
-        );
-
-        // ============================================================
-        // PART 8: ANALYSIS & TRANSCRIPT PERMISSIONS
-        // ============================================================
-
-        $this->printSection(
-            '📊 PART 8: ANALYSIS & TRANSCRIPT PERMISSIONS'
-        );
-
-        $analysisSeeders = [
-            'AnalysisPermissionTableSeeder' =>
-                '📊 Seeding analysis permissions...',
-
-            'TranscriptPermissionTableSeeder' =>
-                '📄 Seeding transcript permissions...',
-
-            'MyPrincipalsCommentPermissionTableSeeder' =>
-                '👔 Seeding my principals comment permissions...',
-
-            'AdminStudentResultManagerPermissionSeeder' =>
-                '📝 Seeding admin student result manager...',
-        ];
-
-        $this->runSeederList(
-            $analysisSeeders,
-            $seededCount,
-            $failedCount,
-            $skippedCount
-        );
-
-        // ============================================================
-        // PART 9: UPDATED PERMISSION SEEDERS
-        // ============================================================
-
-        $this->printSection(
-            '🔄 PART 9: UPDATED PERMISSION SEEDERS'
-        );
-
-        $updatedSeeders = [
-            'UpdatedAttendancePermissionTableSeeder' =>
-                '📋 Seeding updated attendance permissions...',
-
-            'UpdatedFinancialReportPermissionTableSeeder' =>
-                '📊 Seeding updated financial report permissions...',
-
-            'UpdatedScholarshipPermissionTableSeeder' =>
-                '🎓 Seeding updated scholarship permissions...',
-
-            'UpdatedAdminScoreEntryPermissionTableSeeder' =>
-                '📝 Seeding updated admin score entry permissions...',
-
-            'UpdatedPromotionPermissionTableSeeder' =>
-                '🚀 Seeding updated promotion permissions...',
-
-            'UpdatedTranscriptPermissionTableSeeder' =>
-                '📄 Seeding updated transcript permissions...',
-
-            'UpdatedFinancePermissionTableSeeder' =>
-                '💰 Seeding updated finance permissions...',
-
-            'UpdatedTimetablePermissionTableSeeder' =>
-                '📅 Seeding updated timetable permissions...',
-
-            'UpdatedTimetableReportsPermissionTableSeeder' =>
-                '📊 Seeding updated timetable reports permissions...',
-        ];
-
-        $this->runSeederList(
-            $updatedSeeders,
-            $seededCount,
-            $failedCount,
-            $skippedCount
-        );
-
-        // ============================================================
-        // PART 10: ATTENDANCE PERMISSIONS
-        // ============================================================
-
-        $this->printSection(
-            '📋 PART 10: ATTENDANCE PERMISSIONS'
-        );
-
-        $result = $this->safeCall(
-            AttendancePermissionTableSeeder::class,
-            'AttendancePermissionTableSeeder',
-            '📋 Seeding attendance permissions...'
-        );
-
-        $this->updateStats(
-            $result,
-            $seededCount,
-            $failedCount,
-            $skippedCount
-        );
-
-        // ============================================================
-        // PART 11: FINANCE LOOKUP & REFERENCE DATA
-        // ============================================================
-
-        $this->printSection(
-            '📚 PART 11: FINANCE LOOKUP & REFERENCE DATA'
-        );
-
-        $financeLookupSeeders = [
-            'ScholarshipTypeSeeder' =>
-                '🎓 Seeding scholarship types...',
-
-            'DiscountTypeSeeder' =>
-                '🏷️ Seeding discount types...',
-
-            'ChartOfAccountsSeeder' =>
-                '📊 Seeding chart of accounts...',
-
-            'ExpenseCategorySeeder' =>
-                '💸 Seeding expense categories...',
-
-            'PaymentMethodSeeder' =>
-                '💳 Seeding payment methods...',
-
-            'BillCategorySeeder' =>
-                '📋 Seeding bill categories...',
-        ];
-
-        $this->runSeederList(
-            $financeLookupSeeders,
-            $seededCount,
-            $failedCount,
-            $skippedCount
-        );
-
-        // ============================================================
-        // PART 12: PAYMENT GATEWAYS
-        // ============================================================
-
-        $this->printSection(
-            '🌐 PART 12: PAYMENT GATEWAYS'
-        );
-
-        $result = $this->safeCall(
-            DefaultPaymentGatewaysSeeder::class,
-            'DefaultPaymentGatewaysSeeder',
-            '🌐 Seeding default payment gateways...'
-        );
-
-        $this->updateStats(
-            $result,
-            $seededCount,
-            $failedCount,
-            $skippedCount
-        );
-
-        // ============================================================
-        // PART 13: DEMO / TEST DATA
-        // ============================================================
-
-        if (app()->environment('local', 'development')) {
-
-            $this->printSection(
-                '🧪 PART 13: DEMO & TEST DATA (Development Environment)'
-            );
-
-            $this->command->warn(
-                '⚠️  Running in DEVELOPMENT mode - seeding demo data...'
-            );
-
-            $this->command->info('');
-
-            $demoSeeders = [
-                // Uncomment when created
-                // 'DemoScholarshipSeeder' => '🎓 Seeding demo scholarships...',
-                // 'DemoDiscountSeeder' => '🏷️ Seeding demo discounts...',
-                // 'DemoStudentPaymentsSeeder' => '💰 Seeding demo payments...',
-                // 'DemoUsersSeeder' => '👥 Seeding demo users...',
-                // 'DemoStudentsSeeder' => '👨‍🎓 Seeding demo students...',
-            ];
-
-            $this->runSeederList(
-                $demoSeeders,
-                $seededCount,
-                $failedCount,
-                $skippedCount
-            );
-
-        } else {
-
-            $this->printSection(
-                '🚀 PART 13: PRODUCTION ENVIRONMENT'
-            );
-
-            $this->command->info(
-                'Skipping demo data - only seeding essential data'
-            );
-
-            $skippedCount += count(
-                $this->getDemoSeeders()
-            );
-        }
 
         // ============================================================
         // DATABASE STATISTICS
@@ -673,36 +230,6 @@ class DatabaseSeeder extends Seeder
     }
 
     // ================================================================
-    // HELPER: RUN A LIST OF SEEDERS
-    // ================================================================
-
-    protected function runSeederList(
-        array $seeders,
-        int &$seededCount,
-        int &$failedCount,
-        int &$skippedCount
-    ): void {
-
-        foreach ($seeders as $seeder => $message) {
-
-            $result = $this->safeCall(
-                $seeder,
-                $seeder,
-                $message
-            );
-
-            $this->updateStats(
-                $result,
-                $seededCount,
-                $failedCount,
-                $skippedCount
-            );
-        }
-
-        $this->command->info('');
-    }
-
-    // ================================================================
     // LOAD PREVIOUSLY RUN SEEDERS
     // ================================================================
 
@@ -807,11 +334,11 @@ class DatabaseSeeder extends Seeder
         /*
          * Convert:
          *
-         * ViewClassPermissionTableSeeder
+         * PermissionTableSeeder
          *
          * to:
          *
-         * Database\Seeders\ViewClassPermissionTableSeeder
+         * Database\Seeders\PermissionTableSeeder
          */
         return __NAMESPACE__ . '\\' . $seeder;
     }
@@ -844,7 +371,7 @@ class DatabaseSeeder extends Seeder
          *
          * Old logs may contain:
          *
-         * ViewClassPermissionTableSeeder
+         * PermissionTableSeeder
          */
         $shortName = class_basename(
             $seederClass
@@ -1030,15 +557,13 @@ class DatabaseSeeder extends Seeder
         }
 
         /*
-         * IMPORTANT FIX:
-         *
          * Resolve:
          *
-         * ViewClassPermissionTableSeeder
+         * PermissionTableSeeder
          *
          * into:
          *
-         * Database\Seeders\ViewClassPermissionTableSeeder
+         * Database\Seeders\PermissionTableSeeder
          */
         $seederClass = $this->resolveSeederClass(
             $seeder
@@ -1223,51 +748,6 @@ class DatabaseSeeder extends Seeder
             'users' =>
                 '👤 Users',
 
-            'studentRegistration' =>
-                '👨‍🎓 Students',
-
-            'staff_records' =>
-                '👨‍🏫 Staff',
-
-            'school_bill' =>
-                '💰 School Bills',
-
-            'scholarships' =>
-                '🎓 Scholarships',
-
-            'scholarship_assignments' =>
-                '📋 Scholarship Assignments',
-
-            'discounts' =>
-                '🏷️ Discounts',
-
-            'discount_assignments' =>
-                '📋 Discount Assignments',
-
-            'payment_batches' =>
-                '💵 Payment Batches',
-
-            'student_bill_payment' =>
-                '💳 Student Payments',
-
-            'chart_of_accounts' =>
-                '📊 Chart of Accounts',
-
-            'expense_categories' =>
-                '💸 Expense Categories',
-
-            'payment_gateways' =>
-                '🌐 Payment Gateways',
-
-            'schoolterm' =>
-                '📅 Terms',
-
-            'schoolsession' =>
-                '📅 Sessions',
-
-            'schoolclass' =>
-                '🏫 Classes',
-
             'permissions' =>
                 '🔐 Permissions',
 
@@ -1316,20 +796,5 @@ class DatabaseSeeder extends Seeder
                 '  ℹ️  No data found in tables yet.'
             );
         }
-    }
-
-    // ================================================================
-    // DEMO SEEDERS
-    // ================================================================
-
-    protected function getDemoSeeders(): array
-    {
-        return [
-            'DemoScholarshipSeeder',
-            'DemoDiscountSeeder',
-            'DemoStudentPaymentsSeeder',
-            'DemoUsersSeeder',
-            'DemoStudentsSeeder',
-        ];
     }
 }
