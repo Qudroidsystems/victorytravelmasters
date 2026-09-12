@@ -40,7 +40,7 @@
 </head>
 <body>
     <!-- Preloader Start -->
-    <div class="sis-preloader">
+    {{-- <div class="sis-preloader">
         <div class="sis-loading-container rounded-0">
             <div class="sis-loading"></div>
             <div class="sis-loading-icon">
@@ -49,7 +49,7 @@
                 </figure>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- Preloader End -->
     <!-- Header New Start -->
     <header id="sisf-page-header" class="sisf-main-header sis-br-radius mt-3 sisf-standerd-header">
