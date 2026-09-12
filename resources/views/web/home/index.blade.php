@@ -1,5 +1,5 @@
 
-    <!-- Header New End -->
+@section('content')
     <!-- Hero Section Start -->
     <div class="sis-hero hero-slider sis-br-radius mt-3 sis-home-image">
         <div class="hero-slider-layout hero-slider--layout position-relative">
@@ -8,7 +8,7 @@
                     <div class="swiper-slide">
                         <div class="hero-slide align-items-center pb-0">
                             <div class="hero-slider-image">
-                                <img src="{{ asset('website/images/slide-bg1.jpg'))}}" alt="Traviox">
+                                <img src="{{ asset('website/images/slide-bg1.jpg')}}" alt="Traviox">
                             </div>
                             <!-- Content Start -->
                             <div class="container">
@@ -2169,3 +2169,4 @@
         </div>
     </div>
     <!-- Explore More Section End -->
+    @endsection
