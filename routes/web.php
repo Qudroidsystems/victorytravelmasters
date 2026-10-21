@@ -104,6 +104,28 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
+/*
+|--------------------------------------------------------------------------
+| Public website pages (content lives in config/site.php)
+|--------------------------------------------------------------------------
+*/
+Route::controller(\App\Http\Controllers\WebsiteController::class)->group(function () {
+    Route::get('/about-us', 'about')->name('web.about');
+    Route::get('/services', 'services')->name('web.services');
+    Route::get('/services/{slug}', 'service')->name('web.service');
+    Route::get('/destinations', 'destinations')->name('web.destinations');
+    Route::get('/destinations/{slug}', 'destination')->name('web.destination');
+    Route::get('/tours', 'tours')->name('web.tours');
+    Route::get('/tours/{slug}', 'tour')->name('web.tour');
+    Route::get('/faq', 'faq')->name('web.faq');
+    Route::get('/gallery', 'gallery')->name('web.gallery');
+    Route::get('/testimonials', 'testimonials')->name('web.testimonials');
+    Route::get('/blog', 'blog')->name('web.blog');
+    Route::get('/blog/{slug}', 'post')->name('web.post');
+    Route::get('/contact-us', 'contact')->name('web.contact');
+    Route::post('/contact-us', 'sendContact')->middleware('throttle:5,1')->name('web.contact.send');
+});
+
 
 
 /*

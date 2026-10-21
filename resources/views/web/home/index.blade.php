@@ -1,14 +1,32 @@
 @extends('layouts.website.master')
+@section('title', 'Visas, Flights, Study Abroad & Holidays')
 @section('content')
+    @php
+        $heroSlides = [
+            ['image' => 'website/images/slide-bg1.jpg', 'subtitle' => 'Visas · Flights · Study Abroad · Holidays',
+             'title' => 'Your Journey Abroad Starts With the Right Guide',
+             'text' => 'Honest advice, careful visa preparation and reliable bookings — so you can travel, study or holiday abroad with confidence.',
+             'button' => 'Explore Our Services', 'url' => route('web.services')],
+            ['image' => 'website/images/slide-bg2.jpg', 'subtitle' => 'Study Abroad Made Clear',
+             'title' => 'From Admission Letter to Your First Day on Campus',
+             'text' => 'We help students choose the right school, prepare strong applications and secure their student visas on time.',
+             'button' => 'Study Abroad Support', 'url' => route('web.service', 'study-abroad')],
+            ['image' => 'website/images/slide-bg3.jpg', 'subtitle' => 'Holidays You Will Remember',
+             'title' => 'Dubai, Paris, the Maldives — Planned From Start to Finish',
+             'text' => 'Flights, hotels, visas and tours in one well-organised package, with a real team to call whenever you need us.',
+             'button' => 'View Tour Packages', 'url' => route('web.tours')],
+        ];
+    @endphp
     <!-- Hero Section Start -->
     <div class="sis-hero hero-slider sis-br-radius mt-3 sis-home-image">
         <div class="hero-slider-layout hero-slider--layout position-relative">
             <div class="swiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
+                                    @foreach ($heroSlides as $slide)
+                                    <div class="swiper-slide">
                         <div class="hero-slide align-items-center pb-0">
                             <div class="hero-slider-image">
-                                <img src="{{ asset('website/images/slide-bg1.jpg')}}" alt="Traviox">
+                                <img src="{{ asset($slide['image'])}}" alt="{{ $slide['title'] }}">
                             </div>
                             <!-- Content Start -->
                             <div class="container">
@@ -18,17 +36,17 @@
                                         <div class="hero-content text-start pb-0">
                                             <!-- Hero Title Start -->
                                             <div class="sis-section-title mb-0">
-                                                <span class="sisf-subtitle text-white sis-text-anime-style-2">Trusted by 25,000+ Happy Travelers Worldwide</span>
-                                                <h1 class="sis-text-anime-style-2 text-start">Discover Your Next Great Adventure Around the World</h1>
+                                                <span class="sisf-subtitle text-white sis-text-anime-style-2">{{ $slide['subtitle'] }}</span>
+                                                <h1 class="sis-text-anime-style-2 text-start">{{ $slide['title'] }}</h1>
                                                 <div class="sisf-m-text" data-aos="fade-up" data-aos-delay="300">
-                                                    <p class="text-white text-start">From breathtaking landscapes and vibrant cities to unforgettable cultural experiences, we create personalized journeys that turn every trip into a lifetime memory.</p>
+                                                    <p class="text-white text-start">{{ $slide['text'] }}</p>
                                                 </div>
                                                 <div class="button-group d-flex align-items-center flex-wrap gap-3">
                                                     <div class="sisf-m-button aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
-                                                        <a href="tours.html" class="sis-btn-default">Explore Tours<i class="fa-solid fa-arrow-right-long"></i></a>
+                                                        <a href="{{ $slide['url'] }}" class="sis-btn-default">{{ $slide['button'] }}<i class="fa-solid fa-arrow-right-long"></i></a>
                                                     </div>
                                                     <div class="sisf-m-button aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
-                                                        <a href="../traviox.wpthemeverse.com/wp-content/uploads/2026/07/video-hero.mp4" class="sis-btn-default gap-1 popup-video btn-light">Watch Video<span class="fa-solid fa-play-circle"></span></a>
+                                                        <a href="{{ route('web.contact') }}" class="sis-btn-default btn-light">Talk to Us<i class="fa-solid fa-arrow-right-long"></i></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -42,256 +60,16 @@
                             <!-- Content End -->
                         </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="hero-slide align-items-center pb-0">
-                            <div class="hero-slider-image">
-                                <img src="{{ asset('website/images/slide-bg2.jpg')}}" alt="Traviox">
-                            </div>
-                            <!-- Content Start -->
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-xl-9 col-lg-6">
-                                        <!-- Hero Content Start -->
-                                        <div class="hero-content text-start pb-0">
-                                            <!-- Hero Title Start -->
-                                            <div class="sis-section-title mb-0">
-                                                <span class="sisf-subtitle text-white sis-text-anime-style-2">Trusted by 25,000+ Happy Travelers Worldwide</span>
-                                                <h1 class="sis-text-anime-style-2 text-start">Discover Your Next Great Adventure Around the World</h1>
-                                                <div class="sisf-m-text" data-aos="fade-up" data-aos-delay="300">
-                                                    <p class="text-white text-start">From breathtaking landscapes and vibrant cities to unforgettable cultural experiences, we create personalized journeys that turn every trip into a lifetime memory.</p>
-                                                </div>
-                                                <div class="button-group d-flex align-items-center flex-wrap gap-3">
-                                                    <div class="sisf-m-button aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
-                                                        <a href="tours.html" class="sis-btn-default">Explore Tours<i class="fa-solid fa-arrow-right-long"></i></a>
-                                                    </div>
-                                                    <div class="sisf-m-button aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
-                                                        <a href="../traviox.wpthemeverse.com/wp-content/uploads/2026/07/video-hero.mp4" class="sis-btn-default gap-1 popup-video btn-light">Watch Video<span class="fa-solid fa-play-circle"></span></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- Hero Title End -->
-                                        </div>
-                                        <!-- Hero Content End -->
-                                    </div>
-                                    <div class="col-xl-3 col-lg-6"></div>
+                                    @endforeach
                                 </div>
-                            </div>
-                            <!-- Content End -->
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="hero-slide align-items-center pb-0">
-                            <div class="hero-slider-image">
-                                <img src="{{ asset('website/images/slide-bg3.jpg')}}" alt="Traviox">
-                            </div>
-                            <!-- Content Start -->
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-xl-9 col-lg-6">
-                                        <!-- Hero Content Start -->
-                                        <div class="hero-content text-start pb-0">
-                                            <!-- Hero Title Start -->
-                                            <div class="sis-section-title mb-0">
-                                                <span class="sisf-subtitle text-white sis-text-anime-style-2">Trusted by 25,000+ Happy Travelers Worldwide</span>
-                                                <h1 class="sis-text-anime-style-2 text-start">Discover Your Next Great Adventure Around the World</h1>
-                                                <div class="sisf-m-text" data-aos="fade-up" data-aos-delay="300">
-                                                    <p class="text-white text-start">From breathtaking landscapes and vibrant cities to unforgettable cultural experiences, we create personalized journeys that turn every trip into a lifetime memory.</p>
-                                                </div>
-                                                <div class="button-group d-flex align-items-center flex-wrap gap-3">
-                                                    <div class="sisf-m-button aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
-                                                        <a href="tours.html" class="sis-btn-default">Explore Tours<i class="fa-solid fa-arrow-right-long"></i></a>
-                                                    </div>
-                                                    <div class="sisf-m-button aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
-                                                        <a href="../traviox.wpthemeverse.com/wp-content/uploads/2026/07/video-hero.mp4" class="sis-btn-default gap-1 popup-video btn-light">Watch Video<span class="fa-solid fa-play-circle"></span></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- Hero Title End -->
-                                        </div>
-                                        <!-- Hero Content End -->
-                                    </div>
-                                    <div class="col-xl-3 col-lg-6"></div>
-                                </div>
-                            </div>
-                            <!-- Content End -->
-                        </div>
-                    </div>
-                </div>
                 <div class="hero-pagination d-flex justify-content-center"></div>
             </div>
         </div>
     </div>
     <!-- Hero Section End -->
-    <!-- About Us Section Start -->
-    <div class="sis-about-us-section sis-page-background pb-0 section">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <!-- Section Title Start -->
-                    <div class="sisf-sis-section-title sis-section-title">
-                        <span class="sisf-m-subtitle sis-text-anime-style-3">About Traviox</span>
-                        <h2 class="sisf-m-title sis-text-anime-style-3"><span class="sisf-e-colored">Creating Memorable Journeys,</span> One Destination at a Time</h2>
-                        <div class="sisf-m-text" data-aos="fade-up" data-aos-delay="100">
-                            <p class="mt-3">At Traviox, we design thoughtfully planned journeys that combine comfort, adventure, and unforgettable moments for every traveler.</p>
-                        </div>
-                    </div>
-                    <!-- Section Title End -->
-                    <div class="sisf-sis-listing-items">
-                        <p class="mb-2" data-aos="fade-up" data-aos-delay="300">
-                            <span class="sisf-e-colored"><i class="fa-solid pe-3 fa-check"></i></span>
-                            <span class="sisf-e-colored">No Booking Fee Rate Guarantee</span>
-                        </p>
-                        <p class="mb-2" data-aos="fade-up" data-aos-delay="500">
-                            <span class="sisf-e-colored"><i class="fa-solid pe-3 fa-check"></i></span>
-                            <span class="sisf-e-colored">24/7 Emergency Helpline</span>
-                        </p>
-                    </div>
-                    <div class="sisf-m-button pt-4" data-aos="fade-up" data-aos-delay="700">
-                        <a href="about-us.html" class="sis-btn-default">Discover Our Story<i class="fa-solid fa-arrow-right-long"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="sisf-about-images d-flex align-items-end">
-                        <!-- About Image Start -->
-                        <div class="sisf-about-image-small" data-aos="zoom-in" data-aos-delay="500">
-                            <figure>
-                                <img src="{{ asset('website/images/about-img2.png') }}" alt="Traviox">
-                            </figure>
-                        </div>
-                        <!-- About Image End -->
-                        <!-- About Image Start -->
-                        <div class="sisf-about-image-right">
-                            <figure class="sis-reveal sis-image-anime">
-                                <img src="{{ asset('website/images/about-img1.png') }}" class="w-100" alt="Traviox">
-                            </figure>
-                        </div>
-                        <!-- About Image End -->
-                    </div>
-                </div>
-            </div>
-            <div class="sisf-sis-page-counters">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6">
-                        <!-- Couter Item Start -->
-                        <div class="sis-counter-item d-flex align-items-center gap-4" data-aos="fade-up" data-aos-delay="100">
-                            <!-- Counter Image Start -->
-                            <div class="sis-e-counter-image">
-                                <figure>
-                                    <img src="{{ asset('website/images/counter-icon1.svg')}}" alt="Traviox">
-                                </figure>
-                            </div>
-                            <!-- Counter Image Start -->
-                            <!-- Counter Image End -->
-                            <div class="sis-e-content">
-                                <!-- Counter Title Start -->
-                                <div class="sis-counter-title">
-                                    <h2 class="d-flex align-items-center mb-1">
-                                        <span class="sis-counter sisf-e-colored">25,000</span>
-                                        <span class="sisf-digit-label sisf-e-colored">+</span>
-                                    </h2>
-                                </div>
-                                <!-- Counter Title End -->
-                                <!-- Counter Content Start -->
-                                <div class="sis-counter-text">
-                                    <span>Happy Travelers</span>
-                                </div>
-                                <!-- Counter Content End -->
-                            </div>
-                        </div>
-                        <!-- Couter Item End -->
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <!-- Couter Item Start -->
-                        <div class="sis-counter-item d-flex align-items-center gap-4" data-aos="fade-up" data-aos-delay="300">
-                            <!-- Counter Image Start -->
-                            <div class="sis-e-counter-image">
-                                <figure>
-                                    <img src="{{ asset('website/images/counter-icon2.svg')}}" alt="Traviox">
-                                </figure>
-                            </div>
-                            <!-- Counter Image Start -->
-                            <!-- Counter Image End -->
-                            <div class="sis-e-content">
-                                <!-- Counter Title Start -->
-                                <div class="sis-counter-title">
-                                    <h2 class="d-flex align-items-center mb-1">
-                                        <span class="sis-counter sisf-e-colored">120</span>
-                                        <span class="sisf-digit-label sisf-e-colored">+</span>
-                                    </h2>
-                                </div>
-                                <!-- Counter Title End -->
-                                <!-- Counter Content Start -->
-                                <div class="sis-counter-text">
-                                    <span>Global Destinations</span>
-                                </div>
-                                <!-- Counter Content End -->
-                            </div>
-                        </div>
-                        <!-- Couter Item End -->
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <!-- Couter Item Start -->
-                        <div class="sis-counter-item d-flex align-items-center gap-4" data-aos="fade-up" data-aos-delay="500">
-                            <!-- Counter Image Start -->
-                            <div class="sis-e-counter-image">
-                                <figure>
-                                    <img src="{{ asset('website/images/counter-icon3.svg')}}" alt="Traviox">
-                                </figure>
-                            </div>
-                            <!-- Counter Image Start -->
-                            <!-- Counter Image End -->
-                            <div class="sis-e-content">
-                                <!-- Counter Title Start -->
-                                <div class="sis-counter-title">
-                                    <h2 class="d-flex align-items-center mb-1">
-                                        <span class="sis-counter sisf-e-colored">98</span>
-                                        <span class="sisf-digit-label sisf-e-colored">%</span>
-                                    </h2>
-                                </div>
-                                <!-- Counter Title End -->
-                                <!-- Counter Content Start -->
-                                <div class="sis-counter-text">
-                                    <span>Customer Satisfaction</span>
-                                </div>
-                                <!-- Counter Content End -->
-                            </div>
-                        </div>
-                        <!-- Couter Item End -->
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <!-- Couter Item Start -->
-                        <div class="sis-counter-item d-flex align-items-center gap-4" data-aos="fade-up" data-aos-delay="700">
-                            <!-- Counter Image Start -->
-                            <div class="sis-e-counter-image">
-                                <figure>
-                                    <img src="{{ asset('website/images/counter-icon4.svg')}}" alt="Traviox">
-                                </figure>
-                            </div>
-                            <!-- Counter Image Start -->
-                            <!-- Counter Image End -->
-                            <div class="sis-e-content">
-                                <!-- Counter Title Start -->
-                                <div class="sis-counter-title">
-                                    <h2 class="d-flex align-items-center mb-1">
-                                        <span class="sis-counter sisf-e-colored">15</span>
-                                        <span class="sisf-digit-label sisf-e-colored">+</span>
-                                    </h2>
-                                </div>
-                                <!-- Counter Title End -->
-                                <!-- Counter Content Start -->
-                                <div class="sis-counter-text">
-                                    <span>Years of Experience</span>
-                                </div>
-                                <!-- Counter Content End -->
-                            </div>
-                        </div>
-                        <!-- Couter Item End -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- About Us Section End -->
+    @include('web.partials.about-intro', ['home' => true])
+
+    @include('web.partials.welcome-address', ['short' => true])
     <!-- Top Destination Section Start -->
     <div class="sis-destination-section section">
         <div class="container">
@@ -299,10 +77,10 @@
                 <div class="col-12">
                     <!-- Section Title Start -->
                     <div class="sisf-sis-section-title text-center sis-section-title">
-                        <span class="sisf-m-subtitle sis-text-anime-style-3">Top Destinations</span>
-                        <h2 class="sisf-m-title sis-text-anime-style-3">Explore Our <span class="sisf-e-colored">Most<br> Loved Destinations</span></h2>
+                        <span class="sisf-m-subtitle sis-text-anime-style-3">Popular Destinations</span>
+                        <h2 class="sisf-m-title sis-text-anime-style-3">Where Our Clients <span class="sisf-e-colored">Love<br> to Travel</span></h2>
                         <div class="sisf-m-text" data-aos="fade-up" data-aos-delay="100">
-                            <p>Discover handpicked places where breathtaking landscapes, rich cultures, and unforgettable experiences<br> come together to create your perfect escape.</p>
+                            <p>From shopping trips to Dubai and studies in Canada to honeymoons in the Maldives —<br> we handle the visas, flights and bookings for every one of these destinations.</p>
                         </div>
                     </div>
                     <!-- Section Title End -->
@@ -314,13 +92,14 @@
                         <div class="sis-comman-swiper-slider" data-aos="fade-up" data-aos-delay="100">
                             <div class="swiper">
                                 <div class="swiper-wrapper">
+                                    @foreach (config('site.destinations') as $destination)
                                     <div class="swiper-slide">
                                         <div class="sisf-destination-list-item">
                                             <div class="sisf-e-inner sis-radius position-relative">
                                                 <div class="sisf-destination-image position-relative">
-                                                    <a href="destination-single.html" class="sisf-sis-page-link">
+                                                    <a href="{{ route('web.destination', $destination['slug']) }}" class="sisf-sis-page-link">
                                                         <figure>
-                                                            <img src="{{ asset('website/images/destination-image-1.jpg')}}" class="w-100 sis-radius" alt="Traviox">
+                                                            <img src="{{ asset($destination['image'])}}" class="w-100 sis-radius" alt="{{ $destination['name'] }}">
                                                         </figure>
                                                     </a>
                                                 </div>
@@ -328,117 +107,18 @@
                                                 <div class="sisf-e-content d-flex align-items-center justify-content-between">
                                                     <div class="sisf-sis-e-title">
                                                         <h3 class="sisf-e-title">
-                                                            <a href="destination-single.html">Switzerland</a>
+                                                            <a href="{{ route('web.destination', $destination['slug']) }}">{{ $destination['name'] }}</a>
                                                         </h3>
                                                     </div>
                                                     <div class="sisf-m-icon-button">
-                                                        <a href="destination-single.html"><i class="fa-solid fa-arrow-right-long"></i></a>
+                                                        <a href="{{ route('web.destination', $destination['slug']) }}"><i class="fa-solid fa-arrow-right-long"></i></a>
                                                     </div>
                                                 </div>
                                                 <!-- Content End -->
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide">
-                                        <div class="sisf-destination-list-item">
-                                            <div class="sisf-e-inner sis-radius position-relative">
-                                                <div class="sisf-destination-image position-relative">
-                                                    <a href="destination-single.html" class="sisf-sis-page-link">
-                                                        <figure>
-                                                            <img src="{{ asset('website/images/destination-image-2.jpg')}}" class="w-100 sis-radius" alt="Traviox">
-                                                        </figure>
-                                                    </a>
-                                                </div>
-                                                <!-- Content Start -->
-                                                <div class="sisf-e-content d-flex align-items-center justify-content-between">
-                                                    <div class="sisf-sis-e-title">
-                                                        <h3 class="sisf-e-title">
-                                                            <a href="destination-single.html">Greece</a>
-                                                        </h3>
-                                                    </div>
-                                                    <div class="sisf-m-icon-button">
-                                                        <a href="destination-single.html"><i class="fa-solid fa-arrow-right-long"></i></a>
-                                                    </div>
-                                                </div>
-                                                <!-- Content End -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="sisf-destination-list-item">
-                                            <div class="sisf-e-inner sis-radius position-relative">
-                                                <div class="sisf-destination-image position-relative">
-                                                    <a href="destination-single.html" class="sisf-sis-page-link">
-                                                        <figure>
-                                                            <img src="{{ asset('website/images/destination-image-3.jpg')}}" class="w-100 sis-radius" alt="Traviox">
-                                                        </figure>
-                                                    </a>
-                                                </div>
-                                                <!-- Content Start -->
-                                                <div class="sisf-e-content d-flex align-items-center justify-content-between">
-                                                    <div class="sisf-sis-e-title">
-                                                        <h3 class="sisf-e-title">
-                                                            <a href="destination-single.html">Japan</a>
-                                                        </h3>
-                                                    </div>
-                                                    <div class="sisf-m-icon-button">
-                                                        <a href="destination-single.html"><i class="fa-solid fa-arrow-right-long"></i></a>
-                                                    </div>
-                                                </div>
-                                                <!-- Content End -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="sisf-destination-list-item">
-                                            <div class="sisf-e-inner sis-radius position-relative">
-                                                <div class="sisf-destination-image position-relative">
-                                                    <a href="destination-single.html" class="sisf-sis-page-link">
-                                                        <figure>
-                                                            <img src="{{ asset('website/images/destination-image-4.jpg')}}" class="w-100 sis-radius" alt="Traviox">
-                                                        </figure>
-                                                    </a>
-                                                </div>
-                                                <!-- Content Start -->
-                                                <div class="sisf-e-content d-flex align-items-center justify-content-between">
-                                                    <div class="sisf-sis-e-title">
-                                                        <h3 class="sisf-e-title">
-                                                            <a href="destination-single.html">Indonesia</a>
-                                                        </h3>
-                                                    </div>
-                                                    <div class="sisf-m-icon-button">
-                                                        <a href="destination-single.html"><i class="fa-solid fa-arrow-right-long"></i></a>
-                                                    </div>
-                                                </div>
-                                                <!-- Content End -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="sisf-destination-list-item">
-                                            <div class="sisf-e-inner sis-radius position-relative">
-                                                <div class="sisf-destination-image position-relative">
-                                                    <a href="destination-single.html" class="sisf-sis-page-link">
-                                                        <figure>
-                                                            <img src="{{ asset('website/images/destination-image-5.jpg')}}" class="w-100 sis-radius" alt="Traviox">
-                                                        </figure>
-                                                    </a>
-                                                </div>
-                                                <!-- Content Start -->
-                                                <div class="sisf-e-content d-flex align-items-center justify-content-between">
-                                                    <div class="sisf-sis-e-title">
-                                                        <h3 class="sisf-e-title">
-                                                            <a href="destination-single.html">Italy</a>
-                                                        </h3>
-                                                    </div>
-                                                    <div class="sisf-m-icon-button">
-                                                        <a href="destination-single.html"><i class="fa-solid fa-arrow-right-long"></i></a>
-                                                    </div>
-                                                </div>
-                                                <!-- Content End -->
-                                            </div>
-                                        </div>
-                                    </div>
+                                    @endforeach
                                 </div>
                             </div>
                         </div>
@@ -449,17 +129,11 @@
                 <div class="col-12">
                     <div class="sis-comman-bottom-line-text sis-e-bottom d-flex flex-wrap gap-5">
                         <div class="sisf-m-button" data-aos="fade-up" data-aos-delay="100">
-                            <a href="destinations.html" class="sis-btn-default">Find Your Adventure<i class="fa-solid fa-arrow-right-long"></i></a>
+                            <a href="{{ route('web.destinations') }}" class="sis-btn-default">See All Destinations<i class="fa-solid fa-arrow-right-long"></i></a>
                         </div>
                         <div class="sisf-sis-e-box">
-                            <p class="mb-1" data-aos="fade-up" data-aos-delay="300"><span class="pe-2"><img src="{{ asset('website/images/users.png') }}" alt="Traviox"></span> Pack your dreams, leave the planning to us, and experience journeys that you'll remember forever. <a href="about-us.html">Being your journey</a></p>
-                            <p class="mb-0" data-aos="fade-up" data-aos-delay="500">Rated 4.9/5 by Happy Travelers Worldwide
-                                <span class="sisf-e-colored">★</span>
-                                <span class="sisf-e-colored">★</span>
-                                <span class="sisf-e-colored">★</span>
-                                <span class="sisf-e-colored">★</span>
-                                <span class="sisf-e-colored">★</span>
-                            </p>
+                            <p class="mb-1" data-aos="fade-up" data-aos-delay="300">Don’t see your destination? We plan trips to almost anywhere. <a href="{{ route('web.contact') }}">Ask us</a></p>
+                            <p class="mb-0" data-aos="fade-up" data-aos-delay="500">Visa advice, flights and hotels — all in one place <span class="sisf-e-colored"><i class="fa-solid fa-plane"></i></span></p>
                         </div>
                     </div>
                 </div>
@@ -476,7 +150,7 @@
                         <!-- Section Title Start -->
                         <div class="sisf-sis-section-title sis-section-title">
                             <span class="sisf-m-subtitle sis-text-anime-style-3">Our Tour Packages</span>
-                            <h2 class="sisf-m-title text-white sis-text-anime-style-3"><span class="sisf-e-colored">Explore the World's</span> Most Inspiring Places</h2>
+                            <h2 class="sisf-m-title text-white sis-text-anime-style-3"><span class="sisf-e-colored">Ready-made Holidays,</span> Tailored to You</h2>
                         </div>
                         <!-- Section Title End -->
                     </div>
@@ -484,21 +158,21 @@
                         <!-- Section Title Start -->
                         <div class="sisf-sis-section-title sis-section-title">
                             <div class="sisf-m-text" data-aos="fade-up" data-aos-delay="100">
-                                <p class="text-white">From iconic landmarks and pristine beaches to breathtaking mountains and vibrant cities, discover handpicked destinations designed for unforgettable adventures and lifelong memories.</p>
+                                <p class="text-white">Choose one of our curated packages and we will adjust it to your dates, budget and number of travellers. Every quote clearly shows what is included before you pay.</p>
                             </div>
                             <div class="sisf-m-button-inner d-flex justify-content-between flex-wrap">
                                 <div class="sisf-m-button pt-4" data-aos="fade-up" data-aos-delay="300">
-                                    <a href="tours.html" class="sis-btn-default">Explore the Packages<i class="fa-solid fa-arrow-right-long"></i></a>
+                                    <a href="{{ route('web.tours') }}" class="sis-btn-default">View All Packages<i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                                 <div class="sis-e-icon-top position-relative d-inline-block" data-aos="zoom-in" data-aos-delay="600">
                                     <div class="sis-e-icon-spin">
                                         <figure>
-                                            <img src="{{ asset('website/images/icon-top.svg')}}" class="spin-img" alt="Traviox">
+                                            <img src="{{ asset('website/images/icon-top.svg')}}" class="spin-img" alt="Victory Journey Masters">
                                         </figure>
                                     </div>
                                     <div class="sis-m-icon-top">
                                         <figure>
-                                            <img src="{{ asset('website/images/page-comman-icon.svg')}}" alt="Traviox">
+                                            <img src="{{ asset('website/images/page-comman-icon.svg')}}" alt="Victory Journey Masters">
                                         </figure>
                                     </div>
                                 </div>
@@ -513,18 +187,19 @@
                             <div class="sis-comman--swiper-slider" data-aos="zoom-in" data-aos-delay="300">
                                 <div class="swiper">
                                     <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
+                                    @foreach (config('site.tours') as $tour)
+                                    <div class="swiper-slide">
                                             <div class="sisf-tour-list-item sis-radius bg-white">
                                                 <div class="sisf-e-inner mb-0">
                                                     <!-- Vehicle Image Start -->
                                                     <div class="sisf-tour-image position-relative">
-                                                        <a href="tour-single.html">
+                                                        <a href="{{ route('web.tour', $tour['slug']) }}">
                                                             <figure class="sis-image-anime">
-                                                                <img src="{{ asset('website/images/tour-list1.jpg')}}" class="w-100" alt="Traviox">
+                                                                <img src="{{ asset($tour['image'])}}" class="w-100" alt="{{ $tour['title'] }}">
                                                             </figure>
                                                         </a>
                                                         <div class="sis-tours-category">
-                                                            <span>Switzerland</span>
+                                                            <span>{{ $tour['destination'] }}</span>
                                                         </div>
                                                     </div>
                                                     <!-- Vehicle Image End-->
@@ -532,18 +207,18 @@
                                                     <div class="sisf-tour-content p-3">
                                                         <div class="sisf-tour-title mb-1">
                                                             <h3 class="sis-tour-item__link">
-                                                                <a href="tour-single.html">Alpine Beauty at Every Turn</a>
+                                                                <a href="{{ route('web.tour', $tour['slug']) }}">{{ $tour['title'] }}</a>
                                                             </h3>
                                                         </div>
                                                         <div class="sisf-m-text">
-                                                            <p class="mb-3">Journey through snow-capped peaks, crystal-clear lakes, scenic train rides, and charming villages nestled in the heart of the Alps.</p>
+                                                            <p class="mb-3">{{ $tour['summary'] }}</p>
                                                         </div>
                                                         <div class="sis-tour-item__price_wrap">
                                                             <div class="sis-tour-item__start mb-1">
-                                                                <span>Starting From</span>
+                                                                <span><i class="fa-regular fa-clock pe-1"></i> {{ $tour['duration'] }}</span>
                                                             </div>
                                                             <div class="sis-tour-item__price">
-                                                                <h3 class="mb-0 sisf-e-colored">$1,899 / Person</h3>
+                                                                <h3 class="mb-0 sisf-e-colored {{ $tour['price'] ? '' : 'vjm-price-request' }}">{{ $tour['price'] ?: 'Price on request' }}</h3>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -551,159 +226,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="swiper-slide">
-                                            <div class="sisf-tour-list-item sis-radius bg-white">
-                                                <div class="sisf-e-inner mb-0">
-                                                    <!-- Vehicle Image Start -->
-                                                    <div class="sisf-tour-image position-relative">
-                                                        <a href="tour-single.html">
-                                                            <figure class="sis-image-anime">
-                                                                <img src="{{ asset('website/images/tour-list2.jpg')}}" class="w-100" alt="Traviox">
-                                                            </figure>
-                                                        </a>
-                                                        <div class="sis-tours-category">
-                                                            <span>Japan</span>
-                                                        </div>
-                                                    </div>
-                                                    <!-- Vehicle Image End-->
-                                                    <!-- Vehicle Content Start -->
-                                                    <div class="sisf-tour-content p-3">
-                                                        <div class="sisf-tour-title mb-1">
-                                                            <h3 class="sis-tour-item__link">
-                                                                <a href="tour-single.html">Where Tradition Meets Tomorrow</a>
-                                                            </h3>
-                                                        </div>
-                                                        <div class="sisf-m-text">
-                                                            <p class="mb-3">Experience ancient temples, cherry blossoms, modern cityscapes, and breathtaking natural beauty in one unforgettable destination.</p>
-                                                        </div>
-                                                        <div class="sis-tour-item__price_wrap">
-                                                            <div class="sis-tour-item__start mb-1">
-                                                                <span>Starting From</span>
-                                                            </div>
-                                                            <div class="sis-tour-item__price">
-                                                                <h3 class="mb-0 sisf-e-colored">$1,499 / Person</h3>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!-- Vehicle Content End -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="sisf-tour-list-item sis-radius bg-white">
-                                                <div class="sisf-e-inner mb-0">
-                                                    <!-- Vehicle Image Start -->
-                                                    <div class="sisf-tour-image position-relative">
-                                                        <a href="tour-single.html">
-                                                            <figure class="sis-image-anime">
-                                                                <img src="{{ asset('website/images/tour-list3.jpg')}}" class="w-100" alt="Traviox">
-                                                            </figure>
-                                                        </a>
-                                                        <div class="sis-tours-category">
-                                                            <span>Italy</span>
-                                                        </div>
-                                                    </div>
-                                                    <!-- Vehicle Image End-->
-                                                    <!-- Vehicle Content Start -->
-                                                    <div class="sisf-tour-content p-3">
-                                                        <div class="sisf-tour-title mb-1">
-                                                            <h3 class="sis-tour-item__link">
-                                                                <a href="tour-single.html">History, Romance & Timeless Charm</a>
-                                                            </h3>
-                                                        </div>
-                                                        <div class="sisf-m-text">
-                                                            <p class="mb-3">Explore world-famous architecture, authentic Italian cuisine, coastal escapes, and centuries of culture across Italy's most beautiful cities.</p>
-                                                        </div>
-                                                        <div class="sis-tour-item__price_wrap">
-                                                            <div class="sis-tour-item__start mb-1">
-                                                                <span>Starting From</span>
-                                                            </div>
-                                                            <div class="sis-tour-item__price">
-                                                                <h3 class="mb-0 sisf-e-colored">$1,699 / Person</h3>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!-- Vehicle Content End -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="sisf-tour-list-item sis-radius bg-white">
-                                                <div class="sisf-e-inner mb-0">
-                                                    <!-- Vehicle Image Start -->
-                                                    <div class="sisf-tour-image position-relative">
-                                                        <a href="tour-single.html">
-                                                            <figure class="sis-image-anime">
-                                                                <img src="{{ asset('website/images/tour-list4.jpg')}}" class="w-100" alt="Traviox">
-                                                            </figure>
-                                                        </a>
-                                                        <div class="sis-tours-category">
-                                                            <span>Dubai, UAE</span>
-                                                        </div>
-                                                    </div>
-                                                    <!-- Vehicle Image End-->
-                                                    <!-- Vehicle Content Start -->
-                                                    <div class="sisf-tour-content p-3">
-                                                        <div class="sisf-tour-title mb-1">
-                                                            <h3 class="sis-tour-item__link">
-                                                                <a href="tour-single.html">Luxury Beyond Every Expectation</a>
-                                                            </h3>
-                                                        </div>
-                                                        <div class="sisf-m-text">
-                                                            <p class="mb-3">Experience futuristic architecture, desert adventures, luxury shopping, world-class dining, and unforgettable entertainment in Dubai.</p>
-                                                        </div>
-                                                        <div class="sis-tour-item__price_wrap">
-                                                            <div class="sis-tour-item__start mb-1">
-                                                                <span>Starting From</span>
-                                                            </div>
-                                                            <div class="sis-tour-item__price">
-                                                                <h3 class="mb-0 sisf-e-colored">$1,299 / Person</h3>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!-- Vehicle Content End -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="sisf-tour-list-item sis-radius bg-white">
-                                                <div class="sisf-e-inner mb-0">
-                                                    <!-- Vehicle Image Start -->
-                                                    <div class="sisf-tour-image position-relative">
-                                                        <a href="tour-single.html">
-                                                            <figure class="sis-image-anime">
-                                                                <img src="{{ asset('website/images/tour-list5.jpg')}}" class="w-100" alt="Traviox">
-                                                            </figure>
-                                                        </a>
-                                                        <div class="sis-tours-category">
-                                                            <span>Maldives</span>
-                                                        </div>
-                                                    </div>
-                                                    <!-- Vehicle Image End-->
-                                                    <!-- Vehicle Content Start -->
-                                                    <div class="sisf-tour-content p-3">
-                                                        <div class="sisf-tour-title mb-1">
-                                                            <h3 class="sis-tour-item__link">
-                                                                <a href="tour-single.html">Escape to Tropical Paradise</a>
-                                                            </h3>
-                                                        </div>
-                                                        <div class="sisf-m-text">
-                                                            <p class="mb-3">Relax in luxurious overwater villas, crystal-clear lagoons, pristine beaches, and breathtaking sunsets in the Maldives.</p>
-                                                        </div>
-                                                        <div class="sis-tour-item__price_wrap">
-                                                            <div class="sis-tour-item__start mb-1">
-                                                                <span>Starting From</span>
-                                                            </div>
-                                                            <div class="sis-tour-item__price">
-                                                                <h3 class="mb-0 sisf-e-colored">$2,199 / Person</h3>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!-- Vehicle Content End -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    @endforeach
+                                </div>
                                 </div>
                             </div>
                         </div>
@@ -721,9 +245,9 @@
                     <!-- Section Title Start -->
                     <div class="sisf-sis-section-title text-center sis-section-title">
                         <span class="sisf-m-subtitle sis-text-anime-style-3">How it works</span>
-                        <h2 class="sisf-m-title sis-text-anime-style-3">Plan Your Perfect Journey in<br> <span class="sisf-e-colored">Three Simple Steps</span></h2>
+                        <h2 class="sisf-m-title sis-text-anime-style-3">Start Your Journey in<br> <span class="sisf-e-colored">Three Simple Steps</span></h2>
                         <div class="sisf-m-text" data-aos="fade-up" data-aos-delay="100">
-                            <p>From choosing your dream destination to returning home with unforgettable memories, we make every stage<br> of your travel experience seamless, personalized, and stress-free.</p>
+                            <p>Whether it is a visa, an admission or a family holiday, our process is simple, transparent<br> and built around you.</p>
                         </div>
                     </div>
                     <!-- Section Title End -->
@@ -739,15 +263,15 @@
                                     <div class="sisf-e-inner d-flex gap-4">
                                         <div class="sisf-e-icon">
                                             <figure>
-                                                <img src="{{ asset('website/images/how-work-icon1.svg')}}" alt="Traviox">
+                                                <img src="{{ asset('website/images/how-work-icon1.svg')}}" alt="Victory Journey Masters">
                                             </figure>
                                         </div>
                                         <div class="sisf-e-content">
                                             <div class="sisf-m-title mb-2">
-                                                <h3 class="sisf-m-titl-inner">Explore Your Destination</h3>
+                                                <h3 class="sisf-m-titl-inner">{{ config('site.steps.0.title') }}</h3>
                                             </div>
                                             <div class="sisf-m-text">
-                                                <p class="mb-0 sisf-page-text-line">Browse our carefully selected destinations, compare experiences, and discover the perfect place that matches your travel style and interests.</p>
+                                                <p class="mb-0 sisf-page-text-line">{{ config('site.steps.0.text') }}</p>
                                             </div>
                                         </div>
                                     </div>
@@ -758,15 +282,15 @@
                                     <div class="sisf-e-inner d-flex gap-4">
                                         <div class="sisf-e-icon">
                                             <figure>
-                                                <img src="{{ asset('website/images/how-work-icon2.svg')}}" alt="Traviox">
+                                                <img src="{{ asset('website/images/how-work-icon2.svg')}}" alt="Victory Journey Masters">
                                             </figure>
                                         </div>
                                         <div class="sisf-e-content">
                                             <div class="sisf-m-title mb-2">
-                                                <h3 class="sisf-m-titl-inner">Customize Your Journey</h3>
+                                                <h3 class="sisf-m-titl-inner">{{ config('site.steps.1.title') }}</h3>
                                             </div>
                                             <div class="sisf-m-text">
-                                                <p class="mb-0 sisf-page-text-line">Personalize your itinerary by selecting accommodations, activities, transportation, and experiences with guidance from our travel experts.</p>
+                                                <p class="mb-0 sisf-page-text-line">{{ config('site.steps.1.text') }}</p>
                                             </div>
                                         </div>
                                     </div>
@@ -777,15 +301,15 @@
                                     <div class="sisf-e-inner d-flex gap-4">
                                         <div class="sisf-e-icon">
                                             <figure>
-                                                <img src="{{ asset('website/images/how-work-icon3.svg')}}" alt="Traviox">
+                                                <img src="{{ asset('website/images/how-work-icon3.svg')}}" alt="Victory Journey Masters">
                                             </figure>
                                         </div>
                                         <div class="sisf-e-content">
                                             <div class="sisf-m-title mb-2">
-                                                <h3 class="sisf-m-titl-inner">Travel with Confidence</h3>
+                                                <h3 class="sisf-m-titl-inner">{{ config('site.steps.2.title') }}</h3>
                                             </div>
                                             <div class="sisf-m-text">
-                                                <p class="mb-0 sisf-page-text-line">Confirm your booking and enjoy a worry-free adventure with dedicated support before, during, and after your trip.</p>
+                                                <p class="mb-0 sisf-page-text-line">{{ config('site.steps.2.text') }}</p>
                                             </div>
                                         </div>
                                     </div>
@@ -800,26 +324,26 @@
                                 <div class="sisf-e-content-on-image position-relative">
                                     <div class="sisf-how-work-image">
                                         <figure class="sis-image-anime sis-reveal">
-                                            <img src="{{ asset('website/images/how-works-img.jpg')}}" class="w-100 sis-radius" alt="Traviox">
+                                            <img src="{{ asset('website/images/how-works-img.jpg')}}" class="w-100 sis-radius" alt="Victory Journey Masters">
                                         </figure>
                                     </div>
                                     <div class="sis-e-left-top-text sisf-float-left-right" data-aos="zoom-in" data-aos-delay="300">
-                                        <h3>Paris <span class="sisf-e-colored fa-solid fa-plane"></span> Santorini</h3>
+                                        <h3>Lagos <span class="sisf-e-colored fa-solid fa-plane"></span> Dubai</h3>
                                     </div>
                                     <div class="sis-e-right-content">
                                         <div class="sisf-e-inner sis-radius bg-white p-3 sis-fade">
                                             <div class="sisf-m-inner d-flex align-items-center gap-4">
                                                 <div class="sisf-icon-image">
                                                     <figure>
-                                                        <img src="{{ asset('website/images/how-work-icon-left.jpg')}}" class="sis-radius" alt="Traviox">
+                                                        <img src="{{ asset('website/images/how-work-icon-left.jpg')}}" class="sis-radius" alt="Victory Journey Masters">
                                                     </figure>
                                                 </div>
                                                 <div class="sisf-e-content">
                                                     <div class="sisf-m-content">
-                                                        <p class="mb-0">Ongoing</p>
+                                                        <p class="mb-0">Your plan</p>
                                                     </div>
                                                     <div class="sisf-m-title">
-                                                        <h3>Trip to Paris</h3>
+                                                        <h3>Dubai Family Holiday</h3>
                                                     </div>
                                                 </div>
                                             </div>
@@ -830,7 +354,7 @@
                                                         <div class="sis-skillbar" data-percent="45%">
                                                             <div class="sis-skill-data justify-content-start gap-1 mb-2">
                                                                 <div class="sis-skill-no">45%</div>
-                                                                <div class="sis-skill-title mb-0">completed</div>
+                                                                <div class="sis-skill-title mb-0">planned</div>
                                                             </div>
                                                             <div class="sis-skill-progress">
                                                                 <div class="sis-count-bar"></div>
@@ -850,20 +374,20 @@
                                 <div class="sisf-e-content-on-image position-relative">
                                     <div class="sisf-how-work-image">
                                         <figure class="sis-image-anime sis-reveal">
-                                            <img src="{{ asset('website/images/how-works-img1.jpg')}}" class="w-100 sis-radius" alt="Traviox">
+                                            <img src="{{ asset('website/images/how-works-img1.jpg')}}" class="w-100 sis-radius" alt="Victory Journey Masters">
                                         </figure>
                                     </div>
                                     <div class="sis-e-left-top-text sisf-float-left-right p-3 rounded-4" data-aos="zoom-in" data-aos-delay="300">
-                                        <h3>City Walking Tour</h3>
-                                        <p class="my-1">Slightseeing • 3 hours</p>
-                                        <p class="mb-0 sisf-e-colored fw-bold">$45 per person</p>
+                                        <h3>Tailor-made Itinerary</h3>
+                                        <p class="my-1">Visa • Flights • Hotel • Tours</p>
+                                        <p class="mb-0 sisf-e-colored fw-bold">Written quote before you pay</p>
                                     </div>
                                     <div class="sis-e-right-content">
                                         <div class="sisf-e-inner sisf-page sis-radius sis-fade">
                                             <div class="sisf-m-inner">
                                                 <div class="sisf-icon-image">
                                                     <figure>
-                                                        <img src="{{ asset('website/images/form-img.png') }}" class="sis-radius" alt="Traviox">
+                                                        <img src="{{ asset('website/images/form-img.png') }}" class="sis-radius" alt="Victory Journey Masters">
                                                     </figure>
                                                 </div>
                                             </div>
@@ -877,18 +401,18 @@
                                 <div class="sisf-e-content-on-image position-relative">
                                     <div class="sisf-how-work-image">
                                         <figure class="sis-image-anime sis-reveal">
-                                            <img src="{{ asset('website/images/how-works-img2.jpg')}}" class="w-100 sis-radius" alt="Traviox">
+                                            <img src="{{ asset('website/images/how-works-img2.jpg')}}" class="w-100 sis-radius" alt="Victory Journey Masters">
                                         </figure>
                                     </div>
                                     <div class="sis-e-left-top-text px-3 sisf-float-left-right" data-aos="zoom-in" data-aos-delay="300">
-                                        <h3><span class="sisf-e-colored pe-2 fa-solid fa-phone"></span> 24/7 Support</h3>
+                                        <h3><span class="sisf-e-colored pe-2 fa-solid fa-phone"></span> Support While You Travel</h3>
                                     </div>
                                     <div class="sis-e-right-content">
                                         <div class="sisf-e-inner sis-radius sis-fade">
                                             <div class="sisf-m-inner">
                                                 <div class="sisf-icon-image">
                                                     <figure>
-                                                        <img src="{{ asset('website/images/travel-img.png') }}" class="sis-radius" alt="Traviox">
+                                                        <img src="{{ asset('website/images/travel-img.png') }}" class="sis-radius" alt="Victory Journey Masters">
                                                     </figure>
                                                 </div>
                                             </div>
@@ -906,14 +430,7 @@
                 <div class="col-12">
                     <div class="sis-comman-bottom-line-text sis-e-bottom text-center">
                         <div class="sisf-sis-e-box">
-                            <p class="mb-1" data-aos="fade-up" data-aos-delay="300"><span class="pe-2"><img src="{{ asset('website/images/users.png') }}" alt="Traviox"></span> From dream destinations to unforgettable memories, we make every journey effortless and inspiring. <a href="about-us.html">Being your journey</a></p>
-                            <p class="mb-0" data-aos="fade-up" data-aos-delay="500">Trusted by Thousands of Travelers
-                                <span class="sisf-e-colored">★</span>
-                                <span class="sisf-e-colored">★</span>
-                                <span class="sisf-e-colored">★</span>
-                                <span class="sisf-e-colored">★</span>
-                                <span class="sisf-e-colored">★</span>
-                            </p>
+                            <p class="mb-0" data-aos="fade-up" data-aos-delay="300">Ready when you are. <a href="{{ route('web.contact') }}">Book a free consultation</a></p>
                         </div>
                     </div>
                 </div>
@@ -930,9 +447,9 @@
                         <!-- Section Title Start -->
                         <div class="sisf-sis-section-title sis-section-title">
                             <span class="sisf-m-subtitle sis-text-anime-style-3">Our Services</span>
-                            <h2 class="sisf-m-title text-white sis-text-anime-style-3"><span class="sisf-e-colored">Exceptional Travel Services</span> <br>for Every Journey</h2>
+                            <h2 class="sisf-m-title text-white sis-text-anime-style-3"><span class="sisf-e-colored">Travel Services</span> <br>Built Around You</h2>
                             <div class="sisf-m-text" data-aos="fade-up" data-aos-delay="100">
-                                <p class="text-white">Whether you're planning a relaxing holiday, an exciting adventure, or a luxury getaway, <br>our comprehensive travel solutions ensure every trip is seamless from departure to return.</p>
+                                <p class="text-white">One trusted team for your visa, studies, flights, hotels and holidays — <br>so nothing falls through the cracks.</p>
                             </div>
                         </div>
                         <!-- Section Title End -->
@@ -943,15 +460,15 @@
                                     <div class="sisf-e-inner">
                                         <div class="sisf-e-icon mb-4">
                                             <figure>
-                                                <img src="{{ asset('website/images/service-icon1.svg')}}" alt="Traviox">
+                                                <img src="{{ asset('website/images/service-icon1.svg')}}" alt="Victory Journey Masters">
                                             </figure>
                                         </div>
                                         <div class="sisf-e-content">
                                             <div class="sisf-m-title mb-2">
-                                                <h3 class="sisf-m-titl-inner">International Tour Packages</h3>
+                                                <h3 class="sisf-m-titl-inner"><a class="text-white" href="{{ route('web.service', config('site.services.0.slug')) }}">{{ config('site.services.0.title') }}</a></h3>
                                             </div>
                                             <div class="sisf-m-text">
-                                                <p class="text-white sis-page-text-line">Explore carefully curated destinations with flexible itineraries designed for unforgettable travel experiences.</p>
+                                                <p class="text-white sis-page-text-line">{{ config('site.services.0.short') }}</p>
                                             </div>
                                         </div>
                                     </div>
@@ -962,15 +479,15 @@
                                     <div class="sisf-e-inner">
                                         <div class="sisf-e-icon mb-4">
                                             <figure>
-                                                <img src="{{ asset('website/images/service-icon2.svg')}}" alt="Traviox">
+                                                <img src="{{ asset('website/images/service-icon2.svg')}}" alt="Victory Journey Masters">
                                             </figure>
                                         </div>
                                         <div class="sisf-e-content">
                                             <div class="sisf-m-title mb-2">
-                                                <h3 class="sisf-m-titl-inner">Transportation & Transfers</h3>
+                                                <h3 class="sisf-m-titl-inner"><a class="text-white" href="{{ route('web.service', config('site.services.1.slug')) }}">{{ config('site.services.1.title') }}</a></h3>
                                             </div>
                                             <div class="sisf-m-text">
-                                                <p class="text-white sis-page-text-line">Enjoy smooth airport pickups, local transportation, and reliable travel arrangements throughout your journey.</p>
+                                                <p class="text-white sis-page-text-line">{{ config('site.services.1.short') }}</p>
                                             </div>
                                         </div>
                                     </div>
@@ -983,15 +500,15 @@
                                     <div class="sisf-e-inner">
                                         <div class="sisf-e-icon mb-4">
                                             <figure>
-                                                <img src="{{ asset('website/images/service-icon3.svg')}}" alt="Traviox">
+                                                <img src="{{ asset('website/images/service-icon3.svg')}}" alt="Victory Journey Masters">
                                             </figure>
                                         </div>
                                         <div class="sisf-e-content">
                                             <div class="sisf-m-title mb-2">
-                                                <h3 class="sisf-m-titl-inner">Luxury Accommodation</h3>
+                                                <h3 class="sisf-m-titl-inner"><a class="text-white" href="{{ route('web.service', config('site.services.2.slug')) }}">{{ config('site.services.2.title') }}</a></h3>
                                             </div>
                                             <div class="sisf-m-text">
-                                                <p class="text-white sis-page-text-line">Stay in handpicked hotels and resorts that combine comfort, quality, and exceptional hospitality.</p>
+                                                <p class="text-white sis-page-text-line">{{ config('site.services.2.short') }}</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1002,15 +519,15 @@
                                     <div class="sisf-e-inner">
                                         <div class="sisf-e-icon mb-4">
                                             <figure>
-                                                <img src="{{ asset('website/images/service-icon4.svg')}}" alt="Traviox">
+                                                <img src="{{ asset('website/images/service-icon4.svg')}}" alt="Victory Journey Masters">
                                             </figure>
                                         </div>
                                         <div class="sisf-e-content">
                                             <div class="sisf-m-title mb-2">
-                                                <h3 class="sisf-m-titl-inner">24/7 Travel Support</h3>
+                                                <h3 class="sisf-m-titl-inner"><a class="text-white" href="{{ route('web.service', config('site.services.4.slug')) }}">{{ config('site.services.4.title') }}</a></h3>
                                             </div>
                                             <div class="sisf-m-text">
-                                                <p class="text-white sis-page-text-line">Our dedicated travel experts are available<br> around the clock to assist you before, during, and after your trip.</p>
+                                                <p class="text-white sis-page-text-line">{{ config('site.services.4.short') }}</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1019,7 +536,7 @@
                             </div>
                             <div class="col-12">
                                 <div class="sisf-m-button pt-2" data-aos="fade-up" data-aos-delay="500">
-                                    <a href="service.html" class="sis-btn-default">View All Services<i class="fa-solid fa-arrow-right-long"></i></a>
+                                    <a href="{{ route('web.services') }}" class="sis-btn-default">View All Services<i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -1028,7 +545,7 @@
                         <div class="sisf-service-image-right position-relative">
                             <div class="sisf-services-bottom-image" data-aos="zoom-in" data-aos-delay="500">
                                 <figure>
-                                    <img src="{{ asset('website/images/service-bottom-image.png') }}" alt="Traviox">
+                                    <img src="{{ asset('website/images/service-bottom-image.png') }}" alt="Victory Journey Masters">
                                 </figure>
                             </div>
                         </div>
@@ -1048,7 +565,7 @@
                         <div class="sis-gallery-item-image sisf-image-inner">
                             <a href="{{ asset('website/images/what-we-offer1.png') }}">
                                 <figure class="sis-image-anime sis-reveal">
-                                    <img src="{{ asset('website/images/what-we-offer1.png') }}" class="w-100 sis-radius" alt="Traviox">
+                                    <img src="{{ asset('website/images/what-we-offer1.png') }}" class="w-100 sis-radius" alt="Victory Journey Masters">
                                 </figure>
                             </a>
                         </div>
@@ -1057,7 +574,7 @@
                         <div class="sis-gallery-item-image sisf-image-inner sisf-m-center position-absolute">
                             <a href="{{ asset('website/images/what-we-offer2.png') }}">
                                 <figure class="sis-image-anime sis-reveal">
-                                    <img src="{{ asset('website/images/what-we-offer2.png') }}" class="w-100 sis-radius" alt="Traviox">
+                                    <img src="{{ asset('website/images/what-we-offer2.png') }}" class="w-100 sis-radius" alt="Victory Journey Masters">
                                 </figure>
                             </a>
                         </div>
@@ -1066,7 +583,7 @@
                         <div class="sis-gallery-item-image sisf-image-inner sisf-m-end position-absolute">
                             <a href="{{ asset('website/images/what-we-offer3.png') }}">
                                 <figure class="sis-image-anime sis-reveal">
-                                    <img src="{{ asset('website/images/what-we-offer3.png') }}" class="w-100 sis-radius" alt="Traviox">
+                                    <img src="{{ asset('website/images/what-we-offer3.png') }}" class="w-100 sis-radius" alt="Victory Journey Masters">
                                 </figure>
                             </a>
                         </div>
@@ -1077,9 +594,9 @@
                     <!-- Section Title Start -->
                     <div class="sisf-sis-section-title sis-section-title">
                         <span class="sisf-m-subtitle sis-text-anime-style-3">What We Offer</span>
-                        <h2 class="sisf-m-title sis-text-anime-style-3">Discover Experiences That Make <span class="sisf-e-colored"> Every Journey Unforgettable</span></h2>
+                        <h2 class="sisf-m-title sis-text-anime-style-3">Trips for Every Reason <span class="sisf-e-colored"> You Travel</span></h2>
                         <div class="sisf-m-text" data-aos="fade-up" data-aos-delay="100">
-                            <p class="mt-2">rom thrilling outdoor adventures to relaxing cultural escapes, our curated experiences are designed to help you explore every destination in a unique and memorable way.</p>
+                            <p class="mt-2">People travel for many reasons — to rest, to celebrate, to learn or to do business. Whatever your reason, we plan the trip around what matters most to you.</p>
                         </div>
                     </div>
                     <!-- Section Title End -->
@@ -1090,15 +607,15 @@
                                 <div class="sisf-e-inner">
                                     <div class="sisf-e-icon mb-3">
                                         <figure>
-                                            <img src="{{ asset('website/images/what-we-offer-icon1.svg')}}" alt="Traviox">
+                                            <img src="{{ asset('website/images/what-we-offer-icon1.svg')}}" alt="Victory Journey Masters">
                                         </figure>
                                     </div>
                                     <div class="sisf-e-content">
                                         <div class="sisf-m-title mb-2">
-                                            <h3 class="sisf-m-titl-inner">Guided Tours</h3>
+                                            <h3 class="sisf-m-titl-inner">Family Holidays</h3>
                                         </div>
                                         <div class="sisf-m-text">
-                                            <p class="sisf-page-text-line">Explore iconic destinations with knowledgeable local guides and thoughtfully planned itineraries.</p>
+                                            <p class="sisf-page-text-line">School-break trips with family-friendly hotels, easy transfers and activities for every age.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -1109,15 +626,15 @@
                                 <div class="sisf-e-inner">
                                     <div class="sisf-e-icon mb-3">
                                         <figure>
-                                            <img src="{{ asset('website/images/what-we-offer-icon2.svg')}}" alt="Traviox">
+                                            <img src="{{ asset('website/images/what-we-offer-icon2.svg')}}" alt="Victory Journey Masters">
                                         </figure>
                                     </div>
                                     <div class="sisf-e-content">
                                         <div class="sisf-m-title mb-2">
-                                            <h3 class="sisf-m-titl-inner">Luxury Getaways</h3>
+                                            <h3 class="sisf-m-titl-inner">Honeymoons & Celebrations</h3>
                                         </div>
                                         <div class="sisf-m-text">
-                                            <p class="sisf-page-text-line">Experience premium accommodations, exclusive resorts, and personalized services for a relaxing escape.</p>
+                                            <p class="sisf-page-text-line">Romantic escapes, anniversaries and milestone birthdays with thoughtful special touches.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -1130,15 +647,15 @@
                                 <div class="sisf-e-inner">
                                     <div class="sisf-e-icon mb-3">
                                         <figure>
-                                            <img src="{{ asset('website/images/what-we-offer-icon3.svg')}}" alt="Traviox">
+                                            <img src="{{ asset('website/images/what-we-offer-icon3.svg')}}" alt="Victory Journey Masters">
                                         </figure>
                                     </div>
                                     <div class="sisf-e-content">
                                         <div class="sisf-m-title mb-2">
-                                            <h3 class="sisf-m-titl-inner">Outdoor Adventures</h3>
+                                            <h3 class="sisf-m-titl-inner">Group & Church Trips</h3>
                                         </div>
                                         <div class="sisf-m-text">
-                                            <p class="sisf-page-text-line">Enjoy hiking, camping, water sports, and thrilling activities surrounded by breathtaking natural landscapes.</p>
+                                            <p class="sisf-page-text-line">Coordinated visas, group fares and accommodation for associations, churches and friends.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -1149,15 +666,15 @@
                                 <div class="sisf-e-inner">
                                     <div class="sisf-e-icon mb-3">
                                         <figure>
-                                            <img src="{{ asset('website/images/what-we-offer-icon4.svg')}}" alt="Traviox">
+                                            <img src="{{ asset('website/images/what-we-offer-icon4.svg')}}" alt="Victory Journey Masters">
                                         </figure>
                                     </div>
                                     <div class="sisf-e-content">
                                         <div class="sisf-m-title mb-2">
-                                            <h3 class="sisf-m-titl-inner">Local Experiences</h3>
+                                            <h3 class="sisf-m-titl-inner">Business & Conferences</h3>
                                         </div>
                                         <div class="sisf-m-text">
-                                            <p class="sisf-page-text-line">Connect with local communities through authentic food, traditions, festivals, and cultural attractions.</p>
+                                            <p class="sisf-page-text-line">Business visas, conference travel and well-located hotels for productive trips.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -1166,7 +683,7 @@
                         </div>
                         <div class="col-12">
                             <div class="sisf-m-button" data-aos="fade-up" data-aos-delay="500">
-                                <a href="about-us.html" class="sis-btn-default">Discover Our Story<i class="fa-solid fa-arrow-right-long"></i></a>
+                                <a href="{{ route('web.about') }}" class="sis-btn-default">Discover Our Story<i class="fa-solid fa-arrow-right-long"></i></a>
                             </div>
                         </div>
                     </div>
@@ -1183,9 +700,7 @@
                     <div class="col-12 p-0">
                         <div class="intro-video-box">
                             <div class="sisf-sis-back-video">
-                                <video class="bg-video" autoplay loop muted>
-                                    <source src="../traviox.wpthemeverse.com/wp-content/uploads/2026/06/video3.mp4" type="video/mp4">
-                                </video>
+                                <img src="{{ asset('website/images/tour-bg.jpg') }}" class="bg-video w-100 h-100" style="object-fit:cover" alt="">
                             </div>
                         </div>
                     </div>
@@ -1194,9 +709,9 @@
                     <div class="col-12">
                         <!-- Section Title Start -->
                         <div class="sisf-sis-section-title text-center mb-0 sis-section-title">
-                            <h2 class="sisf-m-title text-white sis-text-anime-style-3"><span class="sisf-e-colored">Travel Beyond</span> The Ordinary With<br> <span class="sisf-e-colored">Extraordinary Experiences</span></h2>
+                            <h2 class="sisf-m-title text-white sis-text-anime-style-3"><span class="sisf-e-colored">Your Passport</span> Is Ready.<br> Let’s Get You <span class="sisf-e-colored">Where You’re Going</span></h2>
                             <div class="sisf-m-button pt-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
-                                <a href="contact.html" class="sis-btn-default">Plan Your Journey<i class="fa-solid fa-arrow-right-long"></i></a>
+                                <a href="{{ route('web.contact') }}" class="sis-btn-default">Plan Your Journey<i class="fa-solid fa-arrow-right-long"></i></a>
                             </div>
                         </div>
                         <!-- Section Title End -->
@@ -1206,201 +721,7 @@
         </div>
     </div>
     <!-- Experiences Section End -->
-    <!-- Testimonials Section Start -->
-    <div class="sis-testimonial-section section">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <!-- Section Title Start -->
-                    <div class="sisf-sis-section-title text-center sis-section-title">
-                        <span class="sisf-m-subtitle sis-text-anime-style-3">Traveller’s Story</span>
-                        <h2 class="sisf-m-title sis-text-anime-style-3">Journeys That<br> <span class="sisf-e-colored">Inspire Confidence</span></h2>
-                        <div class="sisf-m-text" data-aos="fade-up" data-aos-delay="100">
-                            <p>Real travelers, unforgettable experiences. Discover why thousands trust Traviox to turn every trip into a<br> seamless and memorable adventure.</p>
-                        </div>
-                    </div>
-                    <!-- Section Title End -->
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="testimonial-right page" data-aos="fade-up" data-aos-delay="300">
-                        <div class="sis-comman--swiper-slider sisf-testimonials-list sisf-testimonial-slider">
-                            <div class="swiper">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="sisf-e-inner sis-radius overflow-hidden position-relative mb-0">
-                                            <div class="sisf-e-testimonial-image">
-                                                <figure>
-                                                    <img src="{{ asset('website/images/testimonial1.png') }}" class="w-100" alt="Traviox">
-                                                </figure>
-                                            </div>
-                                            <div class="sisf-e-top sis-e-testimonial-content p-3">
-                                                <div class="quote-left-icon mb-2">
-                                                    <span><i class="fa-solid sisf-e-colored fa-quote-left"></i></span>
-                                                </div>
-                                                <div class="sisf-bottom-with-content">
-                                                    <div class="sisf-bottom--content">
-                                                        <div class="sisf-m-inner">
-                                                            <div class="sisf-e-author">
-                                                                <span class="sisf-e-author-name pe-1 sisf-primary-text">Emma Thompson</span>
-                                                                <span class="sisf-m-divider"></span>
-                                                                <span class="sisf-e-author-role ps-2 sisf-primary-text">London, United Kingdom</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="sisf-ratings py-2">
-                                                    <div class="sisf-m-star sisf--initial">
-                                                        <span class="star">★</span>
-                                                        <span class="star">★</span>
-                                                        <span class="star">★</span>
-                                                        <span class="star">★</span>
-                                                        <span class="star">★</span>
-                                                    </div>
-                                                </div>
-                                                <div class="sisf-e-content-center sisf-e-discription border-0">
-                                                    <p class="mb-0 sisf-primary-text">Our honeymoon was everything we dreamed of and more. From the luxury resort to every guided excursion, everything was perfectly organized. We simply enjoyed the journey without worrying about a thing.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="sisf-e-inner sis-radius overflow-hidden position-relative mb-0">
-                                            <div class="sisf-e-testimonial-image">
-                                                <figure>
-                                                    <img src="{{ asset('website/images/testimonial2.png') }}" class="w-100" alt="Traviox">
-                                                </figure>
-                                            </div>
-                                            <div class="sisf-e-top sis-e-testimonial-content p-3">
-                                                <div class="quote-left-icon mb-2">
-                                                    <span><i class="fa-solid sisf-e-colored fa-quote-left"></i></span>
-                                                </div>
-                                                <div class="sisf-bottom-with-content">
-                                                    <div class="sisf-bottom--content">
-                                                        <div class="sisf-m-inner">
-                                                            <div class="sisf-e-author">
-                                                                <span class="sisf-e-author-name pe-1 sisf-primary-text">Daniel Carter</span>
-                                                                <span class="sisf-m-divider"></span>
-                                                                <span class="sisf-e-author-role ps-2 sisf-primary-text">Toronto, Canada</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="sisf-ratings py-2">
-                                                    <div class="sisf-m-star sisf--initial">
-                                                        <span class="star">★</span>
-                                                        <span class="star">★</span>
-                                                        <span class="star">★</span>
-                                                        <span class="star">★</span>
-                                                        <span class="star">★</span>
-                                                    </div>
-                                                </div>
-                                                <div class="sisf-e-content-center sisf-e-discription border-0">
-                                                    <p class="mb-0 sisf-primary-text">Planning an international family vacation felt overwhelming until we found Traviox. Every detail was handled professionally, and the itinerary was perfectly balanced for both adults and kids.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="sisf-e-inner sis-radius overflow-hidden position-relative mb-0">
-                                            <div class="sisf-e-testimonial-image">
-                                                <figure>
-                                                    <img src="{{ asset('website/images/testimonial3.png') }}" class="w-100" alt="Traviox">
-                                                </figure>
-                                            </div>
-                                            <div class="sisf-e-top sis-e-testimonial-content p-3">
-                                                <div class="quote-left-icon mb-2">
-                                                    <span><i class="fa-solid sisf-e-colored fa-quote-left"></i></span>
-                                                </div>
-                                                <div class="sisf-bottom-with-content">
-                                                    <div class="sisf-bottom--content">
-                                                        <div class="sisf-m-inner">
-                                                            <div class="sisf-e-author">
-                                                                <span class="sisf-e-author-name pe-1 sisf-primary-text">Sophia Martinez</span>
-                                                                <span class="sisf-m-divider"></span>
-                                                                <span class="sisf-e-author-role ps-2 sisf-primary-text">Barcelona, Spain</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="sisf-ratings py-2">
-                                                    <div class="sisf-m-star sisf--initial">
-                                                        <span class="star">★</span>
-                                                        <span class="star">★</span>
-                                                        <span class="star">★</span>
-                                                        <span class="star">★</span>
-                                                        <span class="star">★</span>
-                                                    </div>
-                                                </div>
-                                                <div class="sisf-e-content-center sisf-e-discription border-0">
-                                                    <p class="mb-0 sisf-primary-text">I've booked several trips through Traviox, and each experience has exceeded my expectations. The destinations, local guides, and customer support were outstanding from beginning to end.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="sisf-e-inner sis-radius overflow-hidden position-relative mb-0">
-                                            <div class="sisf-e-testimonial-image">
-                                                <figure>
-                                                    <img src="{{ asset('website/images/testimonial4.png') }}" class="w-100" alt="Traviox">
-                                                </figure>
-                                            </div>
-                                            <div class="sisf-e-top sis-e-testimonial-content p-3">
-                                                <div class="quote-left-icon mb-2">
-                                                    <span><i class="fa-solid sisf-e-colored fa-quote-left"></i></span>
-                                                </div>
-                                                <div class="sisf-bottom-with-content">
-                                                    <div class="sisf-bottom--content">
-                                                        <div class="sisf-m-inner">
-                                                            <div class="sisf-e-author">
-                                                                <span class="sisf-e-author-name pe-1 sisf-primary-text">Olivia Wilson</span>
-                                                                <span class="sisf-m-divider"></span>
-                                                                <span class="sisf-e-author-role ps-2 sisf-primary-text">New York, United States</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="sisf-ratings py-2">
-                                                    <div class="sisf-m-star sisf--initial">
-                                                        <span class="star">★</span>
-                                                        <span class="star">★</span>
-                                                        <span class="star">★</span>
-                                                        <span class="star">★</span>
-                                                        <span class="star">★</span>
-                                                    </div>
-                                                </div>
-                                                <div class="sisf-e-content-center sisf-e-discription border-0">
-                                                    <p class="mb-0 sisf-primary-text">I’ve booked multiple international tours with this team, and every journey has been exceptional. From carefully selected destinations to knowledgeable guides and outstanding customer support.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="sis-comman-bottom-line-text sis-e-bottom text-center">
-                        <div class="sisf-sis-e-box">
-                            <p class="mb-1" data-aos="fade-up" data-aos-delay="300"><span class="pe-2"><img src="{{ asset('website/images/users1.png') }}" alt="Traviox"></span> Trusted by 25,000+ Happy Travelers Worldwide <a href="about-us.html">Being your journey</a></p>
-                            <p class="mb-0" data-aos="fade-up" data-aos-delay="500">4.9/5 Average Rating from Verified Travelers
-                                <span class="sisf-e-colored">★</span>
-                                <span class="sisf-e-colored">★</span>
-                                <span class="sisf-e-colored">★</span>
-                                <span class="sisf-e-colored">★</span>
-                                <span class="sisf-e-colored">★</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Testimonials Section End -->
+    @include('web.partials.testimonials')
     <!-- FAQ Section Start -->
     <div class="sis-faq-section section">
         <div class="container">
@@ -1408,7 +729,7 @@
                 <div class="col-lg-5 position-relative">
                     <div class="sis-e-faqs-image">
                         <figure class="sis-image-anime sis-reveal">
-                            <img src="{{ asset('website/images/faqs-img.jpg')}}" class="w-100 sis-radius" alt="Traviox">
+                            <img src="{{ asset('website/images/faqs-img.jpg')}}" class="w-100 sis-radius" alt="Victory Journey Masters">
                         </figure>
                     </div>
                     <div class="sisf-faqs-contact-part sisf-contact-left-bottom" data-aos="zoom-in-left" data-aos-delay="500">
@@ -1418,24 +739,24 @@
                                     <h3>Need Personal Travel Assistance?</h3>
                                 </div>
                                 <div class="sisf-m-text">
-                                    <p>Our travel specialists are here to help you plan the perfect<br> getaway and answer any questions you may have.</p>
+                                    <p>Speak with our team about visas, admissions, bookings<br> or holiday plans — we are happy to help.</p>
                                 </div>
                             </div>
                             <div class="sisf-sis-contact-information">
                                 <div class="sisf-contact-box mb-2 d-flex align-items-center gap-3">
                                     <div class="sisf--icon">
-                                        <a href="tel:+18004567890" class="sis-comman-text"><i class="fa-solid fa-phone-volume"></i></a>
+                                        <a href="tel:{{ config('site.phone_link') }}" class="sis-comman-text"><i class="fa-solid fa-phone-volume"></i></a>
                                     </div>
                                     <div class="sisf-sis-e-content">
-                                        <a href="tel:+18004567890" class="sis-title sis-comman-text d-block">+1 (800) 456-7890</a>
+                                        <a href="tel:{{ config('site.phone_link') }}" class="sis-title sis-comman-text d-block">{{ config('site.phone') }}</a>
                                     </div>
                                 </div>
                                 <div class="sisf-contact-box mb-2 d-flex align-items-center gap-3">
                                     <div class="sisf--icon">
-                                        <a href="mailto:hello@travioxtravel.com" class="sis-comman-text"><i class="fa-regular fa-envelope"></i></a>
+                                        <a href="mailto:{{ config('site.email') }}" class="sis-comman-text"><i class="fa-regular fa-envelope"></i></a>
                                     </div>
                                     <div class="sisf-sis-e-content">
-                                        <a href="mailto:hello@travioxtravel.com" class="sis-title sis-comman-text d-block">hello@Travioxtravel.com</a>
+                                        <a href="mailto:{{ config('site.email') }}" class="sis-title sis-comman-text d-block">{{ config('site.email') }}</a>
                                     </div>
                                 </div>
                                 <div class="sisf-contact-box d-flex align-items-center gap-3">
@@ -1443,11 +764,11 @@
                                         <a href="#" class="sis-comman-text"><i class="fa-solid fa-clock"></i></a>
                                     </div>
                                     <div class="sisf-sis-e-content">
-                                        <a href="#" class="sis-title sis-comman-text d-block">Mon – Sat: 9:00 AM – 7:00 PM</a>
+                                        <a href="#" class="sis-title sis-comman-text d-block">{{ config('site.hours_short') }}</a>
                                     </div>
                                 </div>
                                 <div class="sisf-m-button pt-4">
-                                    <a href="contact.html" class="sis-btn-default">Contact Our Experts<i class="fa-solid fa-arrow-right-long"></i></a>
+                                    <a href="{{ route('web.contact') }}" class="sis-btn-default">Contact Our Team<i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -1459,398 +780,49 @@
                         <span class="sisf-m-subtitle sis-text-anime-style-3">FAQs</span>
                         <h2 class="sisf-m-title sis-text-anime-style-3">Frequently <span class="sisf-e-colored">Asked Questions</span></h2>
                         <div class="sisf-m-text" data-aos="fade-up" data-aos-delay="100">
-                            <p>Have questions about planning your next adventure? Here are answers to some of the most common questions to help you book with confidence.</p>
+                            <p>Quick answers to the questions we hear most. Visit our <a href="{{ route('web.faq') }}" class="sisf-e-colored">FAQ page</a> for more.</p>
                         </div>
                     </div>
                     <!-- Section Title End -->
-                    <div class="sisf-page-accordian sisf-sis-page-accordian sisf-page-bottom sis-radius bg-white overflow-hidden" data-aos="fade-up" data-aos-delay="100">
-                        <div class="accordion" id="sisf-Accordion">
-                            <!-- Accordion Item Start-->
-                            <div class="accordion-item mt-0">
-                                <h2 class="accordion-header sis-comman-title">
-                                    <button class="accordion-button mt-0" data-bs-toggle="collapse" data-bs-target="#sis-one">
-                                        <span>1. How do I book a tour package?</span>
-                                    </button>
-                                </h2>
-                                <div id="sis-one" class="accordion-collapse collapse show" data-bs-parent="#sisf-Accordion">
-                                    <div class="accordion-body">
-                                        <div class="sisf-e-content-inner">
-                                            <p class="mb-0 text-white">Browse your preferred destination, select a package, choose your travel dates, and complete your booking securely through our simple online process.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Accordion Item End-->
-                            <!-- Accordion Item Start-->
-                            <div class="accordion-item mt-0">
-                                <h2 class="accordion-header sis-comman-title">
-                                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#sis-two">
-                                        <span>2. Can I customize my travel itinerary?</span>
-                                    </button>
-                                </h2>
-                                <div id="sis-two" class="accordion-collapse collapse" data-bs-parent="#sisf-Accordion">
-                                    <div class="accordion-body">
-                                        <div class="sisf-e-content-inner">
-                                            <p class="mb-0 text-white">Browse your preferred destination, select a package, choose your travel dates, and complete your booking securely through our simple online process.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Accordion Item End-->
-                            <!-- Accordion Item Start-->
-                            <div class="accordion-item mt-0">
-                                <h2 class="accordion-header sis-comman-title">
-                                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#sis-three">
-                                        <span>3. What is included in the tour package?</span>
-                                    </button>
-                                </h2>
-                                <div id="sis-three" class="accordion-collapse collapse" data-bs-parent="#sisf-Accordion">
-                                    <div class="accordion-body">
-                                        <div class="sisf-e-content-inner">
-                                            <p class="mb-0 text-white">Browse your preferred destination, select a package, choose your travel dates, and complete your booking securely through our simple online process.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Accordion Item End-->
-                            <!-- Accordion Item Start-->
-                            <div class="accordion-item mt-0">
-                                <h2 class="accordion-header sis-comman-title">
-                                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#sis-four">
-                                        <span>4. Can I cancel or reschedule my booking?</span>
-                                    </button>
-                                </h2>
-                                <div id="sis-four" class="accordion-collapse collapse" data-bs-parent="#sisf-Accordion">
-                                    <div class="accordion-body">
-                                        <div class="sisf-e-content-inner">
-                                            <p class="mb-0 text-white">Browse your preferred destination, select a package, choose your travel dates, and complete your booking securely through our simple online process.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Accordion Item End-->
-                            <!-- Accordion Item Start-->
-                            <div class="accordion-item mt-0">
-                                <h2 class="accordion-header sis-comman-title">
-                                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#sis-five">
-                                        <span>5. Do you provide international travel assistance?</span>
-                                    </button>
-                                </h2>
-                                <div id="sis-five" class="accordion-collapse collapse" data-bs-parent="#sisf-Accordion">
-                                    <div class="accordion-body">
-                                        <div class="sisf-e-content-inner">
-                                            <p class="mb-0 text-white">Browse your preferred destination, select a package, choose your travel dates, and complete your booking securely through our simple online process.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Accordion Item End-->
-                            <!-- Accordion Item Start-->
-                            <div class="accordion-item border-0 mt-0">
-                                <h2 class="accordion-header sis-comman-title">
-                                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#sis-six">
-                                        <span>6. How can I contact your travel experts?</span>
-                                    </button>
-                                </h2>
-                                <div id="sis-six" class="accordion-collapse collapse" data-bs-parent="#sisf-Accordion">
-                                    <div class="accordion-body">
-                                        <div class="sisf-e-content-inner">
-                                            <p class="mb-0 text-white">Browse your preferred destination, select a package, choose your travel dates, and complete your booking securely through our simple online process.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Accordion Item End-->
-                        </div>
-                    </div>
+                    @include('web.partials.faq-accordion', ['faqs' => [config('site.faqs')['Visas & Travel Documents'][1], config('site.faqs')['Visas & Travel Documents'][2], config('site.faqs')['Study Abroad'][0], config('site.faqs')['Flights & Hotels'][1], config('site.faqs')['Tours & Payments'][1], config('site.faqs')['Tours & Payments'][2]], 'id' => 'homeFaq'])
                 </div>
             </div>
         </div>
     </div>
     <!-- FAQ Section End -->
     <!-- Contact Us Section Start -->
-    <div class="sis-contact-us-section sis-br-radius section">
+    <div class="sis-contact-us-section sis-br-radius section" id="contact-form">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <div class="sisf-e-content text-center mt-5">
-                        <p class="text-white">Trusted by 25,000+ Travelers and 500+ Global Travel Partners</p>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="sis-logo-slider" data-aos="fade-up" data-aos-delay="100">
-                                <div class="sis-comman-swiper-slider">
-                                    <div class="swiper">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide">
-                                                <div class="sisf-e-inner">
-                                                    <div class="sis-logo-slide-image text-center">
-                                                        <figure>
-                                                            <img src="{{ asset('website/images/clien-logo1.png') }}" alt="Traviox">
-                                                        </figure>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="sisf-e-inner">
-                                                    <div class="sis-logo-slide-image text-center">
-                                                        <figure>
-                                                            <img src="{{ asset('website/images/clien-logo2.png') }}" alt="Traviox">
-                                                        </figure>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="sisf-e-inner">
-                                                    <div class="sis-logo-slide-image text-center">
-                                                        <figure>
-                                                            <img src="{{ asset('website/images/clien-logo3.png') }}" alt="Traviox">
-                                                        </figure>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="sisf-e-inner">
-                                                    <div class="sis-logo-slide-image text-center">
-                                                        <figure>
-                                                            <img src="{{ asset('website/images/clien-logo4.png') }}" alt="Traviox">
-                                                        </figure>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="sisf-e-inner">
-                                                    <div class="sis-logo-slide-image text-center">
-                                                        <figure>
-                                                            <img src="{{ asset('website/images/clien-logo5.png') }}" alt="Traviox">
-                                                        </figure>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="sisf-e-inner">
-                                                    <div class="sis-logo-slide-image text-center">
-                                                        <figure>
-                                                            <img src="{{ asset('website/images/clien-logo6.png') }}" alt="Traviox">
-                                                        </figure>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="sisf-e-inner">
-                                                    <div class="sis-logo-slide-image text-center">
-                                                        <figure>
-                                                            <img src="{{ asset('website/images/clien-logo7.png') }}" alt="Traviox">
-                                                        </figure>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="sisf-e-inner">
-                                                    <div class="sis-logo-slide-image text-center">
-                                                        <figure>
-                                                            <img src="{{ asset('website/images/clien-logo8.png') }}" alt="Traviox">
-                                                        </figure>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="sisf-e-inner">
-                                                    <div class="sis-logo-slide-image text-center">
-                                                        <figure>
-                                                            <img src="{{ asset('website/images/clien-logo9.png') }}" alt="Traviox">
-                                                        </figure>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                    <div class="sisf-e-content mt-5 pe-lg-4">
+                        <div class="sisf-sis-section-title sis-section-title" data-aos="fade-up">
+                            <span class="sisf-m-subtitle sis-text-anime-style-3">Talk To Us</span>
+                            <h2 class="sisf-m-title text-white sis-text-anime-style-3">Prefer to Speak <span class="sisf-e-colored">With a Person?</span></h2>
+                            <div class="sisf-m-text">
+                                <p class="text-white mt-3">Call, WhatsApp or visit our office. We will listen to your plans and tell you honestly what is needed.</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="sis-logo-slider my-4" data-aos="fade-up" data-aos-delay="300">
-                                <div class="sis-comman--swiper-slider">
-                                    <div class="swiper">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide">
-                                                <div class="sisf-e-inner">
-                                                    <div class="sis-logo-slide-image text-center">
-                                                        <figure>
-                                                            <img src="{{ asset('website/images/clien-logo1.png') }}" alt="Traviox">
-                                                        </figure>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="sisf-e-inner">
-                                                    <div class="sis-logo-slide-image text-center">
-                                                        <figure>
-                                                            <img src="{{ asset('website/images/clien-logo2.png') }}" alt="Traviox">
-                                                        </figure>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="sisf-e-inner">
-                                                    <div class="sis-logo-slide-image text-center">
-                                                        <figure>
-                                                            <img src="{{ asset('website/images/clien-logo3.png') }}" alt="Traviox">
-                                                        </figure>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="sisf-e-inner">
-                                                    <div class="sis-logo-slide-image text-center">
-                                                        <figure>
-                                                            <img src="{{ asset('website/images/clien-logo4.png') }}" alt="Traviox">
-                                                        </figure>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="sisf-e-inner">
-                                                    <div class="sis-logo-slide-image text-center">
-                                                        <figure>
-                                                            <img src="{{ asset('website/images/clien-logo5.png') }}" alt="Traviox">
-                                                        </figure>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="sisf-e-inner">
-                                                    <div class="sis-logo-slide-image text-center">
-                                                        <figure>
-                                                            <img src="{{ asset('website/images/clien-logo6.png') }}" alt="Traviox">
-                                                        </figure>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="sisf-e-inner">
-                                                    <div class="sis-logo-slide-image text-center">
-                                                        <figure>
-                                                            <img src="{{ asset('website/images/clien-logo7.png') }}" alt="Traviox">
-                                                        </figure>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="sisf-e-inner">
-                                                    <div class="sis-logo-slide-image text-center">
-                                                        <figure>
-                                                            <img src="{{ asset('website/images/clien-logo8.png') }}" alt="Traviox">
-                                                        </figure>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="sisf-e-inner">
-                                                    <div class="sis-logo-slide-image text-center">
-                                                        <figure>
-                                                            <img src="{{ asset('website/images/clien-logo9.png') }}" alt="Traviox">
-                                                        </figure>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                        <div class="sisf-sis-contact-information" data-aos="fade-up" data-aos-delay="200">
+                            <div class="sisf-contact-box mb-3 pb-3 d-flex align-items-center gap-3">
+                                <div class="sisf-icon"><a href="tel:{{ config('site.phone_link') }}"><i class="fa-solid fa-phone-volume"></i></a></div>
+                                <div class="sisf-sis-e-content">
+                                    <span class="sis-title text-white d-block">Call us on</span>
+                                    <a href="tel:{{ config('site.phone_link') }}" class="sis-title text-white sis-comman-text d-block">{{ config('site.phone') }}</a>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="sis-logo-slider mb-4" data-aos="fade-up" data-aos-delay="500">
-                                <div class="sisf-comman--swiper-slider ms-auto me-auto">
-                                    <div class="swiper">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide">
-                                                <div class="sisf-e-inner">
-                                                    <div class="sis-logo-slide-image text-center">
-                                                        <figure>
-                                                            <img src="{{ asset('website/images/clien-logo1.png') }}" alt="Traviox">
-                                                        </figure>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="sisf-e-inner">
-                                                    <div class="sis-logo-slide-image text-center">
-                                                        <figure>
-                                                            <img src="{{ asset('website/images/clien-logo2.png') }}" alt="Traviox">
-                                                        </figure>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="sisf-e-inner">
-                                                    <div class="sis-logo-slide-image text-center">
-                                                        <figure>
-                                                            <img src="{{ asset('website/images/clien-logo3.png') }}" alt="Traviox">
-                                                        </figure>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="sisf-e-inner">
-                                                    <div class="sis-logo-slide-image text-center">
-                                                        <figure>
-                                                            <img src="{{ asset('website/images/clien-logo4.png') }}" alt="Traviox">
-                                                        </figure>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="sisf-e-inner">
-                                                    <div class="sis-logo-slide-image text-center">
-                                                        <figure>
-                                                            <img src="{{ asset('website/images/clien-logo5.png') }}" alt="Traviox">
-                                                        </figure>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="sisf-e-inner">
-                                                    <div class="sis-logo-slide-image text-center">
-                                                        <figure>
-                                                            <img src="{{ asset('website/images/clien-logo6.png') }}" alt="Traviox">
-                                                        </figure>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="sisf-e-inner">
-                                                    <div class="sis-logo-slide-image text-center">
-                                                        <figure>
-                                                            <img src="{{ asset('website/images/clien-logo7.png') }}" alt="Traviox">
-                                                        </figure>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="sisf-e-inner">
-                                                    <div class="sis-logo-slide-image text-center">
-                                                        <figure>
-                                                            <img src="{{ asset('website/images/clien-logo8.png') }}" alt="Traviox">
-                                                        </figure>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="sisf-e-inner">
-                                                    <div class="sis-logo-slide-image text-center">
-                                                        <figure>
-                                                            <img src="{{ asset('website/images/clien-logo9.png') }}" alt="Traviox">
-                                                        </figure>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                            <div class="sisf-contact-box mb-3 pb-3 d-flex align-items-center gap-3">
+                                <div class="sisf-icon"><a href="https://wa.me/{{ config('site.whatsapp') }}" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a></div>
+                                <div class="sisf-sis-e-content">
+                                    <span class="sis-title text-white d-block">WhatsApp</span>
+                                    <a href="https://wa.me/{{ config('site.whatsapp') }}" target="_blank" rel="noopener" class="sis-title text-white sis-comman-text d-block">Chat with our team</a>
+                                </div>
+                            </div>
+                            <div class="sisf-contact-box d-flex align-items-center gap-3">
+                                <div class="sisf-icon"><a href="{{ route('web.contact') }}#office-map"><i class="fa-solid fa-location-dot"></i></a></div>
+                                <div class="sisf-sis-e-content">
+                                    <span class="sis-title text-white d-block">Visit our office</span>
+                                    <a href="{{ route('web.contact') }}#office-map" class="sis-title text-white sis-comman-text d-block">{{ config('site.address') }}</a>
                                 </div>
                             </div>
                         </div>
@@ -1860,105 +832,15 @@
                     <div class="sis-contect-right bg-white p-4 sis-radius" data-aos="fade-up" data-aos-delay="100">
                         <!-- Setion Title Start -->
                         <div class="sisf-sis-section-title sis-section-title">
-                            <span class="sisf-m-subtitle sis-text-anime-style-3">Start Your Joruney</span>
-                            <h2 class="sisf-m-title sis-text-anime-style-3"><span class="sisf-e-colored">Let's Plan</span> Your Next Unforgettable Adventure</h2>
+                            <span class="sisf-m-subtitle sis-text-anime-style-3">Start Your Journey</span>
+                            <h2 class="sisf-m-title sis-text-anime-style-3"><span class="sisf-e-colored">Tell Us</span> Where You Want to Go</h2>
                             <div class="sisf-m-text">
-                                <p>Our travel experts are here to create a personalized journey tailored just for you.</p>
+                                <p>Send a few details and we will reply with clear next steps — usually within one working day.</p>
                             </div>
                         </div>
                         <!-- Setion Title End -->
                         <div class="form-section">
-                            <!-- Form Start -->
-                            <form id="enquiryForm" class="p-0 m-0" action="#" method="POST" data-toggle="validator">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <div class="help-block with-errors"></div>
-                                            <div class="form-col">
-                                                <label class="sis-form-label mb-2">First Name *</label>
-                                                <input type="text" class="form-control sis-comman-bg" id="firstName" name="firstName" placeholder="ex. John" required="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <div class="help-block with-errors"></div>
-                                            <div class="form-col">
-                                                <label class="sis-form-label mb-2">Last Name *</label>
-                                                <input type="text" class="form-control sis-comman-bg" id="lastName" name="lastName" placeholder="ex. Doe" required="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <div class="help-block with-errors"></div>
-                                            <div class="form-col">
-                                                <label class="sis-form-label mb-2">Phone Number *</label>
-                                                <input type="tel" class="form-control sis-comman-bg" id="phone" name="phone" placeholder="ex. +1 (800) 456-7890" required="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <div class="help-block with-errors"></div>
-                                            <div class="form-col">
-                                                <label class="sis-form-label mb-2">Email Address *</label>
-                                                <input type="email" class="form-control sis-comman-bg" id="email" name="email" placeholder="ex. john.doe@example.com" required="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <div class="help-block with-errors"></div>
-                                            <div class="form-col">
-                                                <label class="sis-form-label mb-2">Preferred Destination *</label>
-                                                <input type="email" class="form-control sis-comman-bg" id="destination" name="destination" placeholder="ex. Bali, Indonesia" required="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="sis-form-field form-group w-100 ps-0 border-0">
-                                            <div class="help-block with-errors"></div>
-                                            <label class="sis-form-label mb-2">Travel Date *</label>
-                                            <div class="sis-date-field position-relative">
-                                                <input type="date" class="form-control sis-comman-bg w-100" name="Date" required>
-                                                <i class="fa-regular fa-calendar"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="sis-form-field form-group">
-                                            <label class="sis-form-label mb-2">Number of Travelers *</label>
-                                            <select class="form-select form-control sis-comman-bg" name="Guests" required>
-                                                <option value="">ex. 2 Adults</option>
-                                                <option value="">1</option>
-                                                <option value="">2</option>
-                                                <option value="">3</option>
-                                                <option value="">4</option>
-                                                <option value="">5</option>
-                                                <option value="">6</option>
-                                                <option value="">7</option>
-                                                <option value="">8</option>
-                                                <option value="">9</option>
-                                                <option value="">10</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <div class="help-block with-errors"></div>
-                                            <div class="form-col position-relative">
-                                                <label class="sis-form-label mb-2">Your Message *</label>
-                                                <textarea id="message" class="form-control sis-comman-bg rounded-3" name="message" placeholder="We're planning a 7-day honeymoon and would love a package that includes beachfront accommodation, island tours, and a romantic sunset dinner." rows="2" required=""></textarea>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="sisf-m-btn pt-3">
-                                    <button type="submit" class="sis-btn-default">Start Planning My Trip<i class="fa-solid fa-arrow-right-long"></i></button>
-                                </div>
-                            </form>
-                            <!-- Form End -->
+                            @include('web.partials.enquiry-form', ['fieldClass' => 'sis-comman-bg'])
                         </div>
                     </div>
                 </div>
@@ -1973,14 +855,14 @@
                 <div class="col-lg-7">
                     <!-- Section Title Start -->
                     <div class="sisf-sis-section-title sis-section-title">
-                        <span class="sisf-m-subtitle sis-text-anime-style-3">Latest Blogs</span>
-                        <h2 class="sisf-m-title sis-text-anime-style-3">Discover Inspiration for Your <span class="sisf-e-colored">Next Adventure</span></h2>
+                        <span class="sisf-m-subtitle sis-text-anime-style-3">Travel Guides</span>
+                        <h2 class="sisf-m-title sis-text-anime-style-3">Helpful Advice Before <span class="sisf-e-colored">You Travel</span></h2>
                         <div class="button-group pt-2 d-flex align-items-center flex-wrap gap-4">
                             <div class="sisf-m-button" data-aos="fade-up" data-aos-delay="100">
-                                <a href="blogs.html" class="sis-btn-default">View All Blogs<i class="fa-solid fa-arrow-right-long"></i></a>
+                                <a href="{{ route('web.blog') }}" class="sis-btn-default">View All Guides<i class="fa-solid fa-arrow-right-long"></i></a>
                             </div>
                             <div class="sisf-m-button" data-aos="fade-up" data-aos-delay="300">
-                                <a href="about-us.html" class="sis-btn-default btn-light">Discover Our Story<i class="fa-solid fa-arrow-right-long"></i></a>
+                                <a href="{{ route('web.about') }}" class="sis-btn-default btn-light">Discover Our Story<i class="fa-solid fa-arrow-right-long"></i></a>
                             </div>
                         </div>
                     </div>
@@ -1990,41 +872,31 @@
                     <!-- Section Title Start -->
                     <div class="sisf-sis-section-title sis-section-title">
                         <div class="sisf-m-text mb-3 pb-3" data-aos="fade-up" data-aos-delay="100">
-                            <p class="mt-0">Explore expert travel tips, destination guides, hidden gems, and inspiring stories designed to help you plan unforgettable journeys and create meaningful experiences wherever yournext adventure takes you.</p>
+                            <p class="mt-0">Practical guides on visa applications, studying abroad, booking flights and getting the most from popular destinations — written by our team.</p>
                         </div>
-                        <div class="sis-comman-bottom--line-text sis-e-bottom">
-                            <div class="sisf-sis-e-box d-flex align-items-center flex-wrap gap-2">
-                                <p class="m-0" data-aos="fade-up" data-aos-delay="300">
-                                    <span class="sisf-e-colored">★</span>
-                                    <span class="sisf-e-colored">★</span>
-                                    <span class="sisf-e-colored">★</span>
-                                    <span class="sisf-e-colored">★</span>
-                                    <span class="sisf-e-colored">★</span>
-                                </p>
-                                <p class="m-0" data-aos="fade-up" data-aos-delay="500">Rated <span class="sis-primary-text fw-bold">4.9/5</span> by Happy Travelers Worldwide</p>
-                            </div>
-                        </div>
+                        
                     </div>
                     <!-- Section Title End -->
                 </div>
             </div>
             <div class="row">
+                @foreach (array_slice(config('site.posts'), 0, 3) as $post)
                 <div class="col-lg-4 col-md-6">
-                    <div class="sis-letest-blog-item sis-radius bg-white p-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="sis-letest-blog-item sis-radius bg-white p-3" data-aos="fade-up" data-aos-delay="{{ 100 + $loop->index * 200 }}">
                         <div class="sisf-e-inner position-relative">
                             <div class="sisf-e-media-holder mb-3">
                                 <div class="sisf-e-media">
                                     <!-- Blog Image Start -->
                                     <div class="sisf-e-media-image">
-                                        <a href="blog-single.html" class="d-block">
+                                        <a href="{{ route('web.post', $post['slug']) }}" class="d-block">
                                             <figure>
-                                                <img src="{{ asset('website/images/blog-image1.jpg')}}" class="w-100" alt="Traviox">
+                                                <img src="{{ asset($post['image'])}}" class="w-100" alt="{{ $post['title'] }}">
                                             </figure>
                                         </a>
                                     </div>
                                     <!-- Blog Image End -->
                                     <div class="sisf-blog-category">
-                                        <a href="blogs.html">5 Min Read</a>
+                                        <a href="{{ route('web.blog') }}">{{ $post['category'] }}</a>
                                     </div>
                                 </div>
                             </div>
@@ -2033,16 +905,16 @@
                                 <div class="sisf-e-text">
                                     <div class="sisf-e-title-wraper">
                                         <h2 class="sisf-e-title sis-comman-text entry-title">
-                                            <a class="sisf-e-title-link blog-title-link" href="blog-single.html">
-                                                10 Essential Travel Tips for a Stress-Free Vacation
+                                            <a class="sisf-e-title-link blog-title-link" href="{{ route('web.post', $post['slug']) }}">
+                                                {{ $post['title'] }}
                                             </a>
                                         </h2>
                                     </div>
                                     <div class="sisf-m-text">
-                                        <p class="sisf-e-discription sisf-page-text-line mb-0">Discover practical travel tips that help you save time, pack smarter, avoid common mistakes...</p>
+                                        <p class="sisf-e-discription sisf-page-text-line mb-0">{{ $post['excerpt'] }}</p>
                                     </div>
                                     <div class="sisf-m-btn pt-4">
-                                        <a href="blog-single.html" class="sis-btn-default d-inline-block">Read More <i class="fa-solid fa-arrow-right-long"></i></a>
+                                        <a href="{{ route('web.post', $post['slug']) }}" class="sis-btn-default d-inline-block">Read More <i class="fa-solid fa-arrow-right-long"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -2050,123 +922,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="sis-letest-blog-item sis-radius bg-white p-3" data-aos="fade-up" data-aos-delay="300">
-                        <div class="sisf-e-inner position-relative">
-                            <div class="sisf-e-media-holder mb-3">
-                                <div class="sisf-e-media">
-                                    <!-- Blog Image Start -->
-                                    <div class="sisf-e-media-image">
-                                        <a href="blog-single.html" class="d-block">
-                                            <figure>
-                                                <img src="{{ asset('website/images/blog-image2.jpg')}}" class="w-100" alt="Traviox">
-                                            </figure>
-                                        </a>
-                                    </div>
-                                    <!-- Blog Image End -->
-                                    <div class="sisf-blog-category">
-                                        <a href="blogs.html">10 Min Read</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Blog Content Start -->
-                            <div class="sisf-e-content">
-                                <div class="sisf-e-text">
-                                    <div class="sisf-e-title-wraper">
-                                        <h2 class="sisf-e-title sis-comman-text entry-title">
-                                            <a class="sisf-e-title-link blog-title-link" href="blog-single.html">
-                                                Hidden Gems You Must Visit in Southeast Asia
-                                            </a>
-                                        </h2>
-                                    </div>
-                                    <div class="sisf-m-text">
-                                        <p class="sisf-e-discription sisf-page-text-line mb-0">Explore breathtaking beaches, charming villages, and lesser-known destinations perfect for travelers...</p>
-                                    </div>
-                                    <div class="sisf-m-btn pt-4">
-                                        <a href="blog-single.html" class="sis-btn-default d-inline-block">Read More <i class="fa-solid fa-arrow-right-long"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Blog Content End -->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="sis-letest-blog-item sis-radius bg-white p-3 mb-0" data-aos="fade-up" data-aos-delay="500">
-                        <div class="sisf-e-inner position-relative">
-                            <div class="sisf-e-media-holder mb-3">
-                                <div class="sisf-e-media">
-                                    <!-- Blog Image Start -->
-                                    <div class="sisf-e-media-image">
-                                        <a href="blog-single.html" class="d-block">
-                                            <figure>
-                                                <img src="{{ asset('website/images/blog-image3.jpg')}}" class="w-100" alt="Traviox">
-                                            </figure>
-                                        </a>
-                                    </div>
-                                    <!-- Blog Image End -->
-                                    <div class="sisf-blog-category">
-                                        <a href="blogs.html">8 Min Read</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Blog Content Start -->
-                            <div class="sisf-e-content">
-                                <div class="sisf-e-text">
-                                    <div class="sisf-e-title-wraper">
-                                        <h2 class="sisf-e-title sis-comman-text entry-title">
-                                            <a class="sisf-e-title-link blog-title-link" href="blog-single.html">
-                                                Top Adventure Activities Every Thrill-Seeker Should Try
-                                            </a>
-                                        </h2>
-                                    </div>
-                                    <div class="sisf-m-text">
-                                        <p class="sisf-e-discription sisf-page-text-line mb-0">From mountain hiking to scuba diving and skydiving, discover unforgettable adventures...</p>
-                                    </div>
-                                    <div class="sisf-m-btn pt-4">
-                                        <a href="blog-single.html" class="sis-btn-default d-inline-block">Read More <i class="fa-solid fa-arrow-right-long"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Blog Content End -->
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </div>
     <!-- Letest Blog Section End -->
-    <!-- Explore More Section Start -->
-    <div class="sis-explore-more-section">
-        <div class="container">
-            <div class="sisf-partners-content-part sis-primary-background sis-radius position-relative">
-                <div class="sisf-sis-top-right-image">
-                    <figure>
-                        <img src="{{ asset('website/images/explore-bg.png') }}" alt="Traviox">
-                    </figure>
-                </div>
-                <div class="row align-items-center">
-                    <div class="col-lg-7">
-                        <!-- Section Title Start -->
-                        <div class="sisf-sis-section-title mb-0 ps-5 sis-section-title">
-                            <span class="sisf-m-subtitle text-white sis-text-anime-style-3">Explore More. Worry Less.</span>
-                            <h2 class="sisf-m-title text-white sis-text-anime-style-3">Book dream vacations with special limited-time offers.</h2>
-                            <div class="sisf-m-button pt-3" data-aos="fade-up" data-aos-delay="100">
-                                <a href="about-us.html" class="sis-btn-default btn-light">Limited Time Offer<i class="fa-solid fa-arrow-right-long"></i></a>
-                            </div>
-                        </div>
-                        <!-- Section Title End -->
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="sisf-explore-right-image" data-aos="zoom-in" data-aos-delay="400">
-                            <figure>
-                                <img src="{{ asset('website/images/explore-img-right.png') }}" alt="Traviox">
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Explore More Section End -->
+    @include('web.partials.cta')
     @endsection
