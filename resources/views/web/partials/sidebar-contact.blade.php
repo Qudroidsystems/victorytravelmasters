@@ -23,6 +23,9 @@
                     <div class="sisf-sis-e-content">
                         <span class="sis-title sis-title-top d-block">Have Questions?</span>
                         <a href="tel:{{ config('site.phone_link') }}" class="sis-title d-block">{{ config('site.phone') }}</a>
+                        @if (config('site.phone_alt'))
+                            <a href="tel:{{ config('site.phone_alt_link') }}" class="sis-title d-block">{{ config('site.phone_alt') }}</a>
+                        @endif
                     </div>
                 </div>
             </div>

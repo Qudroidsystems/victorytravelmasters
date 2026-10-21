@@ -37,6 +37,9 @@
                                 <div class="sisf-sis-e-content">
                                     <span class="sis-title text-white d-block">Call us on</span>
                                     <a href="tel:{{ $site['phone_link'] }}" class="sis-title text-white sis-comman-text d-block">{{ $site['phone'] }}</a>
+                                    @if (!empty($site['phone_alt']))
+                                        <a href="tel:{{ $site['phone_alt_link'] }}" class="sis-title text-white sis-comman-text d-block">{{ $site['phone_alt'] }}</a>
+                                    @endif
                                 </div>
                             </div>
                             <div class="sisf-contact-box mb-3 pb-3 d-flex align-items-center gap-3">

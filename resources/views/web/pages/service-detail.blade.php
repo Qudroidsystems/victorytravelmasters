@@ -32,6 +32,21 @@
                             </div>
                         @endforeach
                     </div>
+                    @if (!empty($service['flyer']))
+                        <div class="vjm-flyer-inline mb-4" data-aos="fade-up">
+                            <a href="{{ asset($service['flyer']) }}" class="vjm-flyer-link">
+                                <img src="{{ asset($service['flyer']) }}" alt="{{ $service['title'] }} flyer" class="sis-radius">
+                            </a>
+                            <div>
+                                <span class="sisf-m-subtitle">Programme Flyer</span>
+                                <h3 class="sis-comman-text mt-2 mb-2">{{ $service['title'] }}</h3>
+                                <p class="mb-3">Tap the flyer to view it full size, or contact us for the latest details and requirements.</p>
+                                <div class="d-flex flex-wrap gap-3">
+                                    <a href="{{ route('web.contact', ['service' => $service['slug']]) }}" class="sis-btn-default">Apply / Enquire<i class="fa-solid fa-arrow-right-long"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    @endif
 
                     <div class="sis-e-content--inner mb-4">
                         <div class="sisf-sis-section-title sis-section-title">

@@ -8,7 +8,7 @@
                         <div class="col-xl-4 col-lg-6 col-md-6">
                             <div class="footer-logo mb-4 pb-4" data-aos="fade-right" data-aos-delay="100">
                                 <a href="{{ route('home') }}">
-                                    <img src="{{ asset('website/images/logo-victory.svg') }}" alt="{{ $site['name'] }}">
+                                    <img src="{{ asset('website/images/logo-victory.png') }}" alt="{{ $site['name'] }}">
                                 </a>
                             </div>
                             <div class="sisf-e-text-bottom">
@@ -90,6 +90,9 @@
                                                     <div class="sisf-sis-e-content">
                                                         <span class="sis-title text-white d-block">Call us on</span>
                                                         <a href="tel:{{ $site['phone_link'] }}" class="sis-title text-white d-block">{{ $site['phone'] }}</a>
+                                                        @if (!empty($site['phone_alt']))
+                                                            <a href="tel:{{ $site['phone_alt_link'] }}" class="sis-title text-white d-block">{{ $site['phone_alt'] }}</a>
+                                                        @endif
                                                     </div>
                                                 </div>
                                                 <div class="sisf-contact-box d-flex align-items-center ps-4 gap-3">
@@ -117,7 +120,7 @@
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="footer-copyright-text">
-                                    <p class="mb-0 text-white">&copy; {{ date('Y') }} {{ $site['name'] }}. All Rights Reserved.</p>
+                                    <p class="mb-0 text-white">&copy; {{ date('Y') }} {{ $site['name'] }} — {{ config('site.tagline') }} All Rights Reserved.</p>
                                 </div>
                             </div>
                             <div class="col-lg-6">
@@ -184,6 +187,12 @@
     <script src="{{ asset('website/js/SplitText.js') }}"></script>
     <!-- Main Custom js file -->
     <script src="{{ asset('website/js/script.js') }}"></script>
+    <!-- Flyer lightbox (separate from the template gallery so buttons beside flyers keep working) -->
+    <script>
+        if (window.jQuery && $.fn.magnificPopup && $('.vjm-flyer-link').length) {
+            $('.vjm-flyer-link').magnificPopup({ type: 'image', gallery: { enabled: true }, image: { verticalFit: true }, mainClass: 'mfp-fade' });
+        }
+    </script>
 </body>
 
 </html>

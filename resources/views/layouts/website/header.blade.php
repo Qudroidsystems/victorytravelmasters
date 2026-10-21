@@ -10,11 +10,12 @@
     <meta name="robots" content="max-image-preview:large">
     <meta property="og:title" content="@yield('title', 'Home') | {{ config('site.name') }}">
     <meta property="og:description" content="{{ config('site.tagline') }}">
-    <meta property="og:image" content="{{ asset('website/images/slide-bg1.jpg') }}">
+    <meta property="og:image" content="{{ asset('website/images/logo-victory.png') }}">
     <!-- Page Title -->
     <title>@yield('title', 'Home') | {{ config('site.name') }}</title>
     <!-- Favicon Icon -->
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('website/images/favicon.png') }}">
+    <link rel="icon" type="image/png" href="{{ asset('website/images/favicon.png') }}">
+    <link rel="apple-touch-icon" href="{{ asset('website/images/apple-touch-icon.png') }}">
     <!-- Bootstrap Css Link -->
     <link href="{{ asset('website/css/bootstrap.min.css') }}" rel="stylesheet" media="screen">
     <!-- Swiper Css -->
@@ -50,13 +51,13 @@
             <div class="container">
                 <!-- Logo Start -->
                 <a class="navbar-brand sisf-header-logo-link mobile-block" href="{{ route('home') }}">
-                    <img src="{{ asset('website/images/logo-victory.svg') }}" alt="{{ config('site.name') }}">
+                    <img src="{{ asset('website/images/logo-victory.png') }}" alt="{{ config('site.name') }}">
                 </a>
                 <!-- Logo End -->
                 <div class="sisf-centered-header-wrapper sisf--header d-flex justify-content-between align-items-center">
                     <!-- Logo Start -->
                     <a class="navbar-brand sisf-header-logo-link" href="{{ route('home') }}">
-                        <img src="{{ asset('website/images/logo-victory.svg') }}" alt="{{ config('site.name') }}">
+                        <img src="{{ asset('website/images/logo-victory.png') }}" alt="{{ config('site.name') }}">
                     </a>
                     <!-- Logo End -->
                     <nav class="navbar navbar-expand-lg ms-auto me-4">

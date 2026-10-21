@@ -9,7 +9,7 @@
                     <span class="sisf-m-subtitle sis-text-anime-style-3">Who We Are</span>
                     <h2 class="sisf-m-title sis-text-anime-style-3"><span class="sisf-e-colored">Your Trusted Partner</span> for Every Journey Abroad</h2>
                     <div class="sisf-m-text" data-aos="fade-up" data-aos-delay="100">
-                        <p class="mt-3">{{ $site['name'] }} is a full-service travel agency for people who want their trip handled properly. We help individuals, families, students, churches and businesses with visa applications, flight tickets, hotel reservations, study abroad admissions and complete holiday packages.</p>
+                        <p class="mt-3">{{ $site['name'] }} is a full-service travel agency for people who want their trip handled properly. We help individuals, families, students, churches and businesses with visa applications, work permits, study abroad and medical-school admissions, healthcare leadership programmes, flight tickets, hotel reservations and complete holiday packages.</p>
                         <p>We are not a booking website. We are a team you can call, visit and hold accountable — people who explain the rules plainly, check every document, and stay with you until you are back home.</p>
                     </div>
                 </div>

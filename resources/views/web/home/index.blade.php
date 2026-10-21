@@ -3,13 +3,13 @@
 @section('content')
     @php
         $heroSlides = [
-            ['image' => 'website/images/slide-bg1.jpg', 'subtitle' => 'Visas · Flights · Study Abroad · Holidays',
+            ['image' => 'website/images/slide-bg1.jpg', 'subtitle' => 'Visas · Work Permits · Study Abroad · Holidays',
              'title' => 'Your Journey Abroad Starts With the Right Guide',
              'text' => 'Honest advice, careful visa preparation and reliable bookings — so you can travel, study or holiday abroad with confidence.',
              'button' => 'Explore Our Services', 'url' => route('web.services')],
-            ['image' => 'website/images/slide-bg2.jpg', 'subtitle' => 'Study Abroad Made Clear',
+            ['image' => 'website/images/slide-bg2.jpg', 'subtitle' => 'Study Abroad · MBBS · Healthcare Programmes',
              'title' => 'From Admission Letter to Your First Day on Campus',
-             'text' => 'We help students choose the right school, prepare strong applications and secure their student visas on time.',
+             'text' => 'Degrees, medicine (MBBS/MD/MS) and healthcare leadership programmes in Canada, the UK, the USA, Europe and beyond — with admission and visa support.',
              'button' => 'Study Abroad Support', 'url' => route('web.service', 'study-abroad')],
             ['image' => 'website/images/slide-bg3.jpg', 'subtitle' => 'Holidays You Will Remember',
              'title' => 'Dubai, Paris, the Maldives — Planned From Start to Finish',
@@ -555,6 +555,9 @@
         </div>
     </div>
     <!-- Our Services Section End -->
+
+    @include('web.partials.flyers')
+
     <!-- What We Offer Section Start -->
     <div class="sis-what-we-offer-section section">
         <div class="container">
