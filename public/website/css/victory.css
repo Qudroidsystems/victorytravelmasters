@@ -315,3 +315,105 @@
 .vjm-contact-photo img {
 	aspect-ratio: auto;
 }
+
+/* ---------- Brand logo (PNG, roughly 2.6 : 1) — sized by height ---------- */
+.sisf-header-logo-link.navbar-brand img {
+	width: auto !important;
+	height: 62px !important;
+}
+
+.footer-logo img {
+	width: auto !important;
+	height: 90px;
+	max-width: 100%;
+}
+
+@media (max-width: 991px) {
+	.sisf-header-logo-link.navbar-brand img {
+		height: 50px !important;
+	}
+}
+
+@media (max-width: 575px) {
+	.sisf-header-logo-link.navbar-brand img {
+		height: 44px !important;
+	}
+	.footer-logo img {
+		height: 72px;
+	}
+}
+
+/* ---------- Client flyers ---------- */
+.vjm-flyer-card {
+	background: var(--white-color);
+	border-radius: 20px;
+	overflow: hidden;
+	margin-bottom: 30px;
+	height: calc(100% - 30px);
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0 16px 32px rgba(26, 45, 33, 0.06);
+}
+
+.vjm-flyer-link {
+	display: block;
+	overflow: hidden;
+	cursor: zoom-in;
+}
+
+.vjm-flyer-card .vjm-flyer-link img {
+	width: 100%;
+	aspect-ratio: 1 / 1;
+	object-fit: cover;
+	object-position: top center;
+	transition: transform 0.5s ease;
+}
+
+.vjm-flyer-card:hover .vjm-flyer-link img {
+	transform: scale(1.04);
+}
+
+.vjm-flyer-body {
+	padding: 22px 24px 26px;
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+
+.vjm-flyer-body h3 {
+	font-size: 20px;
+	margin-bottom: 8px;
+}
+
+.vjm-flyer-body p {
+	flex: 1;
+}
+
+.vjm-flyer-inline {
+	display: flex;
+	gap: 24px;
+	align-items: center;
+	background: var(--white-color);
+	border-radius: 20px;
+	padding: 20px;
+}
+
+.vjm-flyer-inline .vjm-flyer-link {
+	flex: 0 0 220px;
+	border-radius: 14px;
+}
+
+.vjm-flyer-inline img {
+	width: 100%;
+	display: block;
+}
+
+@media (max-width: 575px) {
+	.vjm-flyer-inline {
+		flex-direction: column;
+		align-items: stretch;
+	}
+	.vjm-flyer-inline .vjm-flyer-link {
+		flex-basis: auto;
+	}
+}

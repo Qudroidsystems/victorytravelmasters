@@ -20,7 +20,8 @@ return [
      * ------------------------------------------------------------------ */
     'name'        => 'Victory Journey Masters',
     'short_name'  => 'Victory Journey',
-    'tagline'     => 'Visas, flights, study abroad and holidays — handled by people who care.',
+    'tagline'     => 'Leave your travel to us.',
+    'tagline_long' => 'Visas, flights, study abroad and holidays — handled by people who care.',
 
     'owner' => [
         'name'      => '[Owner Name]',            // e.g. Mrs. Jane Doe
@@ -28,11 +29,14 @@ return [
         'signature' => '[Owner Name]',            // name shown in handwriting style under the welcome address
     ],
 
-    'phone'          => '+234 000 000 0000',       // shown on the site
-    'phone_link'     => '+2340000000000',          // same number, digits only, for tel: links
-    'whatsapp'       => '2340000000000',           // digits only, used for wa.me links
-    'email'          => 'info@yourdomain.com',     // contact-form messages are sent here
-    'address'        => '[Office address, City, State, Nigeria]',
+    'phone'          => '0705 917 3036',           // main line (from the client's flyers)
+    'phone_link'     => '+2347059173036',          // same number in international format, for tel: links
+    'phone_alt'      => '0905 114 9946',           // second line
+    'phone_alt_link' => '+2349051149946',
+    'whatsapp'       => '2347059173036',           // digits only, used for wa.me links — confirm which line has WhatsApp
+    'email'          => 'victoryfrancis06@gmail.com', // contact-form messages are sent here
+    'address'        => 'No. 8 Sydney Emmanuel Street, Upper Valentino, Ondo, Ondo State',
+    'website'        => 'https://www.victoryjourneymasters.ng/',
     'hours'          => [
         'Monday – Friday : 9:00 AM – 5:00 PM',
         'Saturday : 10:00 AM – 3:00 PM',
@@ -41,10 +45,11 @@ return [
     'hours_short'    => 'Mon – Sat, 9:00 AM – 5:00 PM',
 
     'socials' => [
-        'facebook'  => '#',
-        'instagram' => '#',
-        'x-twitter' => '#',
-        'tiktok'    => '#',
+        // Replace '#' with the full profile links (e.g. https://facebook.com/yourpage)
+        'facebook'    => '#',
+        'instagram'   => '#',
+        'x-twitter'   => '#',
+        'linkedin-in' => '#',
     ],
 
     /* ------------------------------------------------------------------
@@ -77,7 +82,7 @@ return [
      | once the client confirms them.
      * ------------------------------------------------------------------ */
     'stats' => [
-        ['value' => '4',   'suffix' => '',  'label' => 'Core Travel Services'],
+        ['value' => '9',   'suffix' => '',  'label' => 'Travel & Study Services'],
         ['value' => '8',   'suffix' => '+', 'label' => 'Featured Destinations'],
         ['value' => '6',   'suffix' => '',  'label' => 'Ready-made Tour Packages'],
         ['value' => '100', 'suffix' => '%', 'label' => 'Personalised Planning'],
@@ -185,7 +190,7 @@ return [
             'title' => 'Hotel Reservations',
             'icon'  => 'website/images/service-icon-4.svg',
             'tag'   => 'Hotels · Apartments · Resorts',
-            'image' => 'website/images/what-we-offer2.png',
+            'image' => 'website/images/blog-image5.jpg',
             'short' => 'Safe, well-located hotels and apartments that match your budget and the reason for your trip.',
             'intro' => [
                 'Where you stay can make or break a trip. We recommend hotels, serviced apartments and resorts based on location, safety, reviews and your budget — not on whatever pays the highest commission.',
@@ -268,6 +273,102 @@ return [
             'faqs' => [
                 ['q' => 'How soon after the wedding should we travel?', 'a' => 'That is up to you. Many couples leave within a week; we simply recommend sorting visas well before the wedding date.'],
                 ['q' => 'Can you include a photoshoot?', 'a' => 'Yes. We can arrange a professional photographer at most popular honeymoon destinations.'],
+            ],
+        ],
+        [
+            'slug'  => 'work-permit',
+            'title' => 'Work Permits & Relocation',
+            'icon'  => 'website/images/service-icon-3.svg',
+            'tag'   => 'Work & Live Abroad',
+            'image' => 'website/images/flyers/work-permit-banner.jpg',
+            'flyer' => 'website/images/flyers/work-permit.jpg',
+            'short' => 'Guidance on legitimate work-visa routes to the UK, USA, Germany, the Netherlands, Canada, Ireland, Australia and more.',
+            'intro' => [
+                'Working abroad can change your career and your family’s future — but it is also the area where Nigerians are most often targeted by fake job offers and visa scams. We help you pursue genuine, legal routes to work and live abroad.',
+                'We assess your qualifications and experience, explain which work-visa categories you may qualify for in the UK, USA, Germany, the Netherlands, Canada, Russia, Ireland and Australia, and guide you through credential checks, documentation and the visa application once you have a valid job offer or sponsorship.',
+            ],
+            'features' => [
+                ['title' => 'Eligibility Assessment', 'text' => 'An honest review of your profession, qualifications and experience against each country’s requirements.'],
+                ['title' => 'CV & Document Preparation', 'text' => 'Country-standard CVs, reference letters and certificate evaluation where needed.'],
+                ['title' => 'Visa Application Support', 'text' => 'Careful preparation of your work-visa application once you have a genuine offer or sponsorship.'],
+                ['title' => 'Relocation Planning', 'text' => 'Flights, temporary accommodation and arrival guidance for you and your family.'],
+            ],
+            'checklist' => [
+                'UK, USA, Germany and the Netherlands',
+                'Canada, Ireland, Australia and Russia',
+                'Skilled-worker and sponsored routes',
+                'Healthcare, tech, engineering and other in-demand fields',
+                'Dependant visas for spouse and children',
+                'Pre-departure and arrival guidance',
+            ],
+            'faqs' => [
+                ['q' => 'Can you guarantee me a job abroad?', 'a' => 'No. Jobs are offered by employers and visas are issued by governments. Be careful of anyone who “sells” guaranteed jobs or visas. We help you prepare properly and apply through legitimate routes.'],
+                ['q' => 'Do I need a job offer before applying?', 'a' => 'For most work visas, yes — usually from an employer licensed to sponsor foreign workers. Some countries also have points-based or job-seeker routes; we will tell you which ones fit your profile.'],
+                ['q' => 'Can my family come with me?', 'a' => 'Many work-visa routes allow dependants. The rules and costs differ by country and visa type, so we check this for your situation.'],
+            ],
+        ],
+        [
+            'slug'  => 'healthcare-leadership',
+            'title' => 'Healthcare Leadership Programmes',
+            'icon'  => 'website/images/service-icon-2.svg',
+            'tag'   => 'For Healthcare Professionals',
+            'image' => 'website/images/flyers/healthcare-banner.jpg',
+            'flyer' => 'website/images/flyers/healthcare-leadership.jpg',
+            'short' => 'Specialised professional programmes in Canada and other countries for doctors, nurses, pharmacists and health administrators.',
+            'intro' => [
+                'Advance your career in the global healthcare sector. We help healthcare professionals find and apply for specialised leadership and management programmes in Canada and other countries.',
+                'These programmes help you gain international healthcare knowledge, build a global professional network and strengthen your career — whether you plan to return home with new skills or build a career abroad. We support you from choosing a programme to admission, study permit and travel.',
+            ],
+            'features' => [
+                ['title' => 'Healthcare & Nursing Leadership', 'text' => 'Programmes that build management and leadership skills for clinical professionals.'],
+                ['title' => 'Hospital Administration', 'text' => 'Training in running hospitals and health facilities efficiently.'],
+                ['title' => 'Quality & Patient Safety', 'text' => 'Courses in healthcare quality improvement and patient-safety systems.'],
+                ['title' => 'Public Health Management', 'text' => 'Programmes for leading public-health projects, teams and policy.'],
+            ],
+            'checklist' => [
+                'Doctors',
+                'Nurses',
+                'Pharmacists',
+                'Hospital administrators',
+                'Public health professionals',
+                'Other healthcare practitioners',
+            ],
+            'faqs' => [
+                ['q' => 'Which countries offer these programmes?', 'a' => 'Mainly Canada, with options in other countries too. We will show you programmes that fit your profession, budget and goals.'],
+                ['q' => 'Do I need to be practising already?', 'a' => 'Most leadership programmes expect a healthcare qualification and some work experience. Entry requirements vary by school, and we check them for you.'],
+                ['q' => 'Do you help with the study permit?', 'a' => 'Yes — once you have an admission letter, we help you prepare your study permit or visa application, proof of funds and travel plans.'],
+            ],
+        ],
+        [
+            'slug'  => 'study-mbbs-abroad',
+            'title' => 'Study Medicine (MBBS) Abroad',
+            'icon'  => 'website/images/service-icon-1.svg',
+            'tag'   => 'MBBS · MD · MS',
+            'image' => 'website/images/flyers/mbbs-banner.jpg',
+            'flyer' => 'website/images/flyers/study-mbbs.jpg',
+            'short' => 'Admission support for medical degrees in Russia, the UK, the USA, Australia, Europe and Canada.',
+            'intro' => [
+                'Dreaming of becoming a doctor? We help aspiring medical students secure admission into MBBS, MD and MS programmes at medical universities in Russia, the UK, the USA, Australia, Europe and Canada.',
+                'Choosing a medical school is a long-term decision. We help you compare tuition, duration, language of instruction and — most importantly — whether the degree will be recognised when you return. If you plan to practise in Nigeria, we advise you to confirm the school’s recognition with the Medical and Dental Council of Nigeria (MDCN) before you accept an offer.',
+            ],
+            'features' => [
+                ['title' => 'School Shortlisting', 'text' => 'Recognised medical universities that match your grades, budget and preferred country.'],
+                ['title' => 'Admission Processing', 'text' => 'Application forms, transcripts, statements and admission-letter follow-up.'],
+                ['title' => 'Student Visa Support', 'text' => 'Proof of funds guidance, document checks and visa interview preparation.'],
+                ['title' => 'Travel & Arrival', 'text' => 'Flights, accommodation and a pre-departure briefing for students and parents.'],
+            ],
+            'checklist' => [
+                'MBBS / MD / MS programmes',
+                'Russia, UK, USA and Canada',
+                'Australia and other European countries',
+                'Recognition checks before you accept an offer',
+                'Tuition and living-cost planning',
+                'Parent briefings and ongoing support',
+            ],
+            'faqs' => [
+                ['q' => 'What qualifications do I need?', 'a' => 'Usually strong results in Biology, Chemistry, Physics and English (for example WAEC/NECO). Some countries also require entrance exams or foundation years. We check each school’s requirements for you.'],
+                ['q' => 'Will my degree be recognised in Nigeria?', 'a' => 'Only if the school is recognised by the MDCN, and graduates normally sit a qualifying assessment before practising. We help you check recognition before you commit.'],
+                ['q' => 'How long does the programme take?', 'a' => 'Typically five to six years, depending on the country and whether a foundation or language year is required.'],
             ],
         ],
     ],
@@ -463,6 +564,10 @@ return [
             ['q' => 'Can you help with scholarships?', 'a' => 'We point you to scholarships and tuition discounts you may qualify for and help you prepare strong applications, though awards are decided by the institutions.'],
             ['q' => 'Do you help after admission?', 'a' => 'Yes — student visa, flights, accommodation, airport pickup advice and a pre-departure briefing.'],
         ],
+        'Work Permits' => [
+            ['q' => 'Which countries do you help with?', 'a' => 'The UK, USA, Germany, the Netherlands, Canada, Russia, Ireland, Australia and others. Requirements differ for each country and job type.'],
+            ['q' => 'Do you sell jobs or guarantee visas?', 'a' => 'No. Genuine jobs come from employers and visas from governments. We help you understand the legal routes and prepare a strong, truthful application.'],
+        ],
         'Flights & Hotels' => [
             ['q' => 'Do you book both local and international flights?', 'a' => 'Yes, on most major airlines, including group and family bookings.'],
             ['q' => 'Can you provide flight and hotel reservations for my visa application?', 'a' => 'Yes. We provide genuine, verifiable reservations suitable for embassy submission.'],
@@ -490,6 +595,7 @@ return [
      | Gallery images
      * ------------------------------------------------------------------ */
     'gallery' => [
+        'website/images/flyers/work-permit.jpg', 'website/images/flyers/healthcare-leadership.jpg', 'website/images/flyers/study-mbbs.jpg',
         'website/images/page-gallery1.jpg', 'website/images/page-gallery2.jpg', 'website/images/page-gallery3.jpg',
         'website/images/page-gallery4.jpg', 'website/images/page-gallery5.jpg', 'website/images/page-gallery6.jpg',
         'website/images/page-gallery7.jpg', 'website/images/page-gallery8.jpg', 'website/images/page-gallery9.jpg',
