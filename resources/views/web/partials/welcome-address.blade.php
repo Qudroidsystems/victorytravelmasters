@@ -30,8 +30,8 @@
                             {{-- <strong>{{ $site['owner']['name'] }}</strong>
                             <span>{{ $site['owner']['title'] }}</span> --}}
 
-                             {{-- <strong>{{ $site['owner']['name'] }}</strong>
-                            <span>{{ $site['owner']['title'] }}</span> --}}
+                             <strong>{{ $site['owner']['name'] }}</strong>
+                            <span>{{ $site['owner']['title'] }}</span>
                         </div>
                     </div>
                 </div>

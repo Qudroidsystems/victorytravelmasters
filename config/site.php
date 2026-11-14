@@ -24,9 +24,9 @@ return [
     'tagline_long' => 'Visas, flights, study abroad and holidays — handled by people who care.',
 
     'owner' => [
-        'name'      => '[Owner Name]',            // e.g. Mrs. Jane Doe
+        'name'      => 'Mrs. Victory Francis',            // e.g. Mrs. Jane Doe
         'title'     => 'Founder & Chief Executive Officer',
-        'signature' => '[Owner Name]',            // name shown in handwriting style under the welcome address
+        'signature' => 'VicFrc',            // name shown in handwriting style under the welcome address
     ],
 
     'phone'          => '0705 917 3036',           // main line (from the client's flyers)
