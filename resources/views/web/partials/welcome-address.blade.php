@@ -27,8 +27,11 @@
                     <div class="vjm-welcome-badge" data-aos="fade-up" data-aos-delay="600">
                         <span class="vjm-welcome-badge-icon"><i class="fa-solid fa-plane-departure"></i></span>
                         <div>
-                            <strong>{{ $site['owner']['name'] }}</strong>
-                            <span>{{ $site['owner']['title'] }}</span>
+                            {{-- <strong>{{ $site['owner']['name'] }}</strong>
+                            <span>{{ $site['owner']['title'] }}</span> --}}
+
+                             {{-- <strong>{{ $site['owner']['name'] }}</strong>
+                            <span>{{ $site['owner']['title'] }}</span> --}}
                         </div>
                     </div>
                 </div>
